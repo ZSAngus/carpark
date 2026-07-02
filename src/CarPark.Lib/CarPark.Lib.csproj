@@ -1,25 +1,22 @@
-<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <PropertyGroup>
     <AssemblyName>CarPark.Lib</AssemblyName>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
     <UseWindowsForms>True</UseWindowsForms>
-    <FrameworkPathOverride>C:\Users\168v\.nuget\packages\microsoft.netframework.referenceassemblies.net40\1.0.3\build\.NETFramework\v4.0</FrameworkPathOverride>
-    <TargetFramework>net40</TargetFramework>
+    <TargetFramework>net472</TargetFramework>
     <DebugSymbols>false</DebugSymbols>
     <DebugType>none</DebugType>
-  </PropertyGroup>
-  <PropertyGroup>
     <LangVersion>12.0</LangVersion>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
     <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
     <OutputPath>..\..\output\</OutputPath>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <GenerateResourceUsePreserializedResources>false</GenerateResourceUsePreserializedResources>
   </PropertyGroup>
   <PropertyGroup>
-    <RootNamespace />
+    <RootNamespace></RootNamespace>
   </PropertyGroup>
-  <ItemGroup />
   <ItemGroup>
     <Reference Include="DevComponents.DotNetBar2">
       <HintPath>..\..\lib\DevComponents.DotNetBar2.dll</HintPath>
@@ -37,4 +34,14 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Entity" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="_extracted_resources\CarPark.Dialog.resources" LogicalName="CarPark.Dialog.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark.MessageForm.resources" LogicalName="CarPark.MessageForm.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="CarPark.Dialog.resx" />
+    <EmbeddedResource Remove="CarPark.MessageForm.resx" />
+  </ItemGroup>
 </Project>
+
+

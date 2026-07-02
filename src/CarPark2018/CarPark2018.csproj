@@ -1,11 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>CarPark2018</AssemblyName>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
     <OutputType>WinExe</OutputType>
     <UseWindowsForms>True</UseWindowsForms>
-    <FrameworkPathOverride>C:\Users\168v\.nuget\packages\microsoft.netframework.referenceassemblies.net40\1.0.3\build\.NETFramework\v4.0</FrameworkPathOverride>
-    <TargetFramework>net40</TargetFramework>
+    <TargetFramework>net472</TargetFramework>
     <PlatformTarget>x86</PlatformTarget>
     <OutputPath>..\..\output\</OutputPath>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
@@ -20,7 +19,7 @@
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>app.ico</ApplicationIcon>
-    <RootNamespace />
+    <RootNamespace></RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="log4net">
@@ -88,4 +87,68 @@
     <ProjectReference Include="..\CarPark.Device\CarPark.Device.csproj" />
     <ProjectReference Include="..\CarPark.Device.CashierBusiness\CarPark.Device.CashierBusiness.csproj" />
   </ItemGroup>
+
+  <!-- 浣跨敤寰炲師濮?CAR.exe 鎻愬彇鐨勫祵鍏ヨ硣婧?-->
+  <ItemGroup>
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.Forms.BOCN910ChargeDialog.resources" LogicalName="CarPark2018.Forms.BOCN910ChargeDialog.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.FormFee.resources" LogicalName="CarPark2018.FormFee.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.Forms.FormManualUpBarDialog.resources" LogicalName="CarPark2018.Forms.FormManualUpBarDialog.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.Forms.FormTimeChargeTimeOut.resources" LogicalName="CarPark2018.Forms.FormTimeChargeTimeOut.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.Forms.ScanPaymentChargeDialog.resources" LogicalName="CarPark2018.Forms.ScanPaymentChargeDialog.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.Forms.FormLPPayFeeCashier.resources" LogicalName="CarPark2018.Forms.FormLPPayFeeCashier.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.LPPayForms.FormLPPayLost.resources" LogicalName="CarPark2018.LPPayForms.FormLPPayLost.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.Forms.FormLPPayMainOwner.resources" LogicalName="CarPark2018.Forms.FormLPPayMainOwner.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.LPPayForms.FormLPPayReleaseMgmt.resources" LogicalName="CarPark2018.LPPayForms.FormLPPayReleaseMgmt.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.FormMain.resources" LogicalName="CarPark2018.FormMain.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.Forms.FormDisabilityDialog.resources" LogicalName="CarPark2018.Forms.FormDisabilityDialog.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.Forms.FormEpaySale.resources" LogicalName="CarPark2018.Forms.FormEpaySale.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.Forms.FormLicensePlateCorrect.resources" LogicalName="CarPark2018.Forms.FormLicensePlateCorrect.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.Forms.FormLostLP.resources" LogicalName="CarPark2018.Forms.FormLostLP.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.Forms.FormLPPayFeeOwner.resources" LogicalName="CarPark2018.Forms.FormLPPayFeeOwner.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.Forms.FormLPPayMsgOwner.resources" LogicalName="CarPark2018.Forms.FormLPPayMsgOwner.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.Forms.FormLPPayUserInput.resources" LogicalName="CarPark2018.Forms.FormLPPayUserInput.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.Forms.FormMPassCharge.resources" LogicalName="CarPark2018.Forms.FormMPassCharge.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.Forms.FormMPassQuery.resources" LogicalName="CarPark2018.Forms.FormMPassQuery.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.Forms.FormRentalCharge.resources" LogicalName="CarPark2018.Forms.FormRentalCharge.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.Forms.FormVoidCharge.resources" LogicalName="CarPark2018.Forms.FormVoidCharge.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.Forms.FormParkAreaExtend.resources" LogicalName="CarPark2018.Forms.FormParkAreaExtend.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark.UserControls.SysConfig.UcTimeCharge.resources" LogicalName="CarPark.UserControls.SysConfig.UcTimeCharge.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.Forms.FormTimeChargeFree.resources" LogicalName="CarPark2018.Forms.FormTimeChargeFree.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.FormChangePsw.resources" LogicalName="CarPark2018.FormChangePsw.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.FormLogin.resources" LogicalName="CarPark2018.FormLogin.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.FormShift.resources" LogicalName="CarPark2018.FormShift.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.Forms.FormTimeCharge.resources" LogicalName="CarPark2018.Forms.FormTimeCharge.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.Forms.FormTimeChargeDemage.resources" LogicalName="CarPark2018.Forms.FormTimeChargeDemage.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.Forms.FormTimeChargeLost.resources" LogicalName="CarPark2018.Forms.FormTimeChargeLost.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.Forms.FormTimeCompensationFare.resources" LogicalName="CarPark2018.Forms.FormTimeCompensationFare.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.Forms.MPassChargeDialog.resources" LogicalName="CarPark2018.Forms.MPassChargeDialog.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.Forms.QuickPassChargeDialog.resources" LogicalName="CarPark2018.Forms.QuickPassChargeDialog.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.Forms.FormDepositCharge.resources" LogicalName="CarPark2018.Forms.FormDepositCharge.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.Forms.FormCheckRental.resources" LogicalName="CarPark2018.Forms.FormCheckRental.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.Forms.FormTransferTicket.resources" LogicalName="CarPark2018.Forms.FormTransferTicket.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.Forms.FormSetFree.resources" LogicalName="CarPark2018.Forms.FormSetFree.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.LPPayForms.UCReleaseMgmtItem.resources" LogicalName="CarPark2018.LPPayForms.UCReleaseMgmtItem.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.Properties.Resources.resources" LogicalName="CarPark2018.Properties.Resources.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.UserControls.MyKeyBoard.resources" LogicalName="CarPark2018.UserControls.MyKeyBoard.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.UserControls.UcChargeRange.resources" LogicalName="CarPark2018.UserControls.UcChargeRange.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.UserControls.UCClock.resources" LogicalName="CarPark2018.UserControls.UCClock.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.UserControls.UCGatesEX_Item.resources" LogicalName="CarPark2018.UserControls.UCGatesEX_Item.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.UserControls.UCLicensePlate.resources" LogicalName="CarPark2018.UserControls.UCLicensePlate.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.UserControls.UCLicensePlate2.resources" LogicalName="CarPark2018.UserControls.UCLicensePlate2.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark.UserControls.SysConfig.UcParkAreaCount.resources" LogicalName="CarPark.UserControls.SysConfig.UcParkAreaCount.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark.UserControls.SysConfig.UCParkAreaCountEX.resources" LogicalName="CarPark.UserControls.SysConfig.UCParkAreaCountEX.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.UserControls.UCParkAreaEX.resources" LogicalName="CarPark2018.UserControls.UCParkAreaEX.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.UserControls.UCParkAreaEX3.resources" LogicalName="CarPark2018.UserControls.UCParkAreaEX3.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.UserControls.UCParkAreaEX_Item.resources" LogicalName="CarPark2018.UserControls.UCParkAreaEX_Item.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.UserControls.UCPasstraceEX2.resources" LogicalName="CarPark2018.UserControls.UCPasstraceEX2.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.UserControls.UCVideoPlayer.resources" LogicalName="CarPark2018.UserControls.UCVideoPlayer.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.UserControls.UCVideoPlayerEX.resources" LogicalName="CarPark2018.UserControls.UCVideoPlayerEX.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.UserControls.UCParkAreaEX2.resources" LogicalName="CarPark2018.UserControls.UCParkAreaEX2.resources" />
+    <EmbeddedResource Include="_extracted_resources\CarPark2018.UserControls.UCParkAreaEX_Item2.resources" LogicalName="CarPark2018.UserControls.UCParkAreaEX_Item2.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="CarPark2018.Properties.Resources.resx" />
+  </ItemGroup>
 </Project>
+
+

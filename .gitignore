@@ -1,0 +1,32 @@
+# Compiled output - DLLs are delivery artifacts, keep only what's needed
+# (Don't gitignore output/*.dll as they're already tracked in the repo)
+output/Logs/
+output/*.log
+output/debug*.log
+output/build_all.log
+output/log.txt
+
+# Build artifacts
+output_new/
+lib/
+
+# Source build intermediates
+src/**/obj/
+src/**/_extracted_resources/
+src/**/*.resources
+src/**/*.ps1
+src/**/*.bak
+
+# Build logs
+build*.log
+
+# Temporary scripts
+fix_resx.ps1
+_manual_resgen.ps1
+_*.ps1
+_*.php
+_*.py
+
+# OS files
+Thumbs.db
+.DS_Store

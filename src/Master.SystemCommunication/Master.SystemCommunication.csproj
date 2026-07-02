@@ -1,9 +1,8 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Master.SystemCommunication</AssemblyName>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
-    <FrameworkPathOverride>C:\Users\168v\.nuget\packages\microsoft.netframework.referenceassemblies.net40\1.0.3\build\.NETFramework\v4.0</FrameworkPathOverride>
-    <TargetFramework>net40</TargetFramework>
+    <TargetFramework>net472</TargetFramework>
     <DebugSymbols>false</DebugSymbols>
     <DebugType>none</DebugType>
   </PropertyGroup>
@@ -27,3 +26,4 @@
     <ProjectReference Include="..\CarPark.Core\CarPark.Core.csproj" />
   </ItemGroup>
 </Project>
+

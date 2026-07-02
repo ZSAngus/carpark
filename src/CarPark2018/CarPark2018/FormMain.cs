@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Runtime.Remoting.Messaging;
@@ -25,6 +26,7 @@ using MacauPass.POSCom.Package;
 using Master.SystemCommunication.Carpark.LocalService;
 using Master.SystemCommunication.Lib;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using SkyInno.Lang;
 using log4net;
 
@@ -33,6 +35,8 @@ namespace CarPark2018;
 public class FormMain : Form
 {
 	private ILog Logger;
+
+	private FileSystemWatcher noticeWatcher;
 
 	private Thread TimeThread;
 
@@ -202,7 +206,12 @@ public class FormMain : Form
 
 	private System.Windows.Forms.Timer timerPaidMsg;
 
-	private TextBox txtDisplay;
+	private Panel panWeather;
+	private Panel panIconRow;
+	private TableLayoutPanel tblProb;
+	private Panel panNotice;
+	private Label lblNotice;
+	private System.Windows.Forms.Timer timerWeather;
 
 	private string lastContent;
 
@@ -248,6 +257,41 @@ public class FormMain : Form
 			}
 		}
 		ReadTextFile();
+
+		// ── FileSystemWatcher 監控 notice.txt 即時變更 ──
+		try
+		{
+			string watchPath = Application.StartupPath;
+			if (Directory.Exists(watchPath))
+			{
+				noticeWatcher = new FileSystemWatcher
+				{
+					Path = watchPath,
+					Filter = "notice.txt",
+					NotifyFilter = NotifyFilters.LastWrite,
+					EnableRaisingEvents = true
+				};
+				noticeWatcher.Changed += (s, e) =>
+				{
+					try
+					{
+						// 等 200ms 確保寫入完成
+						Thread.Sleep(200);
+						// 防抖：暫時關閉 watcher 避免疊加觸發
+						noticeWatcher.EnableRaisingEvents = false;
+						BeginInvoke((Action)ReadTextFile);
+					}
+					catch { }
+					finally
+					{
+						noticeWatcher.EnableRaisingEvents = true;
+					}
+				};
+			}
+		}
+		catch { }
+		// ── 結束 FileSystemWatcher ──
+
 		FormFee.Self();
 		base.Activated += FormMain_Activated;
 	}
@@ -560,6 +604,11 @@ public class FormMain : Form
 	private void FormMain_Load(object sender, EventArgs e)
 	{
 		LoadImage();
+
+		// 啟動天氣輪詢
+		timerWeather.Start();
+		FetchWeather();
+
 		ThreadPool.QueueUserWorkItem(delegate
 		{
 			try
@@ -1796,9 +1845,10 @@ public class FormMain : Form
 
 	protected override void Dispose(bool disposing)
 	{
-		if (disposing && components != null)
+		if (disposing)
 		{
-			components.Dispose();
+			noticeWatcher?.Dispose();
+			components?.Dispose();
 		}
 		base.Dispose(disposing);
 	}
@@ -2086,13 +2136,56 @@ public class FormMain : Form
 		this.ucPasstraceEX2.Name = "ucPasstraceEX2";
 		this.ucPasstraceEX2.Size = new System.Drawing.Size(999, 277);
 		this.ucPasstraceEX2.TabIndex = 2;
-		this.txtDisplay = new System.Windows.Forms.TextBox();
-		this.txtDisplay.Multiline = true;
-		this.txtDisplay.Location = new System.Drawing.Point(1000, 6);
-		this.txtDisplay.Size = new System.Drawing.Size(320, 610);
-		this.txtDisplay.ReadOnly = true;
-		this.txtDisplay.Font = new System.Drawing.Font("微软雅黑", 20f);
-		this.tabPage1.Controls.Add(this.txtDisplay);
+		// 天氣面板
+		this.panWeather = new System.Windows.Forms.Panel();
+		this.panWeather.Location = new System.Drawing.Point(1000, 6);
+		this.panWeather.Size = new System.Drawing.Size(320, 0);
+		this.panWeather.Visible = false;
+
+		// 圖標行
+		this.panIconRow = new System.Windows.Forms.Panel();
+		this.panIconRow.Location = new System.Drawing.Point(0, 0);
+		this.panIconRow.Size = new System.Drawing.Size(320, 68);
+		this.panIconRow.AutoScroll = true;
+
+		// 概率表（TableLayoutPanel）
+		this.tblProb = new System.Windows.Forms.TableLayoutPanel();
+		this.tblProb.Location = new System.Drawing.Point(3, 70);
+		this.tblProb.AutoSize = true;
+		this.tblProb.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+		this.tblProb.MaximumSize = new System.Drawing.Size(310, 0);
+		this.tblProb.MinimumSize = new System.Drawing.Size(310, 0);
+		this.tblProb.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+		this.tblProb.ColumnCount = 3;
+		this.tblProb.RowCount = 0;
+		this.tblProb.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33));
+		this.tblProb.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44));
+		this.tblProb.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23));
+
+		this.panWeather.Controls.Add(this.panIconRow);
+		this.panWeather.Controls.Add(this.tblProb);
+
+		// 公告面板（取代原本 txtDisplay）
+		this.panNotice = new System.Windows.Forms.Panel();
+		this.panNotice.Location = new System.Drawing.Point(1000, 6);
+		this.panNotice.Size = new System.Drawing.Size(320, 610);
+		this.panNotice.AutoScroll = true;
+
+		this.lblNotice = new System.Windows.Forms.Label();
+		this.lblNotice.AutoSize = true;
+		this.lblNotice.MaximumSize = new System.Drawing.Size(314, 0);
+		this.lblNotice.Font = new System.Drawing.Font("微软雅黑", 20f);
+		this.lblNotice.Location = new System.Drawing.Point(3, 3);
+
+		this.panNotice.Controls.Add(this.lblNotice);
+
+		this.tabPage1.Controls.Add(this.panWeather);
+		this.tabPage1.Controls.Add(this.panNotice);
+
+		// 天氣輪詢計時器（5分鐘）
+		this.timerWeather = new System.Windows.Forms.Timer();
+		this.timerWeather.Interval = 300000;
+		this.timerWeather.Tick += new EventHandler(OnWeatherTimerTick);
 		this.tabPage2.Controls.Add(this.labFinishMsg);
 		this.tabPage2.Controls.Add(this.label6);
 		this.tabPage2.Controls.Add(this.label5);
@@ -2492,6 +2585,119 @@ public class FormMain : Form
 		base.PerformLayout();
 	}
 
+	// ══════════════ 天氣預警 ══════════════
+
+	private void AddProbRow(string col1, string col2, string col3, bool isHeader)
+	{
+		int row = tblProb.RowCount++;
+		Font f = isHeader ? new System.Drawing.Font("微软雅黑", 12f, System.Drawing.FontStyle.Bold) : new System.Drawing.Font("微软雅黑", 12f);
+
+		var l1 = new Label() { Text = col1, Font = f, TextAlign = System.Drawing.ContentAlignment.MiddleCenter, AutoSize = true, MaximumSize = new System.Drawing.Size(100, 0), Padding = new Padding(3, 1, 3, 1) };
+		var l2 = new Label() { Text = col2, Font = f, TextAlign = System.Drawing.ContentAlignment.MiddleCenter, AutoSize = true, MaximumSize = new System.Drawing.Size(134, 0), Padding = new Padding(3, 1, 3, 1) };
+		var l3 = new Label() { Text = col3, Font = f, TextAlign = System.Drawing.ContentAlignment.MiddleCenter, AutoSize = true, MaximumSize = new System.Drawing.Size(70, 0), Padding = new Padding(3, 1, 3, 1) };
+
+		tblProb.Controls.Add(l1, 0, row);
+		tblProb.Controls.Add(l2, 1, row);
+		tblProb.Controls.Add(l3, 2, row);
+		tblProb.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.AutoSize));
+	}
+
+	private void FetchWeather()
+	{
+		try
+		{
+			using (WebClient wc = new WebClient())
+			{
+				wc.Encoding = System.Text.Encoding.UTF8;
+				wc.Headers["User-Agent"] = "CarPark2018-Weather/1.0";
+				string json = wc.DownloadString("http://192.168.1.38/park8/api/weather_warning.php");
+				var obj = JObject.Parse(json);
+				BeginInvoke((Action)(() => UpdateWeatherUI(obj)));
+			}
+		}
+		catch (Exception ex)
+		{
+			Logger.Warn("天氣擷取失敗", ex);
+		}
+	}
+
+	private void UpdateWeatherUI(JObject data)
+	{
+		try
+		{
+			var warnings = data["active_warnings"] as JArray;
+			var tcProb = data["tc_prob"] as JArray;
+
+			bool hasWeather = (warnings != null && warnings.Count > 0) || (tcProb != null && tcProb.Count > 0);
+
+			if (!hasWeather)
+			{
+				panWeather.Visible = false;
+				panNotice.Location = new System.Drawing.Point(1000, 6);
+				panNotice.Size = new System.Drawing.Size(320, 610);
+				return;
+			}
+
+			// 更新圖標行
+			panIconRow.Controls.Clear();
+			int iconX = 3;
+			if (warnings != null)
+			{
+				foreach (var w in warnings)
+				{
+					string url = (string)w["icon_url"] ?? "";
+					if (string.IsNullOrEmpty(url)) continue;
+
+					PictureBox pb = new PictureBox();
+					pb.Size = new System.Drawing.Size(64, 64);
+					pb.Location = new System.Drawing.Point(iconX, 2);
+					pb.SizeMode = PictureBoxSizeMode.StretchImage;
+					pb.LoadAsync(url);
+					panIconRow.Controls.Add(pb);
+					iconX += 67;
+				}
+			}
+
+			// 更新概率表（TableLayoutPanel）
+			tblProb.SuspendLayout();
+			tblProb.Controls.Clear();
+			tblProb.RowStyles.Clear();
+			tblProb.RowCount = 0;
+
+			if (tcProb != null && tcProb.Count > 0)
+			{
+				AddProbRow("信號", "時間", "概率", true);
+				foreach (var p in tcProb)
+				{
+					string signal = ((string)p["signal"] ?? "").Trim();
+					string time = ((string)p["time"] ?? "").Trim();
+					string prob = ((string)p["prob"] ?? "").Trim();
+					AddProbRow(signal, time, prob, false);
+				}
+			}
+			tblProb.ResumeLayout();
+			tblProb.PerformLayout();
+
+			// 計算天氣面板高度
+			int weatherH = 70 + (tblProb.Height > 0 ? tblProb.Height + 10 : 0);
+			panWeather.Size = new System.Drawing.Size(320, weatherH);
+			panWeather.Visible = true;
+
+			// 調整公告面板位置
+			panNotice.Location = new System.Drawing.Point(1000, 6 + weatherH);
+			panNotice.Size = new System.Drawing.Size(320, 610 - weatherH);
+		}
+		catch (Exception ex)
+		{
+			Logger.Warn("天氣 UI 更新失敗", ex);
+		}
+	}
+
+	private void OnWeatherTimerTick(object sender, EventArgs e)
+	{
+		FetchWeather();
+	}
+
 	private void ReadTextFile()
 	{
 		string path = Path.Combine(Application.StartupPath, "notice.txt");
@@ -2511,8 +2717,8 @@ public class FormMain : Form
 						MessageBox.Show("通告已更新，請留意！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
 					}
 				}
-				txtDisplay.Text = text;
-				txtDisplay.Visible = !string.IsNullOrWhiteSpace(text);
+				lblNotice.Text = text;
+			lblNotice.Visible = !string.IsNullOrWhiteSpace(text);
 				lastContent = text;
 				isFirstLoad = false;
 				return;
@@ -2520,11 +2726,11 @@ public class FormMain : Form
 			catch (Exception message)
 			{
 				Logger.Error(message);
-				txtDisplay.Visible = false;
+			lblNotice.Visible = false;
 				return;
 			}
 		}
-		txtDisplay.Visible = false;
+		lblNotice.Visible = false;
 	}
 
 	private void ucClock1_Click(object sender, EventArgs e)
