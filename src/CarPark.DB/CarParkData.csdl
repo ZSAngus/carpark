@@ -1,0 +1,1660 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CarPark.DB" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AD_ExtCardExpiryDate" EntityType="CarPark.DB.AD_ExtCardExpiryDate" />
+    <EntitySet Name="AD_SCSCP_CARD_DATA" EntityType="CarPark.DB.AD_SCSCP_CARD_DATA" />
+    <EntitySet Name="AdminCharge" EntityType="CarPark.DB.AdminCharge" />
+    <EntitySet Name="AppSetting" EntityType="CarPark.DB.AppSetting" />
+    <EntitySet Name="APS_Alarm" EntityType="CarPark.DB.APS_Alarm" />
+    <EntitySet Name="APS_CashBoxAcceptor" EntityType="CarPark.DB.APS_CashBoxAcceptor" />
+    <EntitySet Name="APS_CashBoxDispenser" EntityType="CarPark.DB.APS_CashBoxDispenser" />
+    <EntitySet Name="APS_CashBoxType" EntityType="CarPark.DB.APS_CashBoxType" />
+    <EntitySet Name="APS_Certificate" EntityType="CarPark.DB.APS_Certificate" />
+    <EntitySet Name="APS_CertificateType" EntityType="CarPark.DB.APS_CertificateType" />
+    <EntitySet Name="APS_CertificateUseRecord" EntityType="CarPark.DB.APS_CertificateUseRecord" />
+    <EntitySet Name="APS_CouponSetting" EntityType="CarPark.DB.APS_CouponSetting" />
+    <EntitySet Name="APS_CurrencyInfo" EntityType="CarPark.DB.APS_CurrencyInfo" />
+    <EntitySet Name="APS_FinishApsAcceptLog" EntityType="CarPark.DB.APS_FinishApsAcceptLog" />
+    <EntitySet Name="APS_FinishApsDispenseLog" EntityType="CarPark.DB.APS_FinishApsDispenseLog" />
+    <EntitySet Name="APS_MxtraSyslog" EntityType="CarPark.DB.APS_MxtraSyslog" />
+    <EntitySet Name="APS_RedoTicket" EntityType="CarPark.DB.APS_RedoTicket" />
+    <EntitySet Name="APS_ShiftRecordDetailed" EntityType="CarPark.DB.APS_ShiftRecordDetailed" />
+    <EntitySet Name="APS_Station" EntityType="CarPark.DB.APS_Station" />
+    <EntitySet Name="APS_Syslog" EntityType="CarPark.DB.APS_Syslog" />
+    <EntitySet Name="APS_SystemSetting" EntityType="CarPark.DB.APS_SystemSetting" />
+    <EntitySet Name="APS_TimeChargeRecord" EntityType="CarPark.DB.APS_TimeChargeRecord" />
+    <EntitySet Name="barsys_Discount" EntityType="CarPark.DB.barsys_Discount" />
+    <EntitySet Name="barsys_Discount_Batch" EntityType="CarPark.DB.barsys_Discount_Batch" />
+    <EntitySet Name="barsys_Discount_Record" EntityType="CarPark.DB.barsys_Discount_Record" />
+    <EntitySet Name="BatteryChargeRecord" EntityType="CarPark.DB.BatteryChargeRecord" />
+    <EntitySet Name="BlackList" EntityType="CarPark.DB.BlackList" />
+    <EntitySet Name="BOC_Gate_TransactionExtend" EntityType="CarPark.DB.BOC_Gate_TransactionExtend" />
+    <EntitySet Name="BOC_Gate_TransactionExtend_PackData_File" EntityType="CarPark.DB.BOC_Gate_TransactionExtend_PackData_File" />
+    <EntitySet Name="BOC_N910_POS_Card_Payment_DetailEX" EntityType="CarPark.DB.BOC_N910_POS_Card_Payment_DetailEX" />
+    <EntitySet Name="BOC_Smart_Payment_DetailEX" EntityType="CarPark.DB.BOC_Smart_Payment_DetailEX" />
+    <EntitySet Name="Card" EntityType="CarPark.DB.Card" />
+    <EntitySet Name="CardType" EntityType="CarPark.DB.CardType" />
+    <EntitySet Name="ChargeRecord" EntityType="CarPark.DB.ChargeRecord" />
+    <EntitySet Name="CloudDiscount" EntityType="CarPark.DB.CloudDiscount" />
+    <EntitySet Name="CompanyInfo" EntityType="CarPark.DB.CompanyInfo" />
+    <EntitySet Name="Customer" EntityType="CarPark.DB.Customer" />
+    <EntitySet Name="CustomFreeRecord" EntityType="CarPark.DB.CustomFreeRecord" />
+    <EntitySet Name="CustomFreeTenat" EntityType="CarPark.DB.CustomFreeTenat" />
+    <EntitySet Name="CustomFreeType" EntityType="CarPark.DB.CustomFreeType" />
+    <EntitySet Name="FreeRegister" EntityType="CarPark.DB.FreeRegister" />
+    <EntitySet Name="ICBC_Gate_TransactionExtend" EntityType="CarPark.DB.ICBC_Gate_TransactionExtend" />
+    <EntitySet Name="ICBC_Gate_TransactionExtend_PackData_File" EntityType="CarPark.DB.ICBC_Gate_TransactionExtend_PackData_File" />
+    <EntitySet Name="LicensePlate_PassTrace" EntityType="CarPark.DB.LicensePlate_PassTrace" />
+    <EntitySet Name="MPass_Gate_Transaction" EntityType="CarPark.DB.MPass_Gate_Transaction" />
+    <EntitySet Name="MPass_Gate_Transaction_PackData" EntityType="CarPark.DB.MPass_Gate_Transaction_PackData" />
+    <EntitySet Name="MPass_Gate_Transaction_PackData_File" EntityType="CarPark.DB.MPass_Gate_Transaction_PackData_File" />
+    <EntitySet Name="MPass_Gate_Transaction_SIFiles" EntityType="CarPark.DB.MPass_Gate_Transaction_SIFiles" />
+    <EntitySet Name="MPass_Gate_Transaction_SIStrings" EntityType="CarPark.DB.MPass_Gate_Transaction_SIStrings" />
+    <EntitySet Name="MPass_POS_Signin" EntityType="CarPark.DB.MPass_POS_Signin" />
+    <EntitySet Name="MPass_POS_Signin_Detail" EntityType="CarPark.DB.MPass_POS_Signin_Detail" />
+    <EntitySet Name="MPass_POS_Transaction_Detail" EntityType="CarPark.DB.MPass_POS_Transaction_Detail" />
+    <EntitySet Name="NoFeelPayment" EntityType="CarPark.DB.NoFeelPayment" />
+    <EntitySet Name="Park" EntityType="CarPark.DB.Park" />
+    <EntitySet Name="ParkArea" EntityType="CarPark.DB.ParkArea" />
+    <EntitySet Name="ParkAreaExtend" EntityType="CarPark.DB.ParkAreaExtend" />
+    <EntitySet Name="ParkGate" EntityType="CarPark.DB.ParkGate" />
+    <EntitySet Name="PassTrace" EntityType="CarPark.DB.PassTrace" />
+    <EntitySet Name="PreOffer" EntityType="CarPark.DB.PreOffer" />
+    <EntitySet Name="RentalType" EntityType="CarPark.DB.RentalType" />
+    <EntitySet Name="RuleControl" EntityType="CarPark.DB.RuleControl" />
+    <EntitySet Name="SalaryBlock" EntityType="CarPark.DB.SalaryBlock" />
+    <EntitySet Name="ScanPayment" EntityType="CarPark.DB.ScanPayment" />
+    <EntitySet Name="ShiftRecord" EntityType="CarPark.DB.ShiftRecord" />
+    <EntitySet Name="StaffInfo" EntityType="CarPark.DB.StaffInfo" />
+    <EntitySet Name="StaffOperat" EntityType="CarPark.DB.StaffOperat" />
+    <EntitySet Name="StaffType" EntityType="CarPark.DB.StaffType" />
+    <EntitySet Name="Statistics_NotExitData" EntityType="CarPark.DB.Statistics_NotExitData" />
+    <EntitySet Name="Statistics_UpdateUtil" EntityType="CarPark.DB.Statistics_UpdateUtil" />
+    <EntitySet Name="Statistics_UseTime" EntityType="CarPark.DB.Statistics_UseTime" />
+    <EntitySet Name="SysRole" EntityType="CarPark.DB.SysRole" />
+    <EntitySet Name="SysRoleGroup" EntityType="CarPark.DB.SysRoleGroup" />
+    <EntitySet Name="SysStaffRole" EntityType="CarPark.DB.SysStaffRole" />
+    <EntitySet Name="TempStop" EntityType="CarPark.DB.TempStop" />
+    <EntitySet Name="TempStopList" EntityType="CarPark.DB.TempStopList" />
+    <EntitySet Name="TicketSeq" EntityType="CarPark.DB.TicketSeq" />
+    <EntitySet Name="TimeCharge" EntityType="CarPark.DB.TimeCharge" />
+    <EntitySet Name="TimeChargeExt" EntityType="CarPark.DB.TimeChargeExt" />
+    <EntitySet Name="TransactionData" EntityType="CarPark.DB.TransactionData" />
+    <EntitySet Name="TransactionDataFinished" EntityType="CarPark.DB.TransactionDataFinished" />
+    <EntitySet Name="TypeDictionary" EntityType="CarPark.DB.TypeDictionary" />
+    <EntitySet Name="UMRefNum" EntityType="CarPark.DB.UMRefNum" />
+    <EntitySet Name="VoidCharge" EntityType="CarPark.DB.VoidCharge" />
+    <EntitySet Name="view_parkintime2018" EntityType="CarPark.DB.view_parkintime2018" />
+    <EntitySet Name="view_transactionandlp" EntityType="CarPark.DB.view_transactionandlp" />
+    <EntitySet Name="view_transactiondata" EntityType="CarPark.DB.view_transactiondata" />
+  </EntityContainer>
+  <EntityType Name="AD_ExtCardExpiryDate">
+    <Key>
+      <PropertyRef Name="AutoID" />
+    </Key>
+    <Property Type="Int32" Name="AutoID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Holder_ID" />
+    <Property Type="String" Name="Card_no" />
+    <Property Type="Decimal" Name="Amount" />
+    <Property Type="String" Name="Pay_type" />
+    <Property Type="String" Name="Terminal_ID" />
+    <Property Type="DateTime" Name="Txn_date" />
+    <Property Type="String" Name="Txn_location" />
+    <Property Type="DateTime" Name="New_acctivation_date" />
+    <Property Type="DateTime" Name="New_validation_date" />
+    <Property Type="String" Name="Add_user" />
+    <Property Type="DateTime" Name="Add_date" />
+    <Property Type="String" Name="Error_msg" />
+    <Property Type="Boolean" Name="ReturnValue" />
+  </EntityType>
+  <EntityType Name="AD_SCSCP_CARD_DATA">
+    <Key>
+      <PropertyRef Name="HOLDER_ID" />
+    </Key>
+    <Property Type="String" Name="HOLDER_ID" Nullable="false" />
+    <Property Type="String" Name="FULL_HOLDER_ID" />
+    <Property Type="String" Name="HOLDER_TYPE" />
+    <Property Type="String" Name="HOLDER_NAME" />
+    <Property Type="String" Name="HOLDER_NAME_CH" />
+    <Property Type="String" Name="HOLDER_STATUS" />
+    <Property Type="String" Name="REFERENCE_UNIT" />
+    <Property Type="String" Name="CARD_SERIAL_NO" />
+    <Property Type="DateTime" Name="CARD_EFFECTIVE_DATE" />
+    <Property Type="String" Name="CARD_STATUS" />
+    <Property Type="DateTimeOffset" Name="Last_modify_time" />
+  </EntityType>
+  <EntityType Name="AdminCharge">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="ChargeTypeID" />
+    <Property Type="Decimal" Name="ChargeAmount" />
+    <Property Type="Int32" Name="BillTypeID" />
+    <Property Type="DateTime" Name="ChargeTime" />
+    <Property Type="Int32" Name="CustomID" />
+    <Property Type="Int32" Name="CardID" />
+    <Property Type="String" Name="Remark" />
+    <Property Type="String" Name="CreateStaffCode" />
+    <Property Type="DateTime" Name="CreateDate" />
+  </EntityType>
+  <EntityType Name="AppSetting">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="AreaID" />
+    <Property Type="Int32" Name="AppTypeID" />
+    <Property Type="String" Name="OnlyID" />
+    <Property Type="String" Name="SettingString" />
+  </EntityType>
+  <EntityType Name="APS_Alarm">
+    <Key>
+      <PropertyRef Name="AlarmID" />
+    </Key>
+    <Property Type="Int32" Name="AlarmID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="AlarmCode" Nullable="false" />
+    <Property Type="String" Name="NameCN" Nullable="false" />
+    <Property Type="String" Name="NamePT" Nullable="false" />
+    <Property Type="String" Name="APSReactionCN" />
+    <Property Type="String" Name="APSReactionPT" />
+    <Property Type="String" Name="Remark" Nullable="false" />
+  </EntityType>
+  <EntityType Name="APS_CashBoxAcceptor">
+    <Key>
+      <PropertyRef Name="CashBoxAcceptorID" />
+    </Key>
+    <Property Type="Int32" Name="CashBoxAcceptorID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="StationID" Nullable="false" />
+    <Property Type="Int32" Name="CashBoxID" Nullable="false" />
+    <Property Type="Int32" Name="CashBoxTypeID" Nullable="false" />
+    <Property Type="Int32" Name="CurrencyID" Nullable="false" />
+    <Property Type="Int32" Name="CurrencyValue" Nullable="false" />
+    <Property Type="Int32" Name="ExistQty" Nullable="false" />
+    <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+  </EntityType>
+  <EntityType Name="APS_CashBoxDispenser">
+    <Key>
+      <PropertyRef Name="CashBoxDispenserID" />
+    </Key>
+    <Property Type="Int32" Name="CashBoxDispenserID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="StationID" Nullable="false" />
+    <Property Type="Int32" Name="CashBoxID" Nullable="false" />
+    <Property Type="Int32" Name="CashBoxTypeID" Nullable="false" />
+    <Property Type="Int32" Name="CurrencyID" Nullable="false" />
+    <Property Type="Int32" Name="CurrencyValue" Nullable="false" />
+    <Property Type="Int32" Name="RemainQty" Nullable="false" />
+    <Property Type="Int32" Name="LowlevelQty" Nullable="false" />
+    <Property Type="Int32" Name="ResetQty" Nullable="false" />
+    <Property Type="Int32" Name="ForceChange" Nullable="false" />
+    <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+  </EntityType>
+  <EntityType Name="APS_CashBoxType">
+    <Key>
+      <PropertyRef Name="CashBoxTypeID" />
+    </Key>
+    <Property Type="Int32" Name="CashBoxTypeID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="CashBoxNameCN" Nullable="false" />
+    <Property Type="String" Name="CashBoxNamePT" Nullable="false" />
+    <Property Type="Boolean" Name="IsAcceprot" Nullable="false" />
+    <Property Type="Boolean" Name="IsBanknote" Nullable="false" />
+    <Property Type="Int32" Name="AcceptorQty" Nullable="false" />
+    <Property Type="Int32" Name="AcceptWarningQty" Nullable="false" />
+    <Property Type="Boolean" Name="DetectStatus" Nullable="false" />
+    <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+  </EntityType>
+  <EntityType Name="APS_Certificate">
+    <Key>
+      <PropertyRef Name="CertificateID" />
+    </Key>
+    <Property Type="Int32" Name="CertificateID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="CertificateCode" Nullable="false" />
+    <Property Type="Int32" Name="CertificateType" Nullable="false" />
+    <Property Type="String" Name="UsageMode" />
+    <Property Type="Int32" Name="StaffType" Nullable="false" />
+    <Property Type="Time" Name="ServiceTimeStart" Nullable="false" />
+    <Property Type="Time" Name="ServiceTimeEnd" Nullable="false" />
+    <Property Type="DateTime" Name="CreateTime" Nullable="false" />
+    <Property Type="String" Name="CreateStaffCode" Nullable="false" />
+    <Property Type="String" Name="Barcode" Nullable="false" />
+    <Property Type="DateTime" Name="ExpireDate" Nullable="false" />
+    <Property Type="DateTime" Name="LastUpdateTime" />
+    <Property Type="DateTime" Name="LastUsedTime" />
+    <Property Type="DateTime" Name="LastPrintTime" />
+    <Property Type="Int32" Name="PrintCount" Nullable="false" />
+    <Property Type="Boolean" Name="IsCancel" Nullable="false" />
+    <Property Type="DateTime" Name="CancelTime" />
+    <Property Type="String" Name="CancelStaffName" />
+  </EntityType>
+  <EntityType Name="APS_CertificateType">
+    <Key>
+      <PropertyRef Name="CertificateTypeID" />
+    </Key>
+    <Property Type="Int32" Name="CertificateTypeID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="CertificateNameCn" Nullable="false" />
+    <Property Type="String" Name="CertificateNamePt" Nullable="false" />
+    <Property Type="Int32" Name="Period" Nullable="false" />
+    <Property Type="Time" Name="ServiceTimeStart" Nullable="false" />
+    <Property Type="Time" Name="ServiceTimeEnd" Nullable="false" />
+    <Property Type="Boolean" Name="Enable" Nullable="false" />
+    <Property Type="Boolean" Name="IsCancel" Nullable="false" />
+  </EntityType>
+  <EntityType Name="APS_CertificateUseRecord">
+    <Key>
+      <PropertyRef Name="CertificateUseID" />
+    </Key>
+    <Property Type="Int32" Name="CertificateUseID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="CertificateID" />
+    <Property Type="String" Name="CertificateCode" />
+    <Property Type="String" Name="CertificateType" />
+    <Property Type="DateTime" Name="StartTime" />
+    <Property Type="DateTime" Name="EndTime" />
+    <Property Type="String" Name="StaffCode" />
+    <Property Type="DateTime" Name="CreateTime" Nullable="false" />
+    <Property Type="Boolean" Name="IsInsert" />
+  </EntityType>
+  <EntityType Name="APS_CouponSetting">
+    <Key>
+      <PropertyRef Name="CouponSettingID" />
+    </Key>
+    <Property Type="Int32" Name="CouponSettingID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="StationID" Nullable="false" />
+    <Property Type="Int32" Name="TrayQty" Nullable="false" />
+    <Property Type="Int32" Name="ExistQty" Nullable="false" />
+    <Property Type="Int32" Name="WarningQty" Nullable="false" />
+  </EntityType>
+  <EntityType Name="APS_CurrencyInfo">
+    <Key>
+      <PropertyRef Name="CurrencyInfoID" />
+    </Key>
+    <Property Type="Int32" Name="CurrencyInfoID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Symbol" Nullable="false" />
+    <Property Type="String" Name="NameCN" Nullable="false" />
+    <Property Type="String" Name="NamePT" Nullable="false" />
+    <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+  </EntityType>
+  <EntityType Name="APS_FinishApsAcceptLog">
+    <Key>
+      <PropertyRef Name="FinishApsAcceptLogID" />
+    </Key>
+    <Property Type="Int32" Name="FinishApsAcceptLogID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="StationID" Nullable="false" />
+    <Property Type="String" Name="TicketCode" Nullable="false" />
+    <Property Type="DateTime" Name="AcceptTime" Nullable="false" />
+    <Property Type="Int32" Name="CashBoxID" Nullable="false" />
+    <Property Type="Boolean" Name="IsBanknote" Nullable="false" />
+    <Property Type="Int32" Name="CurrencyID" Nullable="false" />
+    <Property Type="String" Name="CurrencySymbol" Nullable="false" />
+    <Property Type="Int32" Name="CurrencyValue" Nullable="false" />
+    <Property Type="Boolean" Name="Malfunction" Nullable="false" />
+  </EntityType>
+  <EntityType Name="APS_FinishApsDispenseLog">
+    <Key>
+      <PropertyRef Name="FinishApsDispenseLogID" />
+    </Key>
+    <Property Type="Int32" Name="FinishApsDispenseLogID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="StationID" Nullable="false" />
+    <Property Type="String" Name="TicketCode" Nullable="false" />
+    <Property Type="DateTime" Name="DispenseTime" Nullable="false" />
+    <Property Type="Int32" Name="CashBoxID" Nullable="false" />
+    <Property Type="Boolean" Name="IsBanknote" Nullable="false" />
+    <Property Type="Int32" Name="CurrencyID" Nullable="false" />
+    <Property Type="String" Name="CurrencySymbol" Nullable="false" />
+    <Property Type="Int32" Name="CurrencyValue" Nullable="false" />
+    <Property Type="Int32" Name="OrderCount" Nullable="false" />
+    <Property Type="Int32" Name="OutCount" Nullable="false" />
+    <Property Type="DateTime" Name="LastUpdateTime" Nullable="false" />
+    <Property Type="Int32" Name="ReturnCount" />
+  </EntityType>
+  <EntityType Name="APS_MxtraSyslog">
+    <Key>
+      <PropertyRef Name="APSMxtraLogID" />
+    </Key>
+    <Property Type="Int32" Name="APSMxtraLogID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="DateTime" Name="LogDateTime" Nullable="false" />
+    <Property Type="String" Name="LogUName" />
+    <Property Type="String" Name="LogPCName" Nullable="false" />
+    <Property Type="String" Name="LogFuct" />
+    <Property Type="String" Name="LogKeyCode" />
+    <Property Type="Int32" Name="LogAPSID" Nullable="false" />
+    <Property Type="Int32" Name="LogType" Nullable="false" />
+    <Property Type="Int32" Name="APS_AlarmCode" Nullable="false" />
+  </EntityType>
+  <EntityType Name="APS_RedoTicket">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="TicketCode" Nullable="false" />
+    <Property Type="DateTime" Name="CreateTime" Nullable="false" />
+    <Property Type="String" Name="StaffCode" Nullable="false" />
+    <Property Type="String" Name="PCName" Nullable="false" />
+    <Property Type="Int32" Name="APSID" Nullable="false" />
+    <Property Type="Int32" Name="RedoType" Nullable="false" />
+  </EntityType>
+  <EntityType Name="APS_ShiftRecordDetailed">
+    <Key>
+      <PropertyRef Name="ShiftRecord_ID" />
+    </Key>
+    <Property Type="Int32" Name="ShiftRecord_ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="CurrencyID" Nullable="false" />
+    <Property Type="Int32" Name="APSID" Nullable="false" />
+    <Property Type="Int32" Name="CashBoxTypeID" Nullable="false" />
+    <Property Type="Int32" Name="ShiftID" Nullable="false" />
+    <Property Type="Int32" Name="CurrencyValue" Nullable="false" />
+    <Property Type="Int32" Name="Quantity" Nullable="false" />
+    <Property Type="Decimal" Name="Amount" Nullable="false" />
+  </EntityType>
+  <EntityType Name="APS_Station">
+    <Key>
+      <PropertyRef Name="APSStationID" />
+    </Key>
+    <Property Type="Int32" Name="APSStationID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="StationNameCN" Nullable="false" />
+    <Property Type="String" Name="StationNamePT" Nullable="false" />
+    <Property Type="String" Name="StationCode" Nullable="false" />
+    <Property Type="String" Name="PCName" Nullable="false" />
+  </EntityType>
+  <EntityType Name="APS_Syslog">
+    <Key>
+      <PropertyRef Name="APSLogID" />
+    </Key>
+    <Property Type="Int32" Name="APSLogID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="DateTime" Name="LogDateTime" />
+    <Property Type="String" Name="LogUName" />
+    <Property Type="String" Name="LogPCName" Nullable="false" />
+    <Property Type="String" Name="LogFuct" />
+    <Property Type="String" Name="LogKeyCode" />
+    <Property Type="Int32" Name="LogAPSID" Nullable="false" />
+    <Property Type="Int32" Name="LogType" Nullable="false" />
+    <Property Type="Int32" Name="APS_AlarmCode" Nullable="false" />
+  </EntityType>
+  <EntityType Name="APS_SystemSetting">
+    <Key>
+      <PropertyRef Name="SettingID" />
+    </Key>
+    <Property Type="Int32" Name="SettingID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="MsgShowTime" Nullable="false" />
+    <Property Type="Int32" Name="HourlyWaitTime" Nullable="false" />
+    <Property Type="Int32" Name="FinishWaitTime" Nullable="false" />
+    <Property Type="Int32" Name="LoginWaitTime" Nullable="false" />
+    <Property Type="Int32" Name="FinanceWaitTime" Nullable="false" />
+    <Property Type="Int32" Name="FinanceWarnTime" Nullable="false" />
+    <Property Type="Int32" Name="RepairWaitTime" Nullable="false" />
+    <Property Type="Int32" Name="RepairWarnTime" Nullable="false" />
+    <Property Type="Int32" Name="UploadRecordTime" Nullable="false" />
+    <Property Type="Int32" Name="UpdateStatusTime" Nullable="false" />
+    <Property Type="Int32" Name="CheckInterval" Nullable="false" />
+    <Property Type="Int32" Name="BankNotesAcceptorQty" Nullable="false" />
+    <Property Type="Int32" Name="BankNotesAcceptorWamingQty" Nullable="false" />
+    <Property Type="Int32" Name="CoinsAcceptorQty" Nullable="false" />
+    <Property Type="Int32" Name="CoinsAcceptorWamingQty" Nullable="false" />
+    <Property Type="Int32" Name="BankNotesDispenserLowlevelQty" Nullable="false" />
+    <Property Type="Int32" Name="BankNotesDispenserResetQty" Nullable="false" />
+    <Property Type="Int32" Name="CoinsDispenserLowlevelQty" Nullable="false" />
+    <Property Type="Int32" Name="CoinsDispenserResetQty" Nullable="false" />
+    <Property Type="Int32" Name="TrayQty" Nullable="false" />
+    <Property Type="Int32" Name="WamingQty" Nullable="false" />
+  </EntityType>
+  <EntityType Name="APS_TimeChargeRecord">
+    <Key>
+      <PropertyRef Name="TimeChargeRecordID" />
+    </Key>
+    <Property Type="Int32" Name="TimeChargeRecordID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="StationID" Nullable="false" />
+    <Property Type="String" Name="FromAPS" Nullable="false" />
+    <Property Type="Int32" Name="TransactionID" Nullable="false" />
+    <Property Type="Int32" Name="CardID" />
+    <Property Type="String" Name="CardCode" Nullable="false" />
+    <Property Type="Int32" Name="ParkTypeID" Nullable="false" />
+    <Property Type="String" Name="LicensePlate" />
+    <Property Type="Int32" Name="CouponID" />
+    <Property Type="String" Name="CouponCode" />
+    <Property Type="DateTime" Name="InTime" Nullable="false" />
+    <Property Type="DateTime" Name="FeeTime" Nullable="false" />
+    <Property Type="Int32" Name="OriginalFeeMin" Nullable="false" />
+    <Property Type="Int32" Name="ChargeFreeMin" Nullable="false" />
+    <Property Type="Int32" Name="ChargeMin" Nullable="false" />
+    <Property Type="Decimal" Name="TotalCharge" Nullable="false" />
+    <Property Type="Decimal" Name="ActualCharge" Nullable="false" />
+    <Property Type="Decimal" Name="PenaltyAmount" />
+    <Property Type="Decimal" Name="FreeCharge" />
+    <Property Type="Decimal" Name="HKDPaidAmount" Nullable="false" />
+    <Property Type="Decimal" Name="MOPPaidAmount" Nullable="false" />
+    <Property Type="Decimal" Name="OthPaidAmoun" Nullable="false" />
+    <Property Type="String" Name="PaidCurrencyString" />
+    <Property Type="String" Name="ChangeCurrencyString" />
+    <Property Type="Decimal" Name="HKDChangeAmount" Nullable="false" />
+    <Property Type="Decimal" Name="MOPChangeAmount" Nullable="false" />
+    <Property Type="Decimal" Name="OthChangeAmount" Nullable="false" />
+    <Property Type="Boolean" Name="IsLost" />
+    <Property Type="Boolean" Name="IsDamage" />
+    <Property Type="Boolean" Name="IsOverTime" />
+    <Property Type="Boolean" Name="IsAllFree" />
+    <Property Type="Int32" Name="StaffID" />
+    <Property Type="String" Name="StaffName" />
+    <Property Type="Int32" Name="ShiftID" Nullable="false" />
+    <Property Type="DateTime" Name="CreateTime" />
+    <Property Type="Int32" Name="BufferTime" />
+    <Property Type="Int32" Name="BillType" Nullable="false" />
+    <Property Type="String" Name="Remark" />
+    <Property Type="Int32" Name="FirstTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="barsys_Discount">
+    <Key>
+      <PropertyRef Name="DiscountID" />
+    </Key>
+    <Property Type="Int32" Name="DiscountID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="Discount_BatchID" Nullable="false" />
+    <Property Type="Int32" Name="CustomFreeTypeID" Nullable="false" />
+    <Property Type="Int32" Name="TenatID" Nullable="false" />
+    <Property Type="String" Name="DiscountBanks" Nullable="false" />
+    <Property Type="DateTime" Name="StartTime" Nullable="false" />
+    <Property Type="DateTime" Name="EndTime" Nullable="false" />
+    <Property Type="Int32" Name="ReductionTime" Nullable="false" />
+    <Property Type="DateTime" Name="UseTime" />
+    <Property Type="Boolean" Name="State" />
+    <Property Type="Boolean" Name="PrintFlag" />
+    <Property Type="Int32" Name="PrintNumber" />
+    <Property Type="String" Name="PrintStaff" />
+    <Property Type="DateTime" Name="PrintTime" />
+    <Property Type="DateTime" Name="CancellationTime" />
+    <Property Type="String" Name="CancellationStaff" />
+    <Property Type="String" Name="Remark" />
+    <Property Type="String" Name="carparkRemark" />
+    <Property Type="Boolean" Name="PrintState" />
+    <Property Type="String" Name="TicketNo" />
+    <Property Type="Decimal" Name="TotalTicketAmt" />
+    <Property Type="Int32" Name="CompHr" />
+    <Property Type="Int32" Name="DiscountType" />
+    <Property Type="String" Name="CustomerName" />
+    <Property Type="String" Name="Licenseplate" />
+  </EntityType>
+  <EntityType Name="barsys_Discount_Batch">
+    <Key>
+      <PropertyRef Name="DiscountID" />
+    </Key>
+    <Property Type="Int32" Name="DiscountID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="TenatID" Nullable="false" />
+    <Property Type="DateTime" Name="StartTime" Nullable="false" />
+    <Property Type="DateTime" Name="EndTime" Nullable="false" />
+    <Property Type="Int32" Name="PrintAmount" Nullable="false" />
+    <Property Type="String" Name="StartDiscount" Nullable="false" />
+    <Property Type="String" Name="EndDiscount" Nullable="false" />
+    <Property Type="Int32" Name="FreeTime" Nullable="false" />
+    <Property Type="String" Name="IssStaff" Nullable="false" />
+    <Property Type="DateTime" Name="IssTime" Nullable="false" />
+    <Property Type="String" Name="Remark" />
+    <Property Type="Int32" Name="DiscountType" />
+  </EntityType>
+  <EntityType Name="barsys_Discount_Record">
+    <Key>
+      <PropertyRef Name="DiscountUsedID" />
+    </Key>
+    <Property Type="Int32" Name="DiscountUsedID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="DiscountID" />
+    <Property Type="String" Name="TicketNo" />
+    <Property Type="Int32" Name="TimeChargeID" />
+    <Property Type="DateTime" Name="UseTime" />
+  </EntityType>
+  <EntityType Name="BatteryChargeRecord">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Licenseplate" Nullable="false" />
+    <Property Type="DateTime" Name="Intime" Nullable="false" />
+    <Property Type="DateTime" Name="Outtime" />
+    <Property Type="Int32" Name="TransactionID" Nullable="false" />
+    <Property Type="String" Name="ImagePath" />
+    <Property Type="Int32" Name="ParkID" />
+  </EntityType>
+  <EntityType Name="BlackList">
+    <Key>
+      <PropertyRef Name="BID" />
+    </Key>
+    <Property Type="Int32" Name="BID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="CustomerID" />
+    <Property Type="String" Name="Context" />
+    <Property Type="Boolean" Name="IsDelete" />
+    <Property Type="DateTime" Name="RecordDate" />
+  </EntityType>
+  <EntityType Name="BOC_Gate_TransactionExtend">
+    <Key>
+      <PropertyRef Name="TransactionID" />
+    </Key>
+    <Property Type="Int32" Name="TransactionID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Decimal" Name="CardBillAmount" Nullable="false" />
+    <Property Type="Decimal" Name="CardRemain" Nullable="false" />
+    <Property Type="String" Name="CardNumber" />
+    <Property Type="String" Name="BillArea" />
+    <Property Type="String" Name="TxnNo" />
+    <Property Type="String" Name="BillDate" />
+    <Property Type="String" Name="BillTime" />
+    <Property Type="String" Name="ServerCode" />
+    <Property Type="String" Name="LogicNo" />
+    <Property Type="String" Name="DeviceCode" />
+    <Property Type="String" Name="ReceiverCode" />
+    <Property Type="String" Name="IC_Data" />
+    <Property Type="String" Name="AlternateData" />
+    <Property Type="String" Name="MD5" />
+    <Property Type="String" Name="ReplyCode" />
+    <Property Type="String" Name="ErrorCode" />
+    <Property Type="Int32" Name="REQUEST_CARD_State" />
+    <Property Type="Int32" Name="PURCHASE_CARD_State" />
+    <Property Type="String" Name="CardPhyType" />
+    <Property Type="String" Name="CardAppType" />
+    <Property Type="String" Name="BillAreaB" />
+    <Property Type="Decimal" Name="OffLineRemain_MOP" />
+    <Property Type="Decimal" Name="OffLineRemain_RMB" />
+    <Property Type="String" Name="Purchase_FullData" />
+    <Property Type="String" Name="EncryptedCardNumber" />
+    <Property Type="String" Name="Description" />
+    <Property Type="String" Name="CardReaderNumber" />
+    <Property Type="String" Name="StaffInfo" />
+    <Property Type="Boolean" Name="Valid" />
+    <Property Type="Int32" Name="IsBlack" />
+    <Property Type="Int32" Name="FromGateID" Nullable="false" />
+    <Property Type="Int32" Name="SysTransacionID" Nullable="false" />
+    <Property Type="DateTime" Name="TransactionTime" Nullable="false" />
+    <Property Type="Boolean" Name="ISUploaded" Nullable="false" />
+    <Property Type="Int32" Name="ChargeTransactionID" />
+  </EntityType>
+  <EntityType Name="BOC_Gate_TransactionExtend_PackData_File">
+    <Key>
+      <PropertyRef Name="AutoID" />
+    </Key>
+    <Property Type="Int32" Name="AutoID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="DateTime" Name="StartTime" Nullable="false" />
+    <Property Type="DateTime" Name="EndTime" Nullable="false" />
+    <Property Type="DateTime" Name="UploadTime" />
+    <Property Type="DateTime" Name="ZIPTime" Nullable="false" />
+    <Property Type="Boolean" Name="IsUploaded" Nullable="false" />
+    <Property Type="Binary" Name="FileContent" Nullable="false" />
+    <Property Type="String" Name="FileName" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BOC_N910_POS_Card_Payment_DetailEX">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="VERSION" />
+    <Property Type="String" Name="CMD" />
+    <Property Type="String" Name="STATUS" />
+    <Property Type="String" Name="TXNDATE" />
+    <Property Type="String" Name="TXNTIME" />
+    <Property Type="String" Name="RCODE" />
+    <Property Type="String" Name="MESSAGE" />
+    <Property Type="Decimal" Name="AMOUNT" />
+    <Property Type="String" Name="AUTHCODE" />
+    <Property Type="String" Name="PAN" />
+    <Property Type="String" Name="EXPIRYDATE" />
+    <Property Type="String" Name="ENTERMODE" />
+    <Property Type="String" Name="TRACEID" />
+    <Property Type="String" Name="TERMINALID" />
+    <Property Type="String" Name="MERCHANTID" />
+    <Property Type="String" Name="CARDTYPE" />
+    <Property Type="String" Name="CARDHOLDERNAME" />
+    <Property Type="String" Name="BATCHNO" />
+    <Property Type="String" Name="REFERENCENO" />
+    <Property Type="String" Name="ISSIGNATURE" />
+    <Property Type="String" Name="REQUESTID" />
+    <Property Type="Int32" Name="ChargeRecordID" />
+    <Property Type="Int32" Name="TransactionID" />
+  </EntityType>
+  <EntityType Name="BOC_Smart_Payment_DetailEX">
+    <Key>
+      <PropertyRef Name="SmartPaymentID" />
+    </Key>
+    <Property Type="Int32" Name="SmartPaymentID" Nullable="false" />
+    <Property Type="Int32" Name="ChargeRecordID" Nullable="false" />
+    <Property Type="Int32" Name="TransactionID" Nullable="false" />
+    <Property Type="String" Name="MerchantId" />
+    <Property Type="String" Name="TrmNo" />
+    <Property Type="String" Name="PayOrderNo" />
+    <Property Type="Decimal" Name="Amount" />
+    <Property Type="String" Name="AuthCode" />
+    <Property Type="String" Name="Subject" />
+    <Property Type="String" Name="OrdDt" />
+    <Property Type="String" Name="OrdTm" />
+    <Property Type="String" Name="ValNum" />
+    <Property Type="String" Name="NotifyUrl" />
+    <Property Type="String" Name="LogNo" />
+    <Property Type="String" Name="Result" />
+    <Property Type="String" Name="ResultMessage" />
+    <Property Type="String" Name="ValTime" />
+    <Property Type="String" Name="PayType" />
+    <Property Type="String" Name="ThdLogNo" />
+    <Property Type="Decimal" Name="CashFee" />
+    <Property Type="String" Name="CashFeeType" />
+    <Property Type="String" Name="UsrId" />
+    <Property Type="String" Name="MercMarketFlg" />
+    <Property Type="String" Name="MarketCnNm" />
+    <Property Type="String" Name="MarketEnNm" />
+    <Property Type="Decimal" Name="ActPayAmt" />
+    <Property Type="String" Name="ParkingLotNo" />
+  </EntityType>
+  <EntityType Name="Card">
+    <Key>
+      <PropertyRef Name="CardID" />
+    </Key>
+    <Property Type="Int32" Name="CardID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="CardCode" Nullable="false" />
+    <Property Type="Int32" Name="RentalTypeID" Nullable="false" />
+    <Property Type="DateTime" Name="CreateTime" Nullable="false" />
+    <Property Type="String" Name="CreateStaffCode" Nullable="false" />
+    <Property Type="DateTime" Name="StartDate" Nullable="false" />
+    <Property Type="DateTime" Name="ExpireDate" />
+    <Property Type="Int32" Name="Status" Nullable="false" />
+    <Property Type="Decimal" Name="Remain" Nullable="false" />
+    <Property Type="String" Name="Remark" />
+    <Property Type="Int32" Name="AllowedAreaID" Nullable="false" />
+    <Property Type="String" Name="LicensePlate" />
+    <Property Type="Int32" Name="CardTypeID" Nullable="false" />
+    <Property Type="Boolean" Name="IsDelete" Nullable="false" />
+    <Property Type="Int32" Name="ParkID" />
+    <Property Type="Int32" Name="CustomerID" />
+    <Property Type="Int32" Name="RuleID" />
+    <Property Type="Decimal" Name="Deposit" />
+    <Property Type="String" Name="CardCodeExt" />
+    <Property Type="String" Name="ForensicsType" />
+    <Property Type="String" Name="ForensicsAddress" />
+    <Property Type="String" Name="CardOwner" />
+  </EntityType>
+  <EntityType Name="CardType">
+    <Key>
+      <PropertyRef Name="CardTypeID" />
+    </Key>
+    <Property Type="Int32" Name="CardTypeID" Nullable="false" />
+    <Property Type="String" Name="CardNameCn" Nullable="false" />
+    <Property Type="String" Name="CardNamePt" Nullable="false" />
+    <Property Type="Int32" Name="AntipassBack" Nullable="false" />
+    <Property Type="Int32" Name="LPRSDisable" Nullable="false" />
+    <Property Type="Boolean" Name="IsCheckLoop" Nullable="false" />
+    <Property Type="Boolean" Name="IsDelete" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ChargeRecord">
+    <Key>
+      <PropertyRef Name="TimeChargeID" />
+    </Key>
+    <Property Type="Int32" Name="TimeChargeID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="DateTime" Name="ChargeTime" Nullable="false" />
+    <Property Type="String" Name="StaffCode" Nullable="false" />
+    <Property Type="Decimal" Name="TotalCharge" Nullable="false" />
+    <Property Type="Int32" Name="FreeMin" Nullable="false" />
+    <Property Type="Decimal" Name="FreeCharge" Nullable="false" />
+    <Property Type="Int32" Name="TransactionID" />
+    <Property Type="Int32" Name="BillType" Nullable="false" />
+    <Property Type="Int32" Name="ShiftID" Nullable="false" />
+    <Property Type="Int32" Name="ChargeMin" Nullable="false" />
+    <Property Type="Int32" Name="ParkMin" Nullable="false" />
+    <Property Type="String" Name="CardCode" Nullable="false" />
+    <Property Type="Int32" Name="ParkTypeID" Nullable="false" />
+    <Property Type="String" Name="Remark" />
+    <Property Type="String" Name="FromStation" Nullable="false" />
+    <Property Type="String" Name="PeriodofTime" />
+    <Property Type="Int32" Name="BufferTime" />
+    <Property Type="String" Name="Currency" />
+    <Property Type="Int32" Name="FirstTime" />
+    <Property Type="Decimal" Name="Fine" />
+    <Property Type="Boolean" Name="IsDelete" Nullable="false" />
+    <Property Type="Int32" Name="PayType" />
+    <Property Type="String" Name="Remark2" />
+    <Property Type="DateTime" Name="StartDate" />
+    <Property Type="DateTime" Name="EndDate" />
+    <Property Type="Int32" Name="subPayType" />
+    <Property Type="String" Name="AuthCode" />
+  </EntityType>
+  <EntityType Name="CloudDiscount">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="CustomFreeTenatID" />
+    <Property Type="Int32" Name="CustomFreeTypeID" />
+    <Property Type="Int32" Name="DiscountID" />
+    <Property Type="Int32" Name="TransactionDataID" />
+    <Property Type="DateTime" Name="CreateTime" />
+    <Property Type="Int32" Name="DiscountStatus" />
+    <Property Type="String" Name="Remark" />
+  </EntityType>
+  <EntityType Name="CompanyInfo">
+    <Key>
+      <PropertyRef Name="CompanyID" />
+    </Key>
+    <Property Type="Int32" Name="CompanyID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="CompanyNameCn" Nullable="false" />
+    <Property Type="String" Name="CompanyNamePt" Nullable="false" />
+    <Property Type="String" Name="PhoneNumber" Nullable="false" />
+    <Property Type="String" Name="EmailAddress" Nullable="false" />
+    <Property Type="String" Name="Address" Nullable="false" />
+    <Property Type="String" Name="WebSite" Nullable="false" />
+    <Property Type="String" Name="TaxNo" Nullable="false" />
+    <Property Type="Int32" Name="DefaultFreeMin" Nullable="false" />
+    <Property Type="Int32" Name="AllowedCardType" Nullable="false" />
+    <Property Type="Int32" Name="AllowedParkType" Nullable="false" />
+    <Property Type="Int32" Name="ExitTimeOutMin" Nullable="false" />
+    <Property Type="Int32" Name="DefaultBufferTime" Nullable="false" />
+    <Property Type="Boolean" Name="LoopDetector" Nullable="false" />
+    <Property Type="Boolean" Name="AntiPass" Nullable="false" />
+    <Property Type="Boolean" Name="IsDelete" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="CustomerID" />
+    </Key>
+    <Property Type="Int32" Name="CustomerID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="CustomerCode" Nullable="false" />
+    <Property Type="String" Name="CustomerName" Nullable="false" />
+    <Property Type="String" Name="PhoneNumber" />
+    <Property Type="String" Name="EmailAddress" />
+    <Property Type="DateTime" Name="BirthDate" />
+    <Property Type="Binary" Name="PicImage" />
+    <Property Type="String" Name="SmartCardCode" />
+    <Property Type="String" Name="CreatorStaff" Nullable="false" />
+    <Property Type="DateTime" Name="CreateTime" Nullable="false" />
+    <Property Type="Boolean" Name="IsDelete" Nullable="false" />
+    <Property Type="Int32" Name="CustomerType" />
+    <Property Type="String" Name="Department" />
+    <Property Type="DateTime" Name="ContractExpiredDate" />
+    <Property Type="String" Name="UniversityDepartment" />
+    <Property Type="String" Name="UniversityStaffName" />
+    <Property Type="String" Name="Remark" />
+    <Property Type="Int32" Name="BuckleSalary" />
+    <Property Type="DateTime" Name="StartDate" />
+    <Property Type="DateTime" Name="EndDate" />
+    <Property Type="String" Name="CustomerNamePt" />
+    <Property Type="String" Name="DrivingLicense" />
+  </EntityType>
+  <EntityType Name="CustomFreeRecord">
+    <Key>
+      <PropertyRef Name="FreeRecordID" />
+    </Key>
+    <Property Type="Int32" Name="FreeRecordID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="FreeType" Nullable="false" />
+    <Property Type="Int32" Name="FreeTenatID" Nullable="false" />
+    <Property Type="Int32" Name="FreeMinutes" Nullable="false" />
+    <Property Type="Decimal" Name="FreeCharge" Nullable="false" />
+    <Property Type="Int32" Name="ShiftID" Nullable="false" />
+    <Property Type="String" Name="StaffCode" Nullable="false" />
+    <Property Type="DateTime" Name="FreeTime" Nullable="false" />
+    <Property Type="Int32" Name="ChargeRecordID" Nullable="false" />
+    <Property Type="String" Name="Remark" />
+    <Property Type="String" Name="BarCode" />
+    <Property Type="Boolean" Name="IsDelete" Nullable="false" />
+    <Property Type="Int32" Name="FormType" />
+    <Property Type="String" Name="FreeImagePath" />
+  </EntityType>
+  <EntityType Name="CustomFreeTenat">
+    <Key>
+      <PropertyRef Name="TenatID" />
+    </Key>
+    <Property Type="Int32" Name="TenatID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="TenatNameCn" Nullable="false" />
+    <Property Type="String" Name="TenatNamePt" Nullable="false" />
+    <Property Type="Int32" Name="AllowedFreeType" Nullable="false" />
+    <Property Type="String" Name="TenatNo" Nullable="false" />
+    <Property Type="String" Name="FreeType" />
+    <Property Type="Int32" Name="InteriorType" />
+    <Property Type="Int32" Name="TenatTypeID" />
+    <Property Type="Int32" Name="Status" />
+    <Property Type="Boolean" Name="IsDelete" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CustomFreeType">
+    <Key>
+      <PropertyRef Name="CustomFreeTypeID" />
+    </Key>
+    <Property Type="Int32" Name="CustomFreeTypeID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="CustomFreeNameCn" Nullable="false" />
+    <Property Type="String" Name="CustomFreeNamePt" Nullable="false" />
+    <Property Type="Boolean" Name="IsAllFree" Nullable="false" />
+    <Property Type="Boolean" Name="IsFreeByTime" Nullable="false" />
+    <Property Type="Int32" Name="FreeMinutes" Nullable="false" />
+    <Property Type="Decimal" Name="FreeAmount" Nullable="false" />
+    <Property Type="Boolean" Name="IsEmployeesPrice" Nullable="false" />
+    <Property Type="Decimal" Name="EmployeesAmount" Nullable="false" />
+    <Property Type="Boolean" Name="IsDelete" Nullable="false" />
+    <Property Type="Boolean" Name="IsDiscountByPercentage" />
+    <Property Type="Decimal" Name="DiscountPercentage" />
+    <Property Type="Boolean" Name="IsDiscountByAmount" />
+    <Property Type="Decimal" Name="DiscountAmount" />
+    <Property Type="Int32" Name="DiscountMinutes" />
+  </EntityType>
+  <EntityType Name="FreeRegister">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="CarNumber" Nullable="false" />
+    <Property Type="DateTime" Name="StartDate" Nullable="false" />
+    <Property Type="DateTime" Name="ExpireDate" Nullable="false" />
+    <Property Type="DateTime" Name="CreateTime" Nullable="false" />
+    <Property Type="String" Name="CreateStaff" Nullable="false" />
+    <Property Type="Boolean" Name="Status" Nullable="false" />
+    <Property Type="Int32" Name="CustomFreeTypeID" Nullable="false" />
+    <Property Type="Int32" Name="TenatID" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ICBC_Gate_TransactionExtend">
+    <Key>
+      <PropertyRef Name="TransactionID" />
+    </Key>
+    <Property Type="Int32" Name="TransactionID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Decimal" Name="CardBillAmount" Nullable="false" />
+    <Property Type="Decimal" Name="CardRemain" Nullable="false" />
+    <Property Type="String" Name="CardNumber" />
+    <Property Type="String" Name="BillArea" />
+    <Property Type="String" Name="TxnNo" />
+    <Property Type="String" Name="BillDate" />
+    <Property Type="String" Name="BillTime" />
+    <Property Type="String" Name="ServerCode" />
+    <Property Type="String" Name="DeviceCode" />
+    <Property Type="String" Name="ReceiverCode" />
+    <Property Type="String" Name="CardReaderNumber" />
+    <Property Type="String" Name="PosNo" />
+    <Property Type="String" Name="CardVaildDate" />
+    <Property Type="String" Name="IC_Data" />
+    <Property Type="String" Name="AlternateData" />
+    <Property Type="String" Name="ReplyCode" />
+    <Property Type="String" Name="ErrorCode" />
+    <Property Type="Int32" Name="REQUEST_CARD_State" />
+    <Property Type="Int32" Name="PURCHASE_CARD_State" />
+    <Property Type="String" Name="EncryptedCardNumber" />
+    <Property Type="String" Name="StaffInfo" />
+    <Property Type="Boolean" Name="Valid" />
+    <Property Type="Int32" Name="IsBlack" />
+    <Property Type="String" Name="Description" />
+    <Property Type="Int32" Name="FromGateID" Nullable="false" />
+    <Property Type="Int32" Name="SysTransacionID" Nullable="false" />
+    <Property Type="Boolean" Name="ISUploaded" Nullable="false" />
+    <Property Type="DateTime" Name="TransactionTime" Nullable="false" />
+    <Property Type="String" Name="Purchase_FullData" />
+    <Property Type="String" Name="CardPhyType" />
+    <Property Type="String" Name="CardAppType" />
+    <Property Type="String" Name="BillAreaB" />
+    <Property Type="Decimal" Name="OffLineRemain_MOP" />
+    <Property Type="Decimal" Name="OffLineRemain_RMB" />
+    <Property Type="Int32" Name="ChargeTransactionID" />
+  </EntityType>
+  <EntityType Name="ICBC_Gate_TransactionExtend_PackData_File">
+    <Key>
+      <PropertyRef Name="AutoID" />
+    </Key>
+    <Property Type="Int32" Name="AutoID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="DateTime" Name="StartTime" Nullable="false" />
+    <Property Type="DateTime" Name="EndTime" Nullable="false" />
+    <Property Type="DateTime" Name="UploadTime" />
+    <Property Type="DateTime" Name="ZIPTime" Nullable="false" />
+    <Property Type="Boolean" Name="IsUploaded" Nullable="false" />
+    <Property Type="Binary" Name="FileContent" Nullable="false" />
+    <Property Type="String" Name="FileName" Nullable="false" />
+  </EntityType>
+  <EntityType Name="LicensePlate_PassTrace">
+    <Key>
+      <PropertyRef Name="LicensePlateID" />
+    </Key>
+    <Property Type="Int32" Name="LicensePlateID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="ImagePath" Nullable="false" />
+    <Property Type="Int32" Name="PassTraceID" Nullable="false" />
+    <Property Type="String" Name="AnalysisResult" Nullable="false" />
+    <Property Type="DateTime" Name="CreateTime" Nullable="false" />
+    <Property Type="String" Name="StaffCode" />
+    <Property Type="Int32" Name="PassReturn" Nullable="false" />
+    <Property Type="Double" Name="Similarity" Nullable="false" />
+    <Property Type="String" Name="UpdateLPRemark" />
+  </EntityType>
+  <EntityType Name="MPass_Gate_Transaction">
+    <Key>
+      <PropertyRef Name="TransactionID" />
+    </Key>
+    <Property Type="Int32" Name="TransactionID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="LogicalCardNumber" />
+    <Property Type="String" Name="CardNumber" />
+    <Property Type="Decimal" Name="CardBillAmount" />
+    <Property Type="Decimal" Name="CardRemain" />
+    <Property Type="Boolean" Name="CardIsValid" Nullable="false" />
+    <Property Type="Int32" Name="FromGateID" Nullable="false" />
+    <Property Type="Int32" Name="SysTransacionID" Nullable="false" />
+    <Property Type="Boolean" Name="ISUploaded" Nullable="false" />
+    <Property Type="DateTime" Name="UploadTime" />
+    <Property Type="Boolean" Name="IsBlack" Nullable="false" />
+    <Property Type="String" Name="CardReaderNo" Nullable="false" />
+    <Property Type="DateTime" Name="TransactionTime" Nullable="false" />
+    <Property Type="Int32" Name="ChargeTransactionID" />
+  </EntityType>
+  <EntityType Name="MPass_Gate_Transaction_PackData">
+    <Key>
+      <PropertyRef Name="TransactionID" />
+    </Key>
+    <Property Type="Int32" Name="TransactionID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="DateTime" Name="StartTime" Nullable="false" />
+    <Property Type="DateTime" Name="EndTime" Nullable="false" />
+    <Property Type="DateTime" Name="UploadTime" />
+    <Property Type="Boolean" Name="IsUploaded" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MPass_Gate_Transaction_PackData_File">
+    <Key>
+      <PropertyRef Name="AutoID" />
+    </Key>
+    <Property Type="Int32" Name="AutoID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="TransactionID" Nullable="false" />
+    <Property Type="Binary" Name="FileContent" Nullable="false" />
+    <Property Type="String" Name="FileName" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MPass_Gate_Transaction_SIFiles">
+    <Key>
+      <PropertyRef Name="TransactionID" />
+    </Key>
+    <Property Type="Int32" Name="TransactionID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Binary" Name="SIFile" Nullable="false" />
+    <Property Type="String" Name="FIFileName" Nullable="false" />
+    <Property Type="String" Name="ReaderNo" Nullable="false" />
+    <Property Type="Boolean" Name="IsUploaded" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MPass_Gate_Transaction_SIStrings">
+    <Key>
+      <PropertyRef Name="TransactionID" />
+    </Key>
+    <Property Type="Int32" Name="TransactionID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="DateTime" Name="PackTime" Nullable="false" />
+    <Property Type="String" Name="ReaderNo" Nullable="false" />
+    <Property Type="Int32" Name="FromGateID" Nullable="false" />
+    <Property Type="String" Name="SIString" Nullable="false" />
+    <Property Type="Boolean" Name="IsPacked" Nullable="false" />
+    <Property Type="String" Name="GenFileName" />
+  </EntityType>
+  <EntityType Name="MPass_POS_Signin">
+    <Key>
+      <PropertyRef Name="SigiInID" />
+    </Key>
+    <Property Type="Int32" Name="SigiInID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="DateTime" Name="SignInTime" Nullable="false" />
+    <Property Type="Int32" Name="ShiftID" Nullable="false" />
+    <Property Type="String" Name="TERMINALID" />
+    <Property Type="String" Name="MERCHANTID" />
+    <Property Type="String" Name="BATCHNO" />
+    <Property Type="String" Name="TXNDATE" />
+    <Property Type="String" Name="TXNTIME" />
+    <Property Type="Decimal" Name="CSNUM" Nullable="false" />
+    <Property Type="Decimal" Name="CSAMT" Nullable="false" />
+    <Property Type="Decimal" Name="CRNUM" Nullable="false" />
+    <Property Type="Decimal" Name="CRNUM_HKD" Nullable="false" />
+    <Property Type="Decimal" Name="CRNUM_RMB" Nullable="false" />
+    <Property Type="Decimal" Name="CRAMT" Nullable="false" />
+    <Property Type="Decimal" Name="CRAMT_HKD" Nullable="false" />
+    <Property Type="Decimal" Name="CRAMT_RMB" Nullable="false" />
+    <Property Type="Decimal" Name="CANUM" Nullable="false" />
+    <Property Type="Decimal" Name="CAAMT" Nullable="false" />
+    <Property Type="Decimal" Name="CDEPOSIT" Nullable="false" />
+    <Property Type="Decimal" Name="CSCHAR" Nullable="false" />
+    <Property Type="Decimal" Name="MSNUM" Nullable="false" />
+    <Property Type="Decimal" Name="MSAMT" Nullable="false" />
+    <Property Type="Decimal" Name="MRNUM" Nullable="false" />
+    <Property Type="Decimal" Name="MRAMT" Nullable="false" />
+    <Property Type="Decimal" Name="MANUM" Nullable="false" />
+    <Property Type="Decimal" Name="MAAMT" Nullable="false" />
+    <Property Type="Decimal" Name="MDEPOSIT" Nullable="false" />
+    <Property Type="Decimal" Name="MSCHAR" Nullable="false" />
+    <Property Type="Decimal" Name="MCSNUM" Nullable="false" />
+    <Property Type="Decimal" Name="MCSAMT" Nullable="false" />
+    <Property Type="Decimal" Name="MCRNUM" Nullable="false" />
+    <Property Type="Decimal" Name="MCRAMT" Nullable="false" />
+    <Property Type="Decimal" Name="ERRORNUM" Nullable="false" />
+    <Property Type="String" Name="TXNNO" />
+    <Property Type="Int32" Name="CommandResult" Nullable="false" />
+    <Property Type="String" Name="ErrDescription" />
+    <Property Type="String" Name="RETCODE" />
+    <Property Type="String" Name="STATUS" />
+  </EntityType>
+  <EntityType Name="MPass_POS_Signin_Detail">
+    <Key>
+      <PropertyRef Name="SignInDetailID" />
+    </Key>
+    <Property Type="Int32" Name="SignInDetailID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="SiginInID" Nullable="false" />
+    <Property Type="Decimal" Name="ERRORNO" Nullable="false" />
+    <Property Type="String" Name="INVOICENO" />
+    <Property Type="String" Name="TXNTYPE" />
+    <Property Type="String" Name="TXNDATE" />
+    <Property Type="String" Name="TXNTIME" />
+    <Property Type="String" Name="PAN" />
+    <Property Type="String" Name="AUTH" />
+    <Property Type="Decimal" Name="TOTALAMT" />
+  </EntityType>
+  <EntityType Name="MPass_POS_Transaction_Detail">
+    <Key>
+      <PropertyRef Name="TransactionID" />
+    </Key>
+    <Property Type="Int32" Name="TransactionID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="ChargeTransactionID" Nullable="false" />
+    <Property Type="DateTime" Name="TransactionTime" Nullable="false" />
+    <Property Type="String" Name="STATUS" Nullable="false" />
+    <Property Type="String" Name="TERMINALID" />
+    <Property Type="String" Name="MERCHANTID" />
+    <Property Type="String" Name="INVOICENO" />
+    <Property Type="String" Name="TXNDATE" />
+    <Property Type="String" Name="TXNTIME" />
+    <Property Type="String" Name="TXNTYPE" />
+    <Property Type="String" Name="CARDTYPE" />
+    <Property Type="String" Name="MPTXNTYPE" />
+    <Property Type="String" Name="PAN" />
+    <Property Type="Decimal" Name="TOTALAMT" Nullable="false" />
+    <Property Type="Decimal" Name="BALANCE" Nullable="false" />
+    <Property Type="String" Name="LOGNO" />
+    <Property Type="String" Name="M1CARDTYPE" />
+    <Property Type="Decimal" Name="ORIGBALANCE" Nullable="false" />
+    <Property Type="Decimal" Name="DEPOSIT" Nullable="false" />
+    <Property Type="Decimal" Name="CHARGE" Nullable="false" />
+    <Property Type="String" Name="TXNTAC" />
+    <Property Type="String" Name="TXNNO" />
+    <Property Type="String" Name="PURSETYPE" />
+    <Property Type="String" Name="EXPDATE" />
+    <Property Type="Decimal" Name="EPA" Nullable="false" />
+    <Property Type="Decimal" Name="EPAAMT" Nullable="false" />
+    <Property Type="String" Name="BATCHNO" />
+    <Property Type="String" Name="VOCNO" />
+    <Property Type="String" Name="REFNO" />
+    <Property Type="String" Name="AUTH" />
+    <Property Type="String" Name="AID" />
+    <Property Type="String" Name="TC" />
+    <Property Type="String" Name="TVR" />
+    <Property Type="String" Name="TSI" />
+    <Property Type="String" Name="ATC" />
+    <Property Type="String" Name="APPLAB" />
+    <Property Type="Int32" Name="TransactionType" Nullable="false" />
+    <Property Type="Int32" Name="CommandResult" Nullable="false" />
+    <Property Type="String" Name="ErrDescription" />
+    <Property Type="String" Name="RETCODE" />
+    <Property Type="String" Name="TransactionSEQ" />
+    <Property Type="String" Name="CashType" Nullable="false" />
+    <Property Type="String" Name="PAY_MODE" />
+    <Property Type="String" Name="PAY_ACCOUNT" />
+    <Property Type="String" Name="PAY_PURSETYPE" />
+    <Property Type="Decimal" Name="PAY_TOTALAMT" />
+    <Property Type="String" Name="PAY_INVOICENO" />
+    <Property Type="Decimal" Name="DISCOUNTAMT" />
+    <Property Type="Decimal" Name="ORIGTXNAMT" />
+    <Property Type="String" Name="DISCOUNTTYPE" />
+    <Property Type="String" Name="COUPONTYPE" />
+    <Property Type="String" Name="COUPONCODE" />
+    <Property Type="Decimal" Name="COUPONDEDAMT" />
+    <Property Type="Decimal" Name="ACTUALAMT" />
+    <Property Type="String" Name="MERCHANTORDERNO" />
+  </EntityType>
+  <EntityType Name="NoFeelPayment">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="TrancationID" />
+    <Property Type="String" Name="CustomerNo" />
+    <Property Type="String" Name="OrderNumber" />
+    <Property Type="String" Name="AddCode" />
+    <Property Type="String" Name="BindingTagFlag" />
+    <Property Type="String" Name="RFIDTID" />
+    <Property Type="String" Name="RFIDNO" />
+    <Property Type="Boolean" Name="isUploadTrans" />
+    <Property Type="Boolean" Name="isUploadCharge" />
+    <Property Type="String" Name="LicensePlate" />
+    <Property Type="String" Name="AuthCode" />
+  </EntityType>
+  <EntityType Name="Park">
+    <Key>
+      <PropertyRef Name="ParkID" />
+    </Key>
+    <Property Type="Int32" Name="ParkID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="ParkCode" Nullable="false" />
+    <Property Type="Int32" Name="ParkLimit" Nullable="false" />
+    <Property Type="DateTimeOffset" Name="CreateDate" Nullable="false" />
+    <Property Type="String" Name="CreateStaffCode" Nullable="false" />
+    <Property Type="DateTime" Name="DeleteDate" />
+    <Property Type="String" Name="DeleteStaffCode" />
+    <Property Type="Int32" Name="Occupied" Nullable="false" />
+    <Property Type="Int32" Name="Active" Nullable="false" />
+    <Property Type="Boolean" Name="IsDelete" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ParkArea">
+    <Key>
+      <PropertyRef Name="AreaID" />
+    </Key>
+    <Property Type="Int32" Name="AreaID" Nullable="false" />
+    <Property Type="String" Name="AreaNameCn" Nullable="false" />
+    <Property Type="String" Name="AreaNamePt" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ParkAreaExtend">
+    <Key>
+      <PropertyRef Name="AreaID" />
+      <PropertyRef Name="ParkTypeID" />
+    </Key>
+    <Property Type="Int32" Name="AreaID" Nullable="false" />
+    <Property Type="Int32" Name="ParkTypeID" Nullable="false" />
+    <Property Type="Int32" Name="TotalSupply" Nullable="false" />
+    <Property Type="Int32" Name="CurrentUse" Nullable="false" />
+    <Property Type="Int32" Name="ExtendCount" Nullable="false" />
+    <Property Type="Int32" Name="FixParkSupply" Nullable="false" />
+    <Property Type="Int32" Name="FixParkUse" Nullable="false" />
+    <Property Type="Int32" Name="FloatParkSupply" Nullable="false" />
+    <Property Type="Int32" Name="FloatParkUse" Nullable="false" />
+    <Property Type="Int32" Name="TimeChargeSupply" Nullable="false" />
+    <Property Type="Int32" Name="TimeChargeUse" Nullable="false" />
+    <Property Type="String" Name="ExtendNameCn" Nullable="false" />
+    <Property Type="String" Name="ExtendNamePt" Nullable="false" />
+    <Property Type="Boolean" Name="CustomFunnSigh" Nullable="false" />
+    <Property Type="Int32" Name="QuotaCount" Nullable="false" />
+    <Property Type="String" Name="SerialNo" Nullable="false" />
+    <Property Type="Boolean" Name="IsDelete" Nullable="false" />
+    <Property Type="DateTime" Name="StartDate" Nullable="false" />
+    <Property Type="Int32" Name="FloatParkSupply3" />
+    <Property Type="Int32" Name="FloatParkUse3" />
+    <Property Type="Int32" Name="FloatParkSupply4" />
+    <Property Type="Int32" Name="FloatParkUse4" />
+    <Property Type="Int32" Name="FloatParkSupply5" />
+    <Property Type="Int32" Name="FloatParkUse5" />
+    <Property Type="Int32" Name="FloatParkSupply6" />
+    <Property Type="Int32" Name="FloatParkUse6" />
+    <Property Type="Int32" Name="FloatParkSupply7" />
+    <Property Type="Int32" Name="FloatParkUse7" />
+    <Property Type="Int32" Name="FloatParkSupply8" />
+    <Property Type="Int32" Name="FloatParkUse8" />
+    <Property Type="Int32" Name="FloatParkSupply9" />
+    <Property Type="Int32" Name="FloatParkUse9" />
+    <Property Type="Int32" Name="FloatParkSupply10" />
+    <Property Type="Int32" Name="FloatParkUse10" />
+  </EntityType>
+  <EntityType Name="ParkGate">
+    <Key>
+      <PropertyRef Name="GateID" />
+    </Key>
+    <Property Type="Int32" Name="GateID" Nullable="false" />
+    <Property Type="String" Name="GateNameCn" Nullable="false" />
+    <Property Type="String" Name="GateNamePt" Nullable="false" />
+    <Property Type="Int32" Name="GateAreaID" Nullable="false" />
+    <Property Type="String" Name="GateCode" Nullable="false" />
+    <Property Type="Int32" Name="AllowedType" Nullable="false" />
+    <Property Type="Int32" Name="ParentGate" />
+    <Property Type="Int32" Name="GateDirection" Nullable="false" />
+    <Property Type="String" Name="BarrierCode" Nullable="false" />
+    <Property Type="Int32" Name="LPRSDisable" Nullable="false" />
+    <Property Type="Boolean" Name="IsDelete" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PassTrace">
+    <Key>
+      <PropertyRef Name="PassTraceID" />
+    </Key>
+    <Property Type="Int32" Name="PassTraceID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="PassGateID" Nullable="false" />
+    <Property Type="DateTime" Name="PassTime" Nullable="false" />
+    <Property Type="String" Name="PassCardCode" Nullable="false" />
+    <Property Type="Int32" Name="ParkTypeID" Nullable="false" />
+    <Property Type="Int32" Name="PassStatus" Nullable="false" />
+    <Property Type="Int32" Name="PassDirection" Nullable="false" />
+    <Property Type="String" Name="PassRemarkCode" Nullable="false" />
+    <Property Type="String" Name="PassRemarkCn" Nullable="false" />
+    <Property Type="String" Name="PassRemarkPt" Nullable="false" />
+    <Property Type="Int32" Name="RentalTypeID" />
+    <Property Type="Int32" Name="PassBillType" Nullable="false" />
+    <Property Type="Int32" Name="TransactionID" />
+    <Property Type="Boolean" Name="IsOpenGate" Nullable="false" />
+    <Property Type="Int32" Name="LPRSDisable" Nullable="false" />
+    <Property Type="Int32" Name="CardTypeID" Nullable="false" />
+    <Property Type="Boolean" Name="IsDelete" Nullable="false" />
+    <Property Type="Boolean" Name="OfflineStatus" />
+  </EntityType>
+  <EntityType Name="PreOffer">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="ImagePath" />
+    <Property Type="String" Name="TransactionDataID" />
+    <Property Type="Int32" Name="CustomFreeTenatID" />
+    <Property Type="Int32" Name="CustomFreeTypeID" />
+    <Property Type="Int32" Name="BarcodeID" />
+    <Property Type="DateTime" Name="CreateTime" />
+    <Property Type="String" Name="CarateStaffCode" />
+    <Property Type="String" Name="Remark" />
+  </EntityType>
+  <EntityType Name="RentalType">
+    <Key>
+      <PropertyRef Name="RentalTypeID" />
+    </Key>
+    <Property Type="Int32" Name="RentalTypeID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="RentalNameCn" Nullable="false" />
+    <Property Type="String" Name="RentalNamePt" Nullable="false" />
+    <Property Type="Int32" Name="ParkTypeID" Nullable="false" />
+    <Property Type="Decimal" Name="NormalCharge" Nullable="false" />
+    <Property Type="Boolean" Name="CheckLoop" Nullable="false" />
+    <Property Type="Int32" Name="RealCountType" Nullable="false" />
+    <Property Type="Decimal" Name="Deposit" Nullable="false" />
+    <Property Type="Int32" Name="FixParkID" />
+    <Property Type="Int32" Name="ParkLimit" />
+    <Property Type="Boolean" Name="IsDelete" Nullable="false" />
+    <Property Type="Int32" Name="ChargingMode" />
+    <Property Type="Decimal" Name="LimitCharge" />
+    <Property Type="Decimal" Name="ReissueCharge" />
+    <Property Type="Decimal" Name="ChargingModeFee" />
+    <Property Type="String" Name="RealCountStr" />
+    <Property Type="Int32" Name="RuleControlID" />
+  </EntityType>
+  <EntityType Name="RuleControl">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="RuleNo" Nullable="false" />
+    <Property Type="Int32" Name="UseCycle" Nullable="false" />
+    <Property Type="DateTime" Name="ForbidTimes" />
+    <Property Type="String" Name="AcceptGateID" Nullable="false" />
+    <Property Type="Boolean" Name="CheckRegistrationLP" Nullable="false" />
+    <Property Type="Boolean" Name="IsLPInOut" Nullable="false" />
+    <Property Type="DateTimeOffset" Name="CreateTime" Nullable="false" />
+    <Property Type="String" Name="CreateStaffCode" Nullable="false" />
+    <Property Type="Boolean" Name="IgnoreLoop" Nullable="false" />
+    <Property Type="String" Name="ControlObj" />
+  </EntityType>
+  <EntityType Name="SalaryBlock">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="CustomerID" />
+    <Property Type="DateTime" Name="StartDate" />
+    <Property Type="DateTime" Name="Endate" />
+    <Property Type="Int32" Name="OptType" />
+    <Property Type="Decimal" Name="Amount" />
+    <Property Type="DateTime" Name="ChangeDate" />
+    <Property Type="Int32" Name="ChangeType" />
+    <Property Type="String" Name="Remark" />
+  </EntityType>
+  <EntityType Name="ScanPayment">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="Int32" Name="ChargeRecordID" Nullable="false" />
+    <Property Type="Int32" Name="TransactionID" Nullable="false" />
+    <Property Type="String" Name="MerchantId" />
+    <Property Type="String" Name="TrmNo" />
+    <Property Type="String" Name="PayOrderNo" />
+    <Property Type="String" Name="LogNo" />
+    <Property Type="String" Name="ChargeTime" />
+    <Property Type="String" Name="Subject" />
+    <Property Type="Decimal" Name="Amount" />
+    <Property Type="String" Name="AuthCode" />
+    <Property Type="String" Name="PayType" />
+    <Property Type="String" Name="UserData" />
+    <Property Type="String" Name="ParkingLotNo" />
+    <Property Type="String" Name="Result" />
+    <Property Type="String" Name="ResultMessage" />
+    <Property Type="String" Name="LastUpdateTime" />
+  </EntityType>
+  <EntityType Name="ShiftRecord">
+    <Key>
+      <PropertyRef Name="ShiftID" />
+    </Key>
+    <Property Type="Int32" Name="ShiftID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="DateTime" Name="StartTime" Nullable="false" />
+    <Property Type="String" Name="StartStaffCode" />
+    <Property Type="DateTime" Name="EndTime" />
+    <Property Type="String" Name="EndStaffCode" />
+    <Property Type="Boolean" Name="IsComplete" Nullable="false" />
+    <Property Type="Decimal" Name="StartBalance" Nullable="false" />
+    <Property Type="Decimal" Name="EndBalance" Nullable="false" />
+    <Property Type="Decimal" Name="TotalTimeCharge" Nullable="false" />
+    <Property Type="Decimal" Name="TotalRentalCharge" Nullable="false" />
+    <Property Type="Decimal" Name="TotalRentalDeposit" Nullable="false" />
+    <Property Type="Decimal" Name="TotalCharge" Nullable="false" />
+    <Property Type="String" Name="FromStation" Nullable="false" />
+    <Property Type="Decimal" Name="MOP" />
+    <Property Type="Decimal" Name="HKD" />
+    <Property Type="Decimal" Name="CREDIT_CARD" />
+    <Property Type="Boolean" Name="IsDelete" Nullable="false" />
+    <Property Type="Int32" Name="QPassCount" />
+    <Property Type="Decimal" Name="QPassCharge" />
+    <Property Type="Int32" Name="MPassCount" />
+    <Property Type="Decimal" Name="MPassCharge" />
+    <Property Type="Int32" Name="MPassDecalCount" />
+    <Property Type="Decimal" Name="MPassDecalCharge" />
+    <Property Type="Int32" Name="TimeChargeCount" />
+    <Property Type="Decimal" Name="TimeCharge" />
+    <Property Type="Int32" Name="LostCount" />
+    <Property Type="Decimal" Name="LostCharge" />
+    <Property Type="Int32" Name="DamageCount" />
+    <Property Type="Decimal" Name="DamageCharge" />
+    <Property Type="Int32" Name="TimeoutCount" />
+    <Property Type="Decimal" Name="TimeoutCharge" />
+    <Property Type="Int32" Name="RentalCount" />
+    <Property Type="Decimal" Name="RentalCharge" />
+    <Property Type="Int32" Name="RentalDepositCount" />
+    <Property Type="Decimal" Name="RentalDepositCharge" />
+    <Property Type="Int32" Name="VoidDepositCount" />
+    <Property Type="Decimal" Name="VoidDepositCharge" />
+    <Property Type="Int32" Name="VoidRentalCount" />
+    <Property Type="Decimal" Name="VoidRentalCharge" />
+    <Property Type="Int32" Name="TotalCount" />
+    <Property Type="Decimal" Name="CashCharge" />
+    <Property Type="Int32" Name="FeeCount" />
+    <Property Type="Decimal" Name="FeeCharge" />
+    <Property Type="Int32" Name="OpenGateCount" />
+    <Property Type="Int32" Name="PaymentConversionCount" />
+    <Property Type="Decimal" Name="PaymentConversionCharge" />
+    <Property Type="Int32" Name="MPassPosCount" />
+    <Property Type="Decimal" Name="MPassPosCharge" />
+    <Property Type="Int32" Name="MPassGateCount" />
+    <Property Type="Decimal" Name="MPassGateCharge" />
+    <Property Type="String" Name="ManualChargeRemark" />
+    <Property Type="Decimal" Name="ManualChargeCharge" />
+    <Property Type="Decimal" Name="NoSenseCharge" />
+    <Property Type="Int32" Name="NoSenseCount" />
+    <Property Type="String" Name="ReceiptObj" />
+  </EntityType>
+  <EntityType Name="StaffInfo">
+    <Key>
+      <PropertyRef Name="StaffId" />
+    </Key>
+    <Property Type="Int32" Name="StaffId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="StaffCode" Nullable="false" />
+    <Property Type="String" Name="StaffName" />
+    <Property Type="Int32" Name="StaffTypeId" Nullable="false" />
+    <Property Type="String" Name="PhoneNumber" />
+    <Property Type="String" Name="EmailAddress" />
+    <Property Type="String" Name="Address" />
+    <Property Type="String" Name="IDNo" />
+    <Property Type="String" Name="SmartCardCode" />
+    <Property Type="DateTime" Name="CreateTime" Nullable="false" />
+    <Property Type="String" Name="CreateStaffCode" Nullable="false" />
+    <Property Type="Boolean" Name="AllowUse" Nullable="false" />
+    <Property Type="Binary" Name="StaffImage" />
+    <Property Type="String" Name="StaffPwd" Nullable="false" />
+    <Property Type="Boolean" Name="IsDelete" Nullable="false" />
+  </EntityType>
+  <EntityType Name="StaffOperat">
+    <Key>
+      <PropertyRef Name="OperationID" />
+    </Key>
+    <Property Type="Int32" Name="OperationID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="DateTime" Name="OperationTime" Nullable="false" />
+    <Property Type="String" Name="StaffCode" Nullable="false" />
+    <Property Type="Int32" Name="ShiftID" Nullable="false" />
+    <Property Type="Int32" Name="OperationCode" Nullable="false" />
+    <Property Type="String" Name="Remark" />
+  </EntityType>
+  <EntityType Name="StaffType">
+    <Key>
+      <PropertyRef Name="StaffTypeID" />
+    </Key>
+    <Property Type="Int32" Name="StaffTypeID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="StaffTypeNameCn" Nullable="false" />
+    <Property Type="String" Name="StaffTypeNamePt" Nullable="false" />
+    <Property Type="Boolean" Name="IsDelete" Nullable="false" />
+    <Property Type="Int32" Name="SystemCode" />
+  </EntityType>
+  <EntityType Name="Statistics_NotExitData">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="TransactionID" />
+  </EntityType>
+  <EntityType Name="Statistics_UpdateUtil">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="DateTime" Name="updateTime" />
+    <Property Type="Int32" Name="lastId" />
+  </EntityType>
+  <EntityType Name="Statistics_UseTime">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="TransactionID" />
+    <Property Type="Int32" Name="UseTime" />
+    <Property Type="String" Name="Data_Year" />
+    <Property Type="String" Name="Data_Month" />
+    <Property Type="String" Name="Data_Day" />
+    <Property Type="String" Name="Data_Time" />
+  </EntityType>
+  <EntityType Name="SysRole">
+    <Key>
+      <PropertyRef Name="RoleID" />
+    </Key>
+    <Property Type="Int32" Name="RoleID" Nullable="false" />
+    <Property Type="String" Name="RolNameCn" Nullable="false" />
+    <Property Type="String" Name="RoleNamePt" Nullable="false" />
+    <Property Type="String" Name="Remark" />
+    <Property Type="Int32" Name="ParentRoleID" />
+    <Property Type="Boolean" Name="InUse" Nullable="false" />
+    <Property Type="String" Name="RoleClass" />
+    <Property Type="String" Name="FunctionName" />
+    <Property Type="String" Name="FunctionUrl" />
+  </EntityType>
+  <EntityType Name="SysRoleGroup">
+    <Key>
+      <PropertyRef Name="SystemID" />
+    </Key>
+    <Property Type="Int32" Name="SystemID" Nullable="false" />
+    <Property Type="String" Name="DiscriptionCN" Nullable="false" />
+    <Property Type="String" Name="DiscriptionPt" Nullable="false" />
+    <Property Type="String" Name="RoleList" Nullable="false" />
+    <Property Type="Boolean" Name="IsUseInLogo" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SysStaffRole">
+    <Key>
+      <PropertyRef Name="StaffTypeID" />
+      <PropertyRef Name="RoleID" />
+    </Key>
+    <Property Type="Int32" Name="StaffTypeID" Nullable="false" />
+    <Property Type="Int32" Name="RoleID" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TempStop">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="SubjectNo" />
+    <Property Type="String" Name="SubjectName" />
+    <Property Type="DateTime" Name="StartDateTime" Nullable="false" />
+    <Property Type="DateTime" Name="EndDateTime" Nullable="false" />
+    <Property Type="String" Name="Description" />
+    <Property Type="DateTime" Name="CreateTime" Nullable="false" />
+    <Property Type="String" Name="CreateStaffCode" Nullable="false" />
+    <Property Type="String" Name="AllowGateID" />
+    <Property Type="Boolean" Name="IsDelete" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TempStopList">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="SID" Nullable="false" />
+    <Property Type="String" Name="LicensePlate" />
+    <Property Type="Int32" Name="ParkTypeID" />
+  </EntityType>
+  <EntityType Name="TicketSeq">
+    <Key>
+      <PropertyRef Name="Seq" />
+    </Key>
+    <Property Type="Int32" Name="Seq" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="StaffCode" Nullable="false" />
+    <Property Type="Int32" Name="ShiftID" Nullable="false" />
+    <Property Type="DateTime" Name="CreateTime" Nullable="false" />
+    <Property Type="Boolean" Name="IsDelete" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TimeCharge">
+    <Key>
+      <PropertyRef Name="TimeChargeTypeID" />
+    </Key>
+    <Property Type="Int32" Name="TimeChargeTypeID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="TimeChargeNameCn" Nullable="false" />
+    <Property Type="String" Name="TimeChargeNamePt" Nullable="false" />
+    <Property Type="Decimal" Name="NormalChargeB" Nullable="false" />
+    <Property Type="Int32" Name="ParkTypeID" Nullable="false" />
+    <Property Type="Decimal" Name="FineChargeB" Nullable="false" />
+    <Property Type="DateTime" Name="StartDate" Nullable="false" />
+    <Property Type="Decimal" Name="NormalChargeA" Nullable="false" />
+    <Property Type="Decimal" Name="FineChargeA" Nullable="false" />
+    <Property Type="Int32" Name="FirstMinA" Nullable="false" />
+    <Property Type="Decimal" Name="FirstNormalChargeA" Nullable="false" />
+    <Property Type="Int32" Name="FirstMinB" Nullable="false" />
+    <Property Type="Decimal" Name="FirstNormalChargeB" Nullable="false" />
+    <Property Type="Int32" Name="AreaID" />
+    <Property Type="Int32" Name="ChargeType" />
+  </EntityType>
+  <EntityType Name="TimeChargeExt">
+    <Key>
+      <PropertyRef Name="ExtID" />
+    </Key>
+    <Property Type="Int32" Name="ExtID" Nullable="false" />
+    <Property Type="Int32" Name="ParkTypeID" Nullable="false" />
+    <Property Type="Int32" Name="StartHR" Nullable="false" />
+    <Property Type="Int32" Name="EndHR" Nullable="false" />
+    <Property Type="Decimal" Name="Charge" Nullable="false" />
+    <Property Type="Boolean" Name="AfterFlag" Nullable="false" />
+    <Property Type="Boolean" Name="Enabled" Nullable="false" />
+    <Property Type="Int32" Name="WeekNum" />
+    <Property Type="Int32" Name="TimeChargeTypeID" />
+  </EntityType>
+  <EntityType Name="TransactionData">
+    <Key>
+      <PropertyRef Name="TransactionID" />
+    </Key>
+    <Property Type="Int32" Name="TransactionID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="InCardCode" Nullable="false" />
+    <Property Type="DateTime" Name="InTime" Nullable="false" />
+    <Property Type="Int32" Name="InGateID" Nullable="false" />
+    <Property Type="String" Name="OutCardCode" />
+    <Property Type="DateTime" Name="OutTime" />
+    <Property Type="Int32" Name="OutGateID" />
+    <Property Type="Int32" Name="TransactionStatus" Nullable="false" />
+    <Property Type="Int32" Name="ParkTypeID" Nullable="false" />
+    <Property Type="Int32" Name="RentalType" />
+    <Property Type="Int32" Name="TransactionBillType" Nullable="false" />
+    <Property Type="Int32" Name="ParkMin" Nullable="false" />
+    <Property Type="String" Name="Remark" />
+    <Property Type="Boolean" Name="IsDelete" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TransactionDataFinished">
+    <Key>
+      <PropertyRef Name="TransactionFinishedID" />
+    </Key>
+    <Property Type="Int32" Name="TransactionFinishedID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="TransactionID" Nullable="false" />
+    <Property Type="String" Name="InCardCode" Nullable="false" />
+    <Property Type="DateTime" Name="InTime" Nullable="false" />
+    <Property Type="Int32" Name="InGateID" Nullable="false" />
+    <Property Type="String" Name="OutCardCode" />
+    <Property Type="DateTime" Name="OutTime" />
+    <Property Type="Int32" Name="OutGateID" />
+    <Property Type="Int32" Name="TransactionStatus" Nullable="false" />
+    <Property Type="Int32" Name="ParkTypeID" Nullable="false" />
+    <Property Type="Int32" Name="RentalType" />
+    <Property Type="Int32" Name="TransactionBillType" Nullable="false" />
+    <Property Type="Int32" Name="ParkMin" Nullable="false" />
+    <Property Type="String" Name="Remark" />
+    <Property Type="Boolean" Name="IsDelete" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TypeDictionary">
+    <Key>
+      <PropertyRef Name="AutoID" />
+    </Key>
+    <Property Type="Int32" Name="AutoID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="TypeNameCN" Nullable="false" />
+    <Property Type="String" Name="TypeNamePT" Nullable="false" />
+    <Property Type="String" Name="C_type" Nullable="false" />
+    <Property Type="String" Name="Ext1" />
+    <Property Type="Decimal" Name="Ext2" />
+    <Property Type="Boolean" Name="IsDelete" />
+  </EntityType>
+  <EntityType Name="UMRefNum">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="TypeName" />
+    <Property Type="Int32" Name="RefNo" />
+    <Property Type="DateTime" Name="CreateTime" />
+    <Property Type="String" Name="CreateStaff" />
+  </EntityType>
+  <EntityType Name="VoidCharge">
+    <Key>
+      <PropertyRef Name="AutoID" />
+    </Key>
+    <Property Type="Int32" Name="AutoID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="ChargeRecordID" Nullable="false" />
+    <Property Type="String" Name="StaffCode" Nullable="false" />
+    <Property Type="DateTime" Name="CreateTime" Nullable="false" />
+    <Property Type="Decimal" Name="VoidChargeAmt" Nullable="false" />
+    <Property Type="String" Name="ImagePath" />
+    <Property Type="String" Name="Auditor" />
+    <Property Type="DateTime" Name="AuditTime" />
+    <Property Type="Int32" Name="Status" Nullable="false" />
+    <Property Type="String" Name="Remark" />
+  </EntityType>
+  <EntityType Name="view_parkintime2018">
+    <Key>
+      <PropertyRef Name="ParkID" />
+      <PropertyRef Name="ParkCode" />
+      <PropertyRef Name="ParkLimit" />
+      <PropertyRef Name="CreateDate" />
+      <PropertyRef Name="CreateStaffCode" />
+      <PropertyRef Name="IsDelete" />
+    </Key>
+    <Property Type="Int32" Name="ParkID" Nullable="false" />
+    <Property Type="String" Name="ParkCode" Nullable="false" />
+    <Property Type="Int32" Name="ParkLimit" Nullable="false" />
+    <Property Type="DateTimeOffset" Name="CreateDate" Nullable="false" />
+    <Property Type="String" Name="CreateStaffCode" Nullable="false" />
+    <Property Type="Decimal" Name="inUserd" />
+    <Property Type="String" Name="CardCode" />
+    <Property Type="String" Name="InCardCode" />
+    <Property Type="String" Name="LicensePlate" />
+    <Property Type="SByte" Name="IsDelete" Nullable="false" />
+  </EntityType>
+  <EntityType Name="view_transactionandlp">
+    <Key>
+      <PropertyRef Name="TransactionID" />
+      <PropertyRef Name="InCardCode" />
+      <PropertyRef Name="InTime" />
+      <PropertyRef Name="InGateID" />
+      <PropertyRef Name="ParkTypeID" />
+      <PropertyRef Name="TransactionBillType" />
+    </Key>
+    <Property Type="Int32" Name="TransactionID" Nullable="false" />
+    <Property Type="String" Name="InCardCode" Nullable="false" />
+    <Property Type="DateTime" Name="InTime" Nullable="false" />
+    <Property Type="Int32" Name="InGateID" Nullable="false" />
+    <Property Type="Int32" Name="ParkTypeID" Nullable="false" />
+    <Property Type="Int32" Name="RentalType" />
+    <Property Type="Int32" Name="TransactionBillType" Nullable="false" />
+    <Property Type="String" Name="AnalysisResult" />
+    <Property Type="String" Name="ImagePath" />
+  </EntityType>
+  <EntityType Name="view_transactiondata">
+    <Key>
+      <PropertyRef Name="TransactionID" />
+      <PropertyRef Name="InCardCode" />
+      <PropertyRef Name="InTime" />
+      <PropertyRef Name="InGateID" />
+      <PropertyRef Name="TransactionStatus" />
+      <PropertyRef Name="ParkTypeID" />
+      <PropertyRef Name="TransactionBillType" />
+      <PropertyRef Name="ParkMin" />
+      <PropertyRef Name="IsDelete" />
+    </Key>
+    <Property Type="Int32" Name="TransactionID" Nullable="false" />
+    <Property Type="String" Name="InCardCode" Nullable="false" />
+    <Property Type="DateTime" Name="InTime" Nullable="false" />
+    <Property Type="Int32" Name="InGateID" Nullable="false" />
+    <Property Type="String" Name="OutCardCode" />
+    <Property Type="DateTime" Name="OutTime" />
+    <Property Type="Int32" Name="OutGateID" />
+    <Property Type="Int32" Name="TransactionStatus" Nullable="false" />
+    <Property Type="Int32" Name="ParkTypeID" Nullable="false" />
+    <Property Type="Int32" Name="RentalType" />
+    <Property Type="Int32" Name="TransactionBillType" Nullable="false" />
+    <Property Type="Int32" Name="ParkMin" Nullable="false" />
+    <Property Type="String" Name="Remark" />
+    <Property Type="SByte" Name="IsDelete" Nullable="false" />
+  </EntityType>
+</Schema>

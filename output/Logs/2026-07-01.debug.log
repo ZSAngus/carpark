@@ -1,0 +1,117 @@
+2026-07-01 21:58:26 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SingleGateStatusChangeNotice1 
+2026-07-01 21:58:26 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SingleGateStatusChangeNotice-2 
+2026-07-01 21:58:26 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SingleGateStatusChangeNotice-2 
+2026-07-01 21:58:26 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SingleGateStatusChangeNotice-2 
+2026-07-01 21:58:27 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SingleGateStatusChangeNotice1 
+2026-07-01 21:58:27 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SingleGateStatusChangeNotice-2 
+2026-07-01 21:58:27 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SingleGateStatusChangeNotice1 
+2026-07-01 21:58:27 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SingleGateStatusChangeNotice-2 
+2026-07-01 21:58:29 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SingleGateStatusChangeNotice1 
+2026-07-01 21:58:29 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SingleGateStatusChangeNotice-2 
+2026-07-01 21:58:29 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SingleGateStatusChangeNotice-2 
+2026-07-01 21:58:29 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SingleGateStatusChangeNotice-2 
+2026-07-01 21:58:32 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SingleGateStatusChangeNotice-2 
+2026-07-01 21:58:32 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SingleGateStatusChangeNotice1 
+2026-07-01 21:58:32 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SingleGateStatusChangeNotice1 
+2026-07-01 21:58:32 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SingleGateStatusChangeNotice-2 
+2026-07-01 22:00:41 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) ParkingSpacesChangeNotice: 18 
+2026-07-01 22:00:41 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SystemNotice22:00 閘口2 卡號G000249   
+2026-07-01 22:00:41 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) PassTraceChange 
+2026-07-01 22:03:44 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) PassTraceChange 
+2026-07-01 22:03:44 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) ParkingSpacesChangeNotice: 18 
+2026-07-01 22:03:44 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SystemNotice22:03 閘口1 卡號G000130   
+2026-07-01 22:06:46 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) PassTraceChange 
+2026-07-01 22:06:47 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SystemNotice22:06 閘口2 卡號130101010241011000517899   
+2026-07-01 22:06:47 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) ParkingSpacesChangeNotice: 63 
+2026-07-01 22:12:25 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SystemNotice22:12 閘口2 卡號G000272   
+2026-07-01 22:12:25 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) ParkingSpacesChangeNotice: 63 
+2026-07-01 22:12:25 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) PassTraceChange 
+2026-07-01 22:17:09 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) PassTraceChange 
+2026-07-01 22:17:09 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SystemNotice22:17 閘口2 卡號MR6381 未付費  
+2026-07-01 22:17:15 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SystemNotice22:17 閘口2 卡號MR6381   
+2026-07-01 22:17:15 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) PassTraceChange 
+2026-07-01 22:17:15 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) ParkingSpacesChangeNotice: 64 
+2026-07-01 22:19:13 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SystemNotice22:19 閘口1 卡號G000071   
+2026-07-01 22:19:13 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) PassTraceChange 
+2026-07-01 22:19:13 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) ParkingSpacesChangeNotice: 64 
+2026-07-01 22:24:00 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SystemNotice22:24 閘口2 卡號130101010211208000472905   
+2026-07-01 22:24:00 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) PassTraceChange 
+2026-07-01 22:24:01 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) ParkingSpacesChangeNotice: 65 
+2026-07-01 22:25:25 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) PassTraceChange 
+2026-07-01 22:25:25 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) ParkingSpacesChangeNotice: 65 
+2026-07-01 22:25:25 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SystemNotice22:25 閘口2 卡號G000052   
+2026-07-01 22:29:16 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) PassTraceChange 
+2026-07-01 22:29:16 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SystemNotice22:29 閘口1 卡號130101010221025000503900   
+2026-07-01 22:29:16 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) ParkingSpacesChangeNotice: 64 
+2026-07-01 22:29:38 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) PassTraceChange 
+2026-07-01 22:29:38 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SystemNotice22:29 閘口2 卡號13010101025071800077F6B8   
+2026-07-01 22:29:39 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) ParkingSpacesChangeNotice: 65 
+2026-07-01 22:30:52 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) ParkingSpacesChangeNotice: 64 
+2026-07-01 22:30:52 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) PassTraceChange 
+2026-07-01 22:30:53 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SystemNotice22:31 閘口1 卡號MT9863   
+2026-07-01 22:33:49 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SystemNotice22:33 閘口1 卡號130101010210920000791661   
+2026-07-01 22:33:49 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) PassTraceChange 
+2026-07-01 22:33:49 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) ParkingSpacesChangeNotice: 63 
+2026-07-01 22:34:55 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SystemNotice22:35 閘口1 卡號1301010102604220006790B9   
+2026-07-01 22:34:55 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) PassTraceChange 
+2026-07-01 22:34:55 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) ParkingSpacesChangeNotice: 17 
+2026-07-01 22:39:36 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SystemNotice22:39 閘口1 卡號MZ2284   
+2026-07-01 22:39:36 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) ParkingSpacesChangeNotice: 62 
+2026-07-01 22:39:36 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) PassTraceChange 
+2026-07-01 22:41:59 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) ParkingSpacesChangeNotice: 62 
+2026-07-01 22:41:59 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) PassTraceChange 
+2026-07-01 22:41:59 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SystemNotice22:42 閘口1 卡號G000162   
+2026-07-01 22:57:36 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) PassTraceChange 
+2026-07-01 22:57:36 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SystemNotice22:57 閘口1 卡號G000216   
+2026-07-01 22:57:36 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) ParkingSpacesChangeNotice: 62 
+2026-07-01 23:08:47 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) ParkingSpacesChangeNotice: 62 
+2026-07-01 23:08:47 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) PassTraceChange 
+2026-07-01 23:08:47 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SystemNotice23:08 閘口2 卡號G000021   
+2026-07-01 23:17:23 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) PassTraceChange 
+2026-07-01 23:17:23 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SystemNotice23:17 閘口1 卡號G000020   
+2026-07-01 23:17:23 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) ParkingSpacesChangeNotice: 62 
+2026-07-01 23:20:10 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SystemNotice23:20 閘口2 卡號1301010102604220006790B9   
+2026-07-01 23:20:10 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) PassTraceChange 
+2026-07-01 23:20:11 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) ParkingSpacesChangeNotice: 18 
+2026-07-01 23:21:27 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) ParkingSpacesChangeNotice: 62 
+2026-07-01 23:21:27 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SystemNotice23:21 閘口1 卡號G000061   
+2026-07-01 23:21:27 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) PassTraceChange 
+2026-07-01 23:23:36 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SystemNotice23:23 閘口1 卡號130101010200301000186A5C   
+2026-07-01 23:23:36 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) PassTraceChange 
+2026-07-01 23:23:36 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) ParkingSpacesChangeNotice: 61 
+2026-07-01 23:26:51 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) PassTraceChange 
+2026-07-01 23:26:51 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SystemNotice23:27 閘口1 卡號G000330   
+2026-07-01 23:26:51 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) ParkingSpacesChangeNotice: 18 
+2026-07-01 23:29:24 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SystemNotice23:29 閘口1 卡號13010101022011200078FE05   
+2026-07-01 23:29:24 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) PassTraceChange 
+2026-07-01 23:29:25 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) ParkingSpacesChangeNotice: 60 
+2026-07-01 23:31:49 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) ParkingSpacesChangeNotice: 18 
+2026-07-01 23:31:49 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) PassTraceChange 
+2026-07-01 23:31:49 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SystemNotice23:31 閘口1 卡號G000127   
+2026-07-01 23:36:30 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) PassTraceChange 
+2026-07-01 23:36:31 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SystemNotice23:36 閘口2 卡號130101010221025000503900   
+2026-07-01 23:36:31 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) ParkingSpacesChangeNotice: 61 
+2026-07-01 23:40:37 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SystemNotice23:40 閘口1 卡號G000135   
+2026-07-01 23:40:38 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) ParkingSpacesChangeNotice: 18 
+2026-07-01 23:40:38 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) PassTraceChange 
+2026-07-01 23:40:48 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SystemNotice23:40 閘口1 卡號G000052   
+2026-07-01 23:40:48 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) PassTraceChange 
+2026-07-01 23:40:48 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) ParkingSpacesChangeNotice: 61 
+2026-07-01 23:45:07 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SystemNotice23:45 閘口2 卡號MW8084 未付費  
+2026-07-01 23:45:07 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) PassTraceChange 
+2026-07-01 23:45:19 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SystemNotice23:45 閘口2 卡號MW8084 未付費  
+2026-07-01 23:45:19 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) PassTraceChange 
+2026-07-01 23:45:35 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) ParkingSpacesChangeNotice: 62 
+2026-07-01 23:45:35 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SystemNotice23:45 閘口2 卡號MW8084   
+2026-07-01 23:45:35 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) PassTraceChange 
+2026-07-01 23:52:48 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SystemNotice23:52 閘口2 卡號130101010210408000272D99   
+2026-07-01 23:52:48 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) PassTraceChange 
+2026-07-01 23:52:48 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) ParkingSpacesChangeNotice: 63 
+2026-07-01 23:53:16 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SystemNotice23:53 閘口2 卡號G000016   
+2026-07-01 23:53:16 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) ParkingSpacesChangeNotice: 63 
+2026-07-01 23:53:16 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) PassTraceChange 
+2026-07-01 23:58:54 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SystemNotice23:59 閘口1 卡號130101010221025000503900   
+2026-07-01 23:58:54 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) PassTraceChange 
+2026-07-01 23:58:54 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) ParkingSpacesChangeNotice: 62 
+2026-07-01 23:59:52 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) SystemNotice00:00 閘口2 卡號MT9863 未付費  
+2026-07-01 23:59:53 DEBUG  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogDebug(:0) PassTraceChange 

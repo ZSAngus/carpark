@@ -1,0 +1,9 @@
+D:\WEB\CAR_MOD\output\CarPark.Lib.dll
+D:\WEB\CAR_MOD\src\CarPark.Lib\obj\x86\Release\CarPark.Lib.csproj.AssemblyReference.cache
+D:\WEB\CAR_MOD\src\CarPark.Lib\obj\x86\Release\CarPark.Dialog.resources
+D:\WEB\CAR_MOD\src\CarPark.Lib\obj\x86\Release\CarPark.MessageForm.resources
+D:\WEB\CAR_MOD\src\CarPark.Lib\obj\x86\Release\CarPark.Lib.csproj.GenerateResource.cache
+D:\WEB\CAR_MOD\src\CarPark.Lib\obj\x86\Release\CarPark.Lib.GeneratedMSBuildEditorConfig.editorconfig
+D:\WEB\CAR_MOD\src\CarPark.Lib\obj\x86\Release\CarPark.Lib.csproj.CoreCompileInputs.cache
+D:\WEB\CAR_MOD\src\CarPark.Lib\obj\x86\Release\CarPark..FF278596.Up2Date
+D:\WEB\CAR_MOD\src\CarPark.Lib\obj\x86\Release\CarPark.Lib.dll

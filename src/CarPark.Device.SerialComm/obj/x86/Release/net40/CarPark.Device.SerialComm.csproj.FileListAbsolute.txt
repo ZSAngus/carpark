@@ -1,0 +1,7 @@
+D:\WEB\CAR_MOD\src\CarPark.Device.SerialComm\obj\x86\Release\net40\CarPark.Device.SerialComm.csproj.AssemblyReference.cache
+D:\WEB\CAR_MOD\src\CarPark.Device.SerialComm\obj\x86\Release\net40\CarPark.Device.SerialComm.GeneratedMSBuildEditorConfig.editorconfig
+D:\WEB\CAR_MOD\src\CarPark.Device.SerialComm\obj\x86\Release\net40\CarPark.Device.SerialComm.csproj.CoreCompileInputs.cache
+D:\WEB\CAR_MOD\src\CarPark.Device.SerialComm\bin\x86\Release\net40\CarPark.Device.SerialComm.dll
+D:\WEB\CAR_MOD\src\CarPark.Device.SerialComm\bin\x86\Release\net40\CarPark.Device.SerialComm.pdb
+D:\WEB\CAR_MOD\src\CarPark.Device.SerialComm\obj\x86\Release\net40\CarPark.Device.SerialComm.dll
+D:\WEB\CAR_MOD\src\CarPark.Device.SerialComm\obj\x86\Release\net40\CarPark.Device.SerialComm.pdb

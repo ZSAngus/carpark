@@ -1,0 +1,80 @@
+20240322 002233 : [INF] ... GetPartTable | Start, nDisk 0, bIgnorePartSize 0
+20240322 002233 : [INF] ... GetPartTable | pPTable == 00B99440
+20240322 002233 : [INF] ... GetPartTable | GetPartitionInfo Start nDisk 0
+20240322 002233 : [INF] ... GetPartitionInfo | Start dwSSect 0, m_bIgnorePartSize 0
+20240322 002233 :  INF] ... GetPartitionInfo | OpenDisk, m_Disk.m_Type 0
+20240322 002233 :  INF] ... GetPartitionInfo | GetDiskSize
+20240322 002233 :  INF] ... GetPartitionInfo | GetPartitionTable, m_dwlDiskSect 1953525168
+20240322 002233 : [INF] ... GetPartitionTable | Start dwSSect 0
+20240322 002233 :  INF] ... GetPartitionTable | ReadDisk
+20240322 002233 :  INF] ... GetPartitionTable | - 1
+20240322 002233 :  INF] ... GetPartitionTable | - 2
+20240322 002234 : [INF] ... GetPartitionTable_GPT | Start, dwSSect 1
+20240322 002234 :  INF] ... GetPartitionTable_GPT | m_dwGPTCnt 128
+20240322 002234 : [INF] ... AddPartition_GPT | Startp->start_sect 2048, p->sys_ind 239
+20240322 002234 : [INF] ... CheckFileSys | Start 2048
+20240322 002234 : [SUC] ... CheckFileSys | End
+20240322 002234 : [SUC] ... AddPartition_GPT | End
+20240322 002234 : [INF] ... AddPartition_GPT | Startp->start_sect 1024000, p->sys_ind 239
+20240322 002234 : [INF] ... CheckFileSys | Start 1024000
+20240322 002234 : [SUC] ... CheckFileSys | End
+20240322 002235 : [SUC] ... AddPartition_GPT | End
+20240322 002235 : [INF] ... AddPartition_GPT | Startp->start_sect 1226752, p->sys_ind 239
+20240322 002235 : [INF] ... CheckFileSys | Start 1226752
+20240322 002235 : [SUC] ... CheckFileSys | End
+20240322 002235 : [SUC] ... AddPartition_GPT | End
+20240322 002235 : [INF] ... AddPartition_GPT | Startp->start_sect 1259520, p->sys_ind 239
+20240322 002235 : [INF] ... CheckFileSys | Start 1259520
+20240322 002235 : [SUC] ... CheckFileSys | End
+20240322 002235 : [SUC] ... AddPartition_GPT | End
+20240322 002235 : [INF] ... AddPartition_GPT | Startp->start_sect 204800000, p->sys_ind 239
+20240322 002235 : [INF] ... CheckFileSys | Start 204800000
+20240322 002235 : [SUC] ... CheckFileSys | End
+20240322 002235 : [SUC] ... AddPartition_GPT | End
+20240322 002235 : [INF] ... AddPartition_GPT | Startp->start_sect 1024000000, p->sys_ind 239
+20240322 002235 : [INF] ... CheckFileSys | Start 1024000000
+20240322 002235 : [SUC] ... CheckFileSys | End
+20240322 002235 : [SUC] ... AddPartition_GPT | End
+20240322 002235 : [SUC] ... GetPartitionTable_GPT | End, m_dwGPTCnt 128
+20240322 002235 : [SUC] ... GetPartitionTable | End
+20240322 002235 :  INF] ... GetPartitionInfo | MatchDriveLetter
+20240322 002235 : [INF] ... MatchDriveLetterNew | Start
+20240322 002235 :  INF] ... MatchDriveLetterNew : 0, 3, C
+20240322 002235 :  INF] ... MatchDriveLetterNew : 0, 4, D
+20240322 002235 :  INF] ... MatchDriveLetterNew : 0, 5, E
+20240322 002235 : [INF] ... MatchDriveLetterNew | End
+20240322 002235 :  INF] GetHiddenFreeSpace | Start
+20240322 002235 : [INF] GetFreeSpaceNTFS | (nDisk:0, dlStart:2048)
+20240322 002235 :  INF] GetFreeSpaceNTFS | ntfs_get_free_cluster_count
+20240322 002235 :  INF] GetHiddenFreeSpace | End, dlRet 510447616
+20240322 002235 :  INF] GetHiddenFreeSpace | Start
+20240322 002235 :  INF] GetHiddenFreeSpace | End, dlRet 72659968
+20240322 002235 :  INF] GetHiddenFreeSpace | Start
+20240322 002235 :  INF] GetHiddenFreeSpace | End, dlRet 0
+20240322 002236 : [SUC] ... GetPartitionInfo | End
+20240322 002236 : [INF] ... GetPartitionInfo | Start dwSSect 58, m_bIgnorePartSize 0
+20240322 002236 :  INF] ... GetPartitionInfo | OpenDisk, m_Disk.m_Type 0
+20240322 002236 :  INF] ... GetPartitionInfo | GetDiskSize
+20240322 002236 :  INF] ... GetPartitionInfo | GetPartitionTable, m_dwlDiskSect 1953525168
+20240322 002236 : [INF] ... GetPartitionTable | Start dwSSect 58
+20240322 002236 :  INF] ... GetPartitionTable | ReadDisk
+20240322 002236 :  INF] ... GetPartitionTable | GetPartitionTable_PIT
+20240322 002236 : [INF] ... GetPartitionTable_PIT | Start
+20240322 002236 : [WAR] ... GetPartitionTable_PIT | War
+20240322 002236 : [WAR] ... GetPartitionTable | War
+20240322 002236 :  INF] ... GetPartitionInfo | MatchDriveLetter
+20240322 002236 : [INF] ... MatchDriveLetterNew | Start
+20240322 002236 :  INF] ... MatchDriveLetterNew : 0, 3, C
+20240322 002236 :  INF] ... MatchDriveLetterNew : 0, 4, D
+20240322 002236 :  INF] ... MatchDriveLetterNew : 0, 5, E
+20240322 002236 : [INF] ... MatchDriveLetterNew | End
+20240322 002236 :  INF] GetHiddenFreeSpace | Start
+20240322 002236 : [INF] GetFreeSpaceNTFS | (nDisk:0, dlStart:2048)
+20240322 002236 :  INF] GetFreeSpaceNTFS | ntfs_get_free_cluster_count
+20240322 002236 :  INF] GetHiddenFreeSpace | End, dlRet 510447616
+20240322 002236 :  INF] GetHiddenFreeSpace | Start
+20240322 002236 :  INF] GetHiddenFreeSpace | End, dlRet 72659968
+20240322 002236 :  INF] GetHiddenFreeSpace | Start
+20240322 002236 :  INF] GetHiddenFreeSpace | End, dlRet 0
+20240322 002236 : [SUC] ... GetPartitionInfo | End
+20240322 002236 : [INF] ... GetPartTable | GetPartitionInfo End cPart.m_PartCnt 6

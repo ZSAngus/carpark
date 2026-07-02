@@ -1,0 +1,5 @@
+D:\WEB\CAR_MOD\output\CarPark.DataStore.dll
+D:\WEB\CAR_MOD\src\CarPark.DataStore\obj\x86\Release\CarPark.DataStore.csproj.AssemblyReference.cache
+D:\WEB\CAR_MOD\src\CarPark.DataStore\obj\x86\Release\CarPark.DataStore.GeneratedMSBuildEditorConfig.editorconfig
+D:\WEB\CAR_MOD\src\CarPark.DataStore\obj\x86\Release\CarPark.DataStore.csproj.CoreCompileInputs.cache
+D:\WEB\CAR_MOD\src\CarPark.DataStore\obj\x86\Release\CarPark.DataStore.dll

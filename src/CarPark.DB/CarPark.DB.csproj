@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>CarPark.DB</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <FrameworkPathOverride>C:\Users\168v\.nuget\packages\microsoft.netframework.referenceassemblies.net40\1.0.3\build\.NETFramework\v4.0</FrameworkPathOverride>
+    <TargetFramework>net40</TargetFramework>
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>12.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <OutputPath>..\..\output\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="CarParkData.msl" />
+    <None Remove="CarParkData.csdl" />
+    <None Remove="CarParkData.ssdl" />
+    <EmbeddedResource Include="CarParkData.msl" LogicalName="CarParkData.msl" />
+    <EmbeddedResource Include="CarParkData.csdl" LogicalName="CarParkData.csdl" />
+    <EmbeddedResource Include="CarParkData.ssdl" LogicalName="CarParkData.ssdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="SkyInno.UI.BindingText">
+      <HintPath>..\..\lib\SkyInno.UI.BindingText.dll</HintPath>
+    </Reference>
+    <ProjectReference Include="..\CarPark.Core\CarPark.Core.csproj" />
+    <Reference Include="System.Core" />
+    <Reference Include="log4net">
+      <HintPath>..\..\lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="SkyInno.Lang">
+      <HintPath>..\..\lib\SkyInno.Lang.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

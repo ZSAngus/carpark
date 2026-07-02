@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "WKLK1eGXAzc=",
+  "success": true,
+  "projectFilePath": "D:\\WEB\\CAR_MOD\\src\\Master.SystemCommunication\\Master.SystemCommunication.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\168v\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\168v\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net40\\1.0.3\\microsoft.netframework.referenceassemblies.net40.1.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

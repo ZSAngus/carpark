@@ -1,0 +1,55 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>CarPark.Device.CashierBusiness</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <UseWindowsForms>True</UseWindowsForms>
+    <FrameworkPathOverride>C:\Users\168v\.nuget\packages\microsoft.netframework.referenceassemblies.net40\1.0.3\build\.NETFramework\v4.0</FrameworkPathOverride>
+    <TargetFramework>net40</TargetFramework>
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>..\..\output\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>12.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\CarPark.Device.SerialComm\CarPark.Device.SerialComm.csproj" />
+    <ProjectReference Include="..\CarPark.Device\CarPark.Device.csproj" />
+    <Reference Include="StarIO">
+      <HintPath>..\..\lib\StarIO.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MacauPass.POSCom">
+      <HintPath>..\..\lib\MacauPass.POSCom.dll</HintPath>
+    </Reference>
+    <ProjectReference Include="..\N910POSDll\N910POSDll.csproj" />
+    <ProjectReference Include="..\CarPark.Core\CarPark.Core.csproj" />
+    <ProjectReference Include="..\Master.SystemCommunication.Lib\Master.SystemCommunication.Lib.csproj" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <ProjectReference Include="..\CarPark.DB\CarPark.DB.csproj" />
+    <ProjectReference Include="..\Master.SystemCommunication\Master.SystemCommunication.csproj" />
+    <Reference Include="Master.Lib.Communication">
+      <HintPath>..\..\lib\Master.Lib.Communication.dll</HintPath>
+    </Reference>
+    <Reference Include="SkyInno.Lib.Common">
+      <HintPath>..\..\lib\SkyInno.Lib.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="SkyInno.Lib.Communication">
+      <HintPath>..\..\lib\SkyInno.Lib.Communication.dll</HintPath>
+    </Reference>
+    <ProjectReference Include="..\CarPark.Core\CarPark.Core.csproj" />
+    <ProjectReference Include="..\CarPark.Core\CarPark.Core.csproj" />
+  </ItemGroup>
+</Project>

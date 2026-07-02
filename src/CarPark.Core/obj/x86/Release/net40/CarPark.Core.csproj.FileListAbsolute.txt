@@ -1,0 +1,7 @@
+D:\WEB\CAR_MOD\src\CarPark.Core\obj\x86\Release\net40\CarPark.Core.csproj.AssemblyReference.cache
+D:\WEB\CAR_MOD\src\CarPark.Core\obj\x86\Release\net40\CarPark.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\WEB\CAR_MOD\src\CarPark.Core\obj\x86\Release\net40\CarPark.Core.csproj.CoreCompileInputs.cache
+D:\WEB\CAR_MOD\src\CarPark.Core\bin\x86\Release\net40\CarPark.Core.dll
+D:\WEB\CAR_MOD\src\CarPark.Core\bin\x86\Release\net40\CarPark.Core.pdb
+D:\WEB\CAR_MOD\src\CarPark.Core\obj\x86\Release\net40\CarPark.Core.dll
+D:\WEB\CAR_MOD\src\CarPark.Core\obj\x86\Release\net40\CarPark.Core.pdb

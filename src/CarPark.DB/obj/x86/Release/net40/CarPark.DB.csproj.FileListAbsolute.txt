@@ -1,0 +1,13 @@
+D:\WEB\CAR_MOD\src\CarPark.DB\obj\x86\Release\net40\CarPark.DB.csproj.AssemblyReference.cache
+D:\WEB\CAR_MOD\src\CarPark.DB\obj\x86\Release\net40\CarPark.DB.GeneratedMSBuildEditorConfig.editorconfig
+D:\WEB\CAR_MOD\src\CarPark.DB\obj\x86\Release\net40\CarPark.DB.csproj.CoreCompileInputs.cache
+D:\WEB\CAR_MOD\src\CarPark.DB\bin\x86\Release\net40\CarPark.DB.dll
+D:\WEB\CAR_MOD\src\CarPark.DB\bin\x86\Release\net40\CarPark.DB.pdb
+D:\WEB\CAR_MOD\src\CarPark.DB\bin\x86\Release\net40\CarPark.Core.dll
+D:\WEB\CAR_MOD\src\CarPark.DB\bin\x86\Release\net40\log4net.dll
+D:\WEB\CAR_MOD\src\CarPark.DB\bin\x86\Release\net40\SkyInno.Lang.dll
+D:\WEB\CAR_MOD\src\CarPark.DB\bin\x86\Release\net40\SkyInno.UI.BindingText.dll
+D:\WEB\CAR_MOD\src\CarPark.DB\bin\x86\Release\net40\CarPark.Core.pdb
+D:\WEB\CAR_MOD\src\CarPark.DB\obj\x86\Release\net40\CarPark.DB.csproj.Up2Date
+D:\WEB\CAR_MOD\src\CarPark.DB\obj\x86\Release\net40\CarPark.DB.dll
+D:\WEB\CAR_MOD\src\CarPark.DB\obj\x86\Release\net40\CarPark.DB.pdb

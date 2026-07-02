@@ -1,0 +1,1246 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Master.SystemCommunication.Lib</name>
+    </assembly>
+    <members>
+        <member name="T:Master.SystemCommunication.Lib.ManualUpBarArgs">
+            <summary>
+            人手起杆參數
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ProgramBase.GuID">
+            <summary>
+            消息ID
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ProgramBase.MsgTimestamp">
+            <summary>
+            消息時間戳
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ManualUpBarArgs.OperationPC">
+            <summary>
+            操作電腦
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ManualUpBarArgs.ShiffCode">
+            <summary>
+            操作用戶
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.ManualChangeArgs">
+            <summary>  
+            人手滿
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ManualChangeArgs.ManualFull">
+            <summary>
+            手工滿字，true為滿
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.AgainCameraArgs">
+            <summary>
+            重新捉拍
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.NoticeArgs">
+            <summary>
+            系統通知
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.ParkingSpacesChangeNoticeArgs">
+            <summary>
+            車位改變通知
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ParkingSpacesChangeNoticeArgs.ParkingSpacesCount">
+            <summary>
+            車位數
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ParkingSpacesChangeNoticeArgs.ManualFull">
+            <summary>
+            true為人手滿
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.ParkAreaExtendArgs">
+            <summary>
+            改車位參數
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ParkAreaExtendArgs.ShiffCode">
+            <summary>
+            操作用戶
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ParkAreaExtendArgs.SystemName">
+            <summary>
+            系統名
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ParkAreaExtendArgs.ParkAreaExtendID">
+            <summary>
+            ParkAreaExtend表ID
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ParkAreaExtendArgs.parkType">
+            <summary>
+            車類型
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ParkAreaExtendArgs.NameCN">
+            <summary>
+            中文名
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ParkAreaExtendArgs.NameEN">
+            <summary>
+            英文名
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ParkAreaExtendArgs.TotalSupply">
+            <summary>
+            總供應
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ParkAreaExtendArgs.TimeChargeUse">
+            <summary>
+            時租占用
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ParkAreaExtendArgs.ExtendCount">
+            <summary>
+            擴展車位
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.CalcTicketFeeArgs">
+            <summary>
+            時租收費計算輸入參數
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.CalcTicketFeeArgs.ChargeTime">
+            <summary>
+            收費時間
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.CalcTicketFeeArgs.PayStationName">
+            <summary>
+            操作PC名
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.CalcTicketFeeArgs.AreaID">
+            <summary>
+            場號，失票傳入場號計算收費
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.CalcTicketFeeReturn.ISValid">
+            <summary>
+            是否有效
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.CalcTicketFeeReturn.ErrCode">
+            <summary>
+            無效原因，商戶不存在，免費類型不存在，優惠券條碼無效
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.CalcTicketFeeReturn.ISTimeOut">
+            <summary>
+            真正超時為true
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.CalcTicketFeeReturn.HasLastTimeCharge">
+            <summary>
+            是否存在上次收費
+            如果HasLastTimeCharge為true,會轉到超時收費窗體，在顯示窗體前如果ISTimeOut為false，提示用戶該票沒超時
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.CalcTicketFeeReturn.LastTimeCharge">
+            <summary>
+            上次繳費時間
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.SaveChargeRecordArgs">
+            <summary>
+            保存收費傳入參數
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.SaveChargeRecordArgs.CustomFreeRecordRemark">
+            <summary>
+            免費記錄的Remark,有免費信息並有備註時有
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.SaveChargeRecordArgs.TransactionDataRemark">
+            <summary>
+            做失票需要傳入場號，記錄在TransactionData備註信息
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.SaveChargeRecordArgs.ISTimeOut">
+            <summary>
+            真正超時為true
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.SaveChargeRecordArgs.BarCode">
+            <summary>
+            優惠券號
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.SaveChargeRecordArgs.TransactionID">
+            <summary>
+            業務記錄ID
+            轉紙票或失票用來刪除入場記錄
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.EndCurrShiftRecordReturn.NewShiftID">
+            <summary>
+            新的更次號
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.CreateLostArgs.PayStationName">
+            <summary>
+            操作PC名
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.CreateLostReturn.TicketNumber">
+            <summary>
+            生成的失票號
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.CashierLoginArgs">
+            <summary>
+            登錄傳入參數
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.CashierLoginArgs.StaffCode">
+            <summary>
+            用戶名
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.CashierLoginArgs.Password">
+            <summary>
+             密碼
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.CashierLoginReturn">
+            <summary>
+            傳出參數
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.GetInitInfoArgs.PayStationName">
+            <summary>
+            操作PC名
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.UpdatePasswordArgs.StaffCode">
+            <summary>
+            用戶名
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.UpdatePasswordArgs.OldPassword">
+            <summary>
+             密碼
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.UpdatePasswordArgs.NewPassword">
+            <summary>
+            新密碼
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.ModifyParkAreaExtendArgs">
+            <summary>
+            修改車位輸入參數
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ModifyParkAreaExtendArgs.PayStationName">
+            <summary>
+            操作PC名
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.ModifyParkAreaExtendReturn">
+            <summary>
+            修改車位輸出參數
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.AddTimeChargeArgs.PayStationName">
+            <summary>
+            操作PC名
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.DeleteTimeChargeArgs.PayStationName">
+            <summary>
+            操作PC名
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.UpdateTimeChargeArgs.PayStationName">
+            <summary>
+            操作PC名
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.GetLastChargeRecordArgs.PayStationName">
+            <summary>
+            操作PC名
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.GetLastChargeRecordReturn.FormatReceiptStr">
+            <summary>
+            格式化後的收據
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.SaveMPassChargeArgs">
+            <summary>
+            保存澳门通增值传入参数
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.SaveMPassChargeArgs.CardCode">
+            <summary>
+            卡邏輯號
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.SaveMPassChargeReturn">
+            <summary>
+             保存澳门通增值返回结果
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.SaveMPassChargeReturn.ISValid">
+            <summary>
+            是否有效
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.SaveMPassChargeReturn.ErrCode">
+            <summary>
+            無效信息
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.GetRentalChargeArgs.CardNumber">
+            <summary>
+            卡號
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.ServerStatusChangeArgs">
+            <summary>
+            數據庫狀態改變參數
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ServerStatusChangeArgs.ServerStatus">
+            <summary>
+            取當前數據庫連接狀態
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.GetCardInfoArgs">
+            <summary>
+            查詢月租卡是否有效參數
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.GetCardInfoArgs.LicensePlate">
+            <summary>
+            車牌
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.GetCardInfoArgs.CardNumber">
+            <summary>
+            卡面號或內存號
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.GetCardInfoReturn">
+             <summary>
+            返回查卡信息
+             </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.GetView_TransactionAndLPArgs.LicensePlate">
+            <summary>
+            入場車牌號
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.GetView_TransactionAndLPArgs.InStartTime">
+            <summary>
+            入場開始時間
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.GetView_TransactionAndLPArgs.InEndTime">
+            <summary>
+            入場結束時間
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.GetView_TransactionAndLPArgs.MPassNumber">
+            <summary>
+            轉紙票用，用戶輸入澳門通號碼
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.GetView_TransactionAndLPArgs.QPassNumber">
+            <summary>
+            閃付轉紙票用，用戶輸入尾4位數
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.GetView_TransactionAndLPReturn">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.CorrectLicensePlateArgs">
+            <summary>
+            糾正車牌參數
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.CorrectLicensePlateArgs.TransactionDataID">
+            <summary>
+            業務記錄ＩＤ
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.CorrectLicensePlateArgs.NewLicensePlate">
+            <summary>
+            糾正後的新車牌
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.CorrectLicensePlateArgs.PayStationName">
+            <summary>
+            操作PC名
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.CorrectLicensePlateReturn">
+            <summary>
+            糾正車牌後返回結果
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.ManualEntryLicensePlateArgs">
+            <summary>
+            手動添加在場記錄
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ManualEntryLicensePlateArgs.SerialNumber">
+            <summary>
+            場號
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ManualEntryLicensePlateArgs.ChargeTime">
+            <summary>
+            收費時間
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ManualEntryLicensePlateArgs.PayStationName">
+            <summary>
+            操作PC名
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ManualEntryLicensePlateArgs.AreaID">
+            <summary>
+            區域ID
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.ManualEntryLicensePlateReturn">
+            <summary>
+            手動添加車牌返回結果
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.CalcTicketFeeReturnV2.InTime">
+            <summary>
+            車輛入場時間
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.CalcTicketFeeReturnV2.InLicensePlatePath">
+            <summary>
+            車牌圖片路徑
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.CalcTicketFeeReturnV2.LicensePlate">
+            <summary>
+            車牌
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.ParkingSpacesChangeArgs">
+            <summary>
+            車位改變參數
+            雲後臺用
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.CalcChargeArgs">
+            <summary>
+            收費參數
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.CalcChargeArgs.FeeTime">
+            <summary>
+            服務設定收費時間
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.DamageTicketArgs.DamageNumber">
+            <summary>
+            壞票號
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.APSRunningStatusArgs">
+            <summary>
+            aps運行狀態
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.APSControlType">
+            <summary>
+            aps控制
+            </summary>
+        </member>
+        <member name="F:Master.SystemCommunication.Lib.APSControlType.GetStatus">
+            <summary>
+            獲取最後狀態
+            </summary>
+        </member>
+        <member name="F:Master.SystemCommunication.Lib.APSControlType.Start">
+            <summary>
+            恢復
+            </summary>
+        </member>
+        <member name="F:Master.SystemCommunication.Lib.APSControlType.Stop">
+            <summary>
+            停止
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.PrintCouponArgs">
+            <summary>
+            打印優惠券參數
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.CommunicationEventArgs">
+            <summary>
+            定义一个本例的事件消息类. 创建包含有关事件的其他有用的信息的变量，只要派生自EventArgs即可。
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.GateObj">
+            <summary>
+            閘門機信息
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.DeviceStatus">
+            <summary>
+            設備狀態傳輸
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.DeviceStatus.DeviceCode">
+            <summary>
+            閃付，澳門通，月租按Unknown=-1, Failure=0, Normal=1, TimeOut=2
+            Ticket按ACE代號解析
+            其餘按各自代號解析
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.RFID_OpenGateArgs">
+            <summary>
+            RFID起杆參數
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.ChangeTimeChargUseArgs">
+            <summary>
+            改變時租占用參數
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ChangeTimeChargUseArgs.IsIn">
+            <summary>
+            true為進場
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.GetTimeChargRemainArgs">
+            <summary>
+            獲取時租車位
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.GetParkAreaExtendArgs">
+            <summary>
+            取車位詳細信息
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.ScanRFIDArgs">
+            <summary>
+            掃描RFID消息
+            發送到RFID控制，如果讀到卡號則填充CardCode並返回
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.ProgramInfo">
+            <summary>
+            程序信息
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ProgramInfo.RunState">
+            <summary>
+            運行狀態，-1:表示停止，0表示啟動，1表示運行中
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.BOCFileArgs">
+            <summary>
+            銀聯上數內容
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.PassTraceArgs">
+            <summary>
+            出入記錄
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.ChargeRecordArgs">
+            <summary>
+            收費記錄
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.RecordContrastArgs">
+            <summary>
+            記錄比對協議
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.RecordContrastArgs.ReceiveID">
+            <summary>
+            接收者ID
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.RecordContrastArgs.Registration">
+            <summary>
+            登記車牌
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.RecordContrastArgs.ImagePath">
+            <summary>
+            當前圖片路徑
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.RecordContrastArgs.currResult">
+            <summary>
+            當前結果
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.RecordContrastArgs.IsPass">
+            <summary>
+            人手處理完結果
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.RecordContrastArgs.ShiffCode">
+            <summary>
+            操作人員
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.ExitContrastArgs">
+            <summary>
+            記錄比對協議
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ExitContrastArgs.ReceiveID">
+            <summary>
+            接收者ID
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ExitContrastArgs.IsPass">
+            <summary>
+            人手處理完結果
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.CameraArgs">
+            <summary>
+            捉拍參數
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.CameraRecognitionArgs">
+            <summary>
+            捉拍並分析參數
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.CameraRecognitionArgs.InputLicensePlate">
+            <summary>
+            手工填入車牌
+            用於閘機系統向車牌請求時附帶參數
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.RecognitionLicenseArgs">
+            <summary>
+            分析車牌參數
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.RecognitionLicenseArgs.Extend">
+            <summary>
+            擴展
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.GateStatusArgs">
+            <summary>
+            所有閘機狀態
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.GateStatusArgs.DeviceList">
+            <summary>
+            所有閘機狀態
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.DisabilityPressArgs">
+            <summary>
+            傷殘接口參數
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.DisabilityPressArgs.PressParkType">
+            <summary>
+            按下類型
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.DisabilityPressArgs.ReceiveID">
+            <summary>
+            接收者ID
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.DisabilityPressArgs.OperationPC">
+            <summary>
+            操作電腦
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.DisabilityPressArgs.ShiffCode">
+            <summary>
+            操作用戶
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.DisabilityPressArgs.PrintParkType">
+            <summary>
+            出票類型
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.DisabilityPressArgs.IsCancel">
+             <summary>
+            是否取消出票
+            true不出票，清標誌位
+             </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.MessageType">
+            <summary>
+            设定消息的类型
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.DeviceCode">
+            <summary>
+            設備狀態
+            </summary>
+        </member>
+        <member name="F:Master.SystemCommunication.Lib.DeviceCode.Unknown">
+             <summary>
+            未知
+             </summary>
+        </member>
+        <member name="F:Master.SystemCommunication.Lib.DeviceCode.Failure">
+            <summary>
+            失敗
+            </summary>
+        </member>
+        <member name="F:Master.SystemCommunication.Lib.DeviceCode.Normal">
+            <summary>
+            正常
+            </summary>
+        </member>
+        <member name="F:Master.SystemCommunication.Lib.DeviceCode.TimeOut">
+            <summary>
+            超時
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.SystemType">
+            <summary>
+            系統類型
+            </summary>
+        </member>
+        <member name="F:Master.SystemCommunication.Lib.SystemType.Sys_Unknown">
+            <summary>
+            未知系統類型
+            </summary>
+        </member>
+        <member name="F:Master.SystemCommunication.Lib.SystemType.Sys_Gate">
+            <summary>
+            閘機控制系統
+            </summary>
+        </member>
+        <member name="F:Master.SystemCommunication.Lib.SystemType.Sys_GateServer">
+            <summary>
+            車場主控服務
+            </summary>
+        </member>
+        <member name="F:Master.SystemCommunication.Lib.SystemType.Sys_LRPS">
+            <summary>
+            車牌系統
+            </summary>
+        </member>
+        <member name="F:Master.SystemCommunication.Lib.SystemType.Sys_Fee">
+            <summary>
+            收費系統
+            </summary>
+        </member>
+        <member name="F:Master.SystemCommunication.Lib.SystemType.Sys_DateCollection">
+            <summary>
+            數據採集終端
+            </summary>
+        </member>
+        <member name="F:Master.SystemCommunication.Lib.SystemType.Sys_CarparkCloud">
+            <summary>
+            車場雲系統
+            </summary>
+        </member>
+        <member name="F:Master.SystemCommunication.Lib.SystemType.Sys_APS">
+            <summary>
+            自助收費
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.NoticeType">
+            <summary>
+            通知類型
+            </summary>
+        </member>
+        <member name="F:Master.SystemCommunication.Lib.NoticeType.SystemPrompt">
+            <summary>
+            系統提示
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.BaseArgs">
+             <summary>
+            車場出入口參數基類
+             </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.Carpark2018Args">
+            <summary>
+            参数基类
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.Carpark2018Args.GateID">
+            <summary>
+            閘口ID
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.Carpark2018Args.CardNumber">
+            <summary>
+            票或卡號碼
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.Carpark2018Args.LicensePlateStr">
+            <summary>
+            車牌
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.Carpark2018Args.ImagePath">
+            <summary>
+            車牌圖片路徑
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.Carpark2018Args.Similarity">
+            <summary>
+            車牌可信度
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.FuncReturn">
+            <summary>
+            返回结果基类
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.FuncReturn.ISSaveSuccess">
+            <summary>
+            是否成功保存數據
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.FuncReturn.ISNeedContrast">
+            <summary>
+            是否需要人工比對
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.FuncReturn.ErrCode">
+            <summary>
+            錯誤信息
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.FuncReturn.InLicensePlateStr">
+            <summary>
+            入場車牌
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.FuncReturn.ImagePath">
+            <summary>
+            入場車牌圖片路徑
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.UpdateLicensePlate_PassTraceArgs">
+            <summary>
+            更新車牌識別參數
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.UpdateLicensePlate_PassTraceArgs.StaffCode">
+            <summary>
+            操作用戶
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.UpdateLicensePlate_PassTraceArgs.LicensePlateStr">
+            <summary>
+            車牌
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.UpdateLicensePlate_PassTraceArgs.ImagePath">
+            <summary>
+            圖片路徑
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.UpdateLicensePlate_PassTraceArgs.LicensePlateID">
+            <summary>
+            車牌表ID
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.EnterTicketArgs">
+             <summary>
+            時租入口參數
+             </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.EnterTicketArgs.InTime">
+            <summary>
+            入场时间
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.EnterTicketArgs.Is485">
+            <summary>
+            Is485=true,取InTime，否则为232信息，取服务本地时间
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.EnterTicketReturn">
+            <summary>
+            入口時租返回結果
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.EnterTicketReturn.ISPass">
+            <summary>
+            是否保存成功
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.EnterTicketReturn.ErrCode">
+            <summary>
+            不通過原因
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.EnterMonthArgs">
+             <summary>
+            月租入口參數
+             </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.EnterMonthArgs.StaffCode">
+            <summary>
+            存在用戶號表示人手通過，可不比對車牌
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.EnterMonthReturn">
+            <summary>
+            入口月租返回信息
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.EnterMonthReturn.ISPass">
+            <summary>
+            是否保存成功
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.EnterMonthReturn.ErrCode">
+            <summary>
+            不通過原因
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.EnterMonthReturn.ISNeedContrast">
+            <summary>
+            是否需要人工比對
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.EnterMonthReturn.RegistrationLicensePlate">
+            <summary>
+            登記車牌
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.EnterMonthReturn.ISOffline">
+            <summary>
+            是否離線
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.EnterMPassArgs">
+             <summary>
+            澳門通入口參數
+             </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.EnterMPassReturn">
+            <summary>
+            入口澳門通返回信息
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.EnterMPassReturn.ISPass">
+            <summary>
+            是否保存成功
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.EnterMPassReturn.ErrCode">
+            <summary>
+            不通過原因
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.EnterMPassReturn.ExpectedAnchorTime">
+            <summary>
+            預計可停泊小時數
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.EnterQPassArgs">
+            <summary>
+            閃付入口參數
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.EnterQPassReturn">
+            <summary>
+            入口閃付返回信息
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.EnterQPassReturn.ISPass">
+            <summary>
+            是否通過
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.EnterQPassReturn.ErrCode">
+            <summary>
+            不通過原因
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.ExitTicketArgs">
+            <summary>
+            出口时租参数
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ExitTicketArgs.OutTime">
+            <summary>
+            入场时间
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ExitTicketArgs.Is485">
+            <summary>
+            Is485=true,取InTime，否则为232信息，取服务本地时间
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ExitTicketArgs.StaffCode">
+            <summary>
+            存在用戶號表示人手通過，可不比對車牌
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.ExitTicketReturn">
+            <summary>
+            出口时租返回参数
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.ExitMonthArgs">
+            <summary>
+            月租出口参数
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ExitMonthArgs.StaffCode">
+            <summary>
+            存在用戶號表示人手通過，可不比對車牌
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.ExitMonthReturn">
+            <summary>
+            月租出口返回参数
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ExitMonthReturn.ISOffline">
+            <summary>
+            是否離線，true為離線
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.ExitMPassCalcCheckArgs">
+            <summary>
+            澳门通参数
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.ExitMPassSaveArgs">
+             <summary>
+            澳門通出口
+             </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.ExitMPassCalcCheckReturn">
+            <summary>
+            澳门通返回参数
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ExitMPassCalcCheckReturn.ISVerifyPass">
+             <summary>
+            出口是否驗證通過
+            驗證通過可以按計算金額進行扣值
+            驗證不通過顯示原因
+             </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ExitMPassCalcCheckReturn.NeedToBuckle">
+            <summary>
+            是否需要扣值
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ExitMPassCalcCheckReturn.ErrCode">
+            <summary>
+            不通過原因
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ExitMPassCalcCheckReturn.InLicensePlateStr">
+            <summary>
+            入場車牌
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ExitMPassCalcCheckReturn.ImagePath">
+            <summary>
+            入場車牌圖片路徑
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.ExitQPassCalcCheckArgs">
+            <summary>
+            闪付参数
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.ExitQPassCalcCheckReturn">
+            <summary>
+            闪付返回参数
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ExitQPassCalcCheckReturn.ISVerifyPass">
+             <summary>
+            出口是否驗證通過
+            驗證通過可以按計算金額進行扣值
+            驗證不通過顯示原因
+             </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ExitQPassCalcCheckReturn.NeedToBuckle">
+            <summary>
+            是否需要扣值
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ExitQPassCalcCheckReturn.ErrCode">
+            <summary>
+            不通過原因
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ExitQPassCalcCheckReturn.InLicensePlateStr">
+            <summary>
+            入場車牌
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ExitQPassCalcCheckReturn.ImagePath">
+            <summary>
+            入場車牌圖片路徑
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.ExitQPassSaveReturn">
+            <summary>
+            出口保存數據後返回
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.EnterLicensePlateArgs">
+            <summary>
+            入口檢測到車牌
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.EnterLicensePlateArgs.GateID">
+            <summary>
+            閘口ID
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.EnterLicensePlateArgs.LicensePlateStr">
+            <summary>
+            車牌
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.EnterLicensePlateArgs.ImagePath">
+            <summary>
+            車牌圖片路徑
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.EnterLicensePlateArgs.Similarity">
+            <summary>
+            車牌可信度
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.ExitLicensePlateArgs">
+            <summary>
+            出口檢測到車牌
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ExitLicensePlateArgs.GateID">
+            <summary>
+            閘口ID
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ExitLicensePlateArgs.LicensePlateStr">
+            <summary>
+            車牌
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ExitLicensePlateArgs.ImagePath">
+            <summary>
+            車牌圖片路徑
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ExitLicensePlateArgs.Similarity">
+            <summary>
+            車牌可信度
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.EnterLicensePlateReturn">
+            <summary>
+            入口車牌返回
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.EnterLicensePlateReturn.CanOpenGate">
+            <summary>
+            能否起杆
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.EnterLicensePlateReturn.ErrCode">
+            <summary>
+            錯誤信息
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.ExitLicensePlateReturn">
+            <summary>
+            出口車牌返回
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ExitLicensePlateReturn.CanOpenGate">
+            <summary>
+            能否起杆
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.ExitLicensePlateReturn.ErrCode">
+            <summary>
+            錯誤信息
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.SaveUpBarrierCountArgs.OpenCount">
+            <summary>
+            起杆次數
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.SaveUpBarrierCountArgs.PayStationName">
+            <summary>
+            指定收費電腦名，類似於指定收費處車牌比對
+            用於記錄更號
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.SaveUpBarrierCountReturn.ErrCode">
+            <summary>
+            不通過原因
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.GetOfflineCardArgs">
+            <summary>
+            獲取離線卡信息
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.GetOfflineCardReturn">
+            <summary>
+            離線卡信息返回
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.GetOfflineCardReturn.OfflineCardList">
+            <summary>
+            離線卡集合
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Lib.OfflineCard">
+            <summary>
+            離線卡結構
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.OfflineCard.CardCode">
+            <summary>
+            卡邏輯號
+            </summary>
+        </member>
+        <member name="P:Master.SystemCommunication.Lib.OfflineCard.ParkTypeID">
+            <summary>
+            車型
+            </summary>
+        </member>
+    </members>
+</doc>

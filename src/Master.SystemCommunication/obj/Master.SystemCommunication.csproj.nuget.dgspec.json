@@ -1,0 +1,258 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\WEB\\CAR_MOD\\src\\Master.SystemCommunication\\Master.SystemCommunication.csproj": {}
+  },
+  "projects": {
+    "D:\\WEB\\CAR_MOD\\src\\CarPark.Core\\CarPark.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\WEB\\CAR_MOD\\src\\CarPark.Core\\CarPark.Core.csproj",
+        "projectName": "CarPark.Core",
+        "projectPath": "D:\\WEB\\CAR_MOD\\src\\CarPark.Core\\CarPark.Core.csproj",
+        "packagesPath": "C:\\Users\\168v\\.nuget\\packages\\",
+        "outputPath": "D:\\WEB\\CAR_MOD\\src\\CarPark.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\168v\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net40"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net40": {
+            "targetAlias": "net40",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "net40": {
+          "targetAlias": "net40",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\WEB\\CAR_MOD\\src\\CarPark.DB\\CarPark.DB.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\WEB\\CAR_MOD\\src\\CarPark.DB\\CarPark.DB.csproj",
+        "projectName": "CarPark.DB",
+        "projectPath": "D:\\WEB\\CAR_MOD\\src\\CarPark.DB\\CarPark.DB.csproj",
+        "packagesPath": "C:\\Users\\168v\\.nuget\\packages\\",
+        "outputPath": "D:\\WEB\\CAR_MOD\\src\\CarPark.DB\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\168v\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net40"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net40": {
+            "targetAlias": "net40",
+            "projectReferences": {
+              "D:\\WEB\\CAR_MOD\\src\\CarPark.Core\\CarPark.Core.csproj": {
+                "projectPath": "D:\\WEB\\CAR_MOD\\src\\CarPark.Core\\CarPark.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "net40": {
+          "targetAlias": "net40",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\WEB\\CAR_MOD\\src\\Master.SystemCommunication.Lib\\Master.SystemCommunication.Lib.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\WEB\\CAR_MOD\\src\\Master.SystemCommunication.Lib\\Master.SystemCommunication.Lib.csproj",
+        "projectName": "Master.SystemCommunication.Lib",
+        "projectPath": "D:\\WEB\\CAR_MOD\\src\\Master.SystemCommunication.Lib\\Master.SystemCommunication.Lib.csproj",
+        "packagesPath": "C:\\Users\\168v\\.nuget\\packages\\",
+        "outputPath": "D:\\WEB\\CAR_MOD\\src\\Master.SystemCommunication.Lib\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\168v\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net40"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net40": {
+            "targetAlias": "net40",
+            "projectReferences": {
+              "D:\\WEB\\CAR_MOD\\src\\CarPark.Core\\CarPark.Core.csproj": {
+                "projectPath": "D:\\WEB\\CAR_MOD\\src\\CarPark.Core\\CarPark.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "net40": {
+          "targetAlias": "net40",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\WEB\\CAR_MOD\\src\\Master.SystemCommunication\\Master.SystemCommunication.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\WEB\\CAR_MOD\\src\\Master.SystemCommunication\\Master.SystemCommunication.csproj",
+        "projectName": "Master.SystemCommunication",
+        "projectPath": "D:\\WEB\\CAR_MOD\\src\\Master.SystemCommunication\\Master.SystemCommunication.csproj",
+        "packagesPath": "C:\\Users\\168v\\.nuget\\packages\\",
+        "outputPath": "D:\\WEB\\CAR_MOD\\src\\Master.SystemCommunication\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\168v\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net40"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net40": {
+            "targetAlias": "net40",
+            "projectReferences": {
+              "D:\\WEB\\CAR_MOD\\src\\CarPark.Core\\CarPark.Core.csproj": {
+                "projectPath": "D:\\WEB\\CAR_MOD\\src\\CarPark.Core\\CarPark.Core.csproj"
+              },
+              "D:\\WEB\\CAR_MOD\\src\\CarPark.DB\\CarPark.DB.csproj": {
+                "projectPath": "D:\\WEB\\CAR_MOD\\src\\CarPark.DB\\CarPark.DB.csproj"
+              },
+              "D:\\WEB\\CAR_MOD\\src\\Master.SystemCommunication.Lib\\Master.SystemCommunication.Lib.csproj": {
+                "projectPath": "D:\\WEB\\CAR_MOD\\src\\Master.SystemCommunication.Lib\\Master.SystemCommunication.Lib.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "net40": {
+          "targetAlias": "net40",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

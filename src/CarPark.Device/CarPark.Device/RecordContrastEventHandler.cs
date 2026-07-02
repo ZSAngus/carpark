@@ -1,0 +1,3 @@
+namespace CarPark.Device;
+
+public delegate RecordContrastInfo RecordContrastEventHandler(RecordContrastInfo recordContrastInfo);

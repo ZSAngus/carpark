@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>CarPark.Device</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <UseWindowsForms>True</UseWindowsForms>
+    <FrameworkPathOverride>C:\Users\168v\.nuget\packages\microsoft.netframework.referenceassemblies.net40\1.0.3\build\.NETFramework\v4.0</FrameworkPathOverride>
+    <TargetFramework>net40</TargetFramework>
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>12.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <OutputPath>..\..\output\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\CarPark.Core\CarPark.Core.csproj" />
+    <Reference Include="log4net">
+      <HintPath>..\..\lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MacauPass.POSCom">
+      <HintPath>..\..\lib\MacauPass.POSCom.dll</HintPath>
+    </Reference>
+    <ProjectReference Include="..\CarPark.DB\CarPark.DB.csproj" />
+    <ProjectReference Include="..\DAT.Entity\DAT.Entity.csproj" />
+    <ProjectReference Include="..\N910POSDll\N910POSDll.csproj" />
+    <Reference Include="SkyInno.Lang">
+      <HintPath>..\..\lib\SkyInno.Lang.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

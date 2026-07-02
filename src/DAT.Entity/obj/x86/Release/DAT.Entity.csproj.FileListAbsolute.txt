@@ -1,0 +1,5 @@
+D:\WEB\CAR_MOD\output\DAT.Entity.dll
+D:\WEB\CAR_MOD\src\DAT.Entity\obj\x86\Release\DAT.Entity.csproj.AssemblyReference.cache
+D:\WEB\CAR_MOD\src\DAT.Entity\obj\x86\Release\DAT.Entity.GeneratedMSBuildEditorConfig.editorconfig
+D:\WEB\CAR_MOD\src\DAT.Entity\obj\x86\Release\DAT.Entity.csproj.CoreCompileInputs.cache
+D:\WEB\CAR_MOD\src\DAT.Entity\obj\x86\Release\DAT.Entity.dll

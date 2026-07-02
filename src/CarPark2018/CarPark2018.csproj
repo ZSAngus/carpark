@@ -1,0 +1,91 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>CarPark2018</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <UseWindowsForms>True</UseWindowsForms>
+    <FrameworkPathOverride>C:\Users\168v\.nuget\packages\microsoft.netframework.referenceassemblies.net40\1.0.3\build\.NETFramework\v4.0</FrameworkPathOverride>
+    <TargetFramework>net40</TargetFramework>
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>..\..\output\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>12.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\..\lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="SkyInno.Lang">
+      <HintPath>..\..\lib\SkyInno.Lang.dll</HintPath>
+    </Reference>
+    <Reference Include="SkyInno.UI.BindingText">
+      <HintPath>..\..\lib\SkyInno.UI.BindingText.dll</HintPath>
+    </Reference>
+    <Reference Include="SkyInno.Lib.Common">
+      <HintPath>..\..\lib\SkyInno.Lib.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="SkyInno.Lib.Communication">
+      <HintPath>..\..\lib\SkyInno.Lib.Communication.dll</HintPath>
+    </Reference>
+    <Reference Include="MacauPass.POSCom">
+      <HintPath>..\..\lib\MacauPass.POSCom.dll</HintPath>
+    </Reference>
+    <Reference Include="Master.Lib.Communication">
+      <HintPath>..\..\lib\Master.Lib.Communication.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Controls">
+      <HintPath>..\..\lib\AForge.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video">
+      <HintPath>..\..\lib\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>..\..\lib\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\..\lib\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>..\..\lib\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="BOC_SmartPay">
+      <HintPath>..\..\lib\BOC_SmartPay.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="WindowsBase" />
+    <ProjectReference Include="..\CarPark.Core\CarPark.Core.csproj" />
+    <ProjectReference Include="..\DAT.Entity\DAT.Entity.csproj" />
+    <ProjectReference Include="..\N910POSDll\N910POSDll.csproj" />
+    <ProjectReference Include="..\CarPark.DataStore\CarPark.DataStore.csproj" />
+    <ProjectReference Include="..\CarPark.Device.SerialComm\CarPark.Device.SerialComm.csproj" />
+    <ProjectReference Include="..\CarPark.DB\CarPark.DB.csproj" />
+    <ProjectReference Include="..\Master.SystemCommunication.Lib\Master.SystemCommunication.Lib.csproj" />
+    <ProjectReference Include="..\Master.SystemCommunication\Master.SystemCommunication.csproj" />
+    <ProjectReference Include="..\CarPark.Lib\CarPark.Lib.csproj" />
+    <ProjectReference Include="..\CarPark.Device\CarPark.Device.csproj" />
+    <ProjectReference Include="..\CarPark.Device.CashierBusiness\CarPark.Device.CashierBusiness.csproj" />
+  </ItemGroup>
+</Project>

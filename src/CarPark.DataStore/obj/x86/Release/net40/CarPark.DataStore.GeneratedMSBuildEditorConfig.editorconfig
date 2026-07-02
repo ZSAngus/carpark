@@ -1,0 +1,8 @@
+is_global = true
+build_property.RootNamespace = CarPark.DataStore
+build_property.ProjectDir = D:\WEB\CAR_MOD\src\CarPark.DataStore\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.CsWinRTUseWindowsUIXamlProjections = false
+build_property.EffectiveAnalysisLevelStyle = 
+build_property.EnableCodeStyleSeverity = 

@@ -1,0 +1,7 @@
+D:\WEB\CAR_MOD\src\DAT.Entity\obj\x86\Release\net40\DAT.Entity.csproj.AssemblyReference.cache
+D:\WEB\CAR_MOD\src\DAT.Entity\obj\x86\Release\net40\DAT.Entity.GeneratedMSBuildEditorConfig.editorconfig
+D:\WEB\CAR_MOD\src\DAT.Entity\obj\x86\Release\net40\DAT.Entity.csproj.CoreCompileInputs.cache
+D:\WEB\CAR_MOD\src\DAT.Entity\bin\x86\Release\net40\DAT.Entity.dll
+D:\WEB\CAR_MOD\src\DAT.Entity\bin\x86\Release\net40\DAT.Entity.pdb
+D:\WEB\CAR_MOD\src\DAT.Entity\obj\x86\Release\net40\DAT.Entity.dll
+D:\WEB\CAR_MOD\src\DAT.Entity\obj\x86\Release\net40\DAT.Entity.pdb

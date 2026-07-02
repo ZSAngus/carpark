@@ -1,0 +1,6 @@
+D:\WEB\CAR_MOD\output\Master.SystemCommunication.Lib.dll
+D:\WEB\CAR_MOD\src\Master.SystemCommunication.Lib\obj\x86\Release\Master.SystemCommunication.Lib.csproj.AssemblyReference.cache
+D:\WEB\CAR_MOD\src\Master.SystemCommunication.Lib\obj\x86\Release\Master.SystemCommunication.Lib.GeneratedMSBuildEditorConfig.editorconfig
+D:\WEB\CAR_MOD\src\Master.SystemCommunication.Lib\obj\x86\Release\Master.SystemCommunication.Lib.csproj.CoreCompileInputs.cache
+D:\WEB\CAR_MOD\src\Master.SystemCommunication.Lib\obj\x86\Release\Master.S.ED35BEE0.Up2Date
+D:\WEB\CAR_MOD\src\Master.SystemCommunication.Lib\obj\x86\Release\Master.SystemCommunication.Lib.dll

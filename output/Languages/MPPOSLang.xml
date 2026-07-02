@@ -1,0 +1,137 @@
+﻿<?xml version="1.0"?>
+<LangResList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <LanguageResources>
+    <Langres>
+      <LangKey>POSERR.101</LangKey>
+      <LangCHT>101 無效交易</LangCHT>
+      <LangEN>101 無效交易</LangEN>
+    </Langres>
+    <Langres>
+      <LangKey>POSERR.102</LangKey>
+      <LangCHT>102 無效金額</LangCHT>
+      <LangEN>102 無效金額</LangEN>
+    </Langres>
+    <Langres>
+      <LangKey>POSERR.103</LangKey>
+      <LangCHT>103 金額太大</LangCHT>
+      <LangEN>103 金額太大</LangEN>
+    </Langres>
+    <Langres>
+      <LangKey>POSERR.104</LangKey>
+      <LangCHT>104 交易失敗，請聯繫澳門通</LangCHT>
+      <LangEN>104 交易失敗，請聯繫澳門通</LangEN>
+    </Langres>
+    <Langres>
+      <LangKey>POSERR.105</LangKey>
+      <LangCHT>105 無法中止交易</LangCHT>
+      <LangEN>105 無法中止交易</LangEN>
+    </Langres>
+    <Langres>
+      <LangKey>POSERR.106</LangKey>
+      <LangCHT>106 未找到交易</LangCHT>
+      <LangEN>106 未找到交易</LangEN>
+    </Langres>
+    <Langres>
+      <LangKey>POSERR.107</LangKey>
+      <LangCHT>107 充值功能受限</LangCHT>
+      <LangEN>107 充值功能受限</LangEN>
+    </Langres>
+    <Langres>
+      <LangKey>POSERR.108</LangKey>
+      <LangCHT>108 充值功能受限</LangCHT>
+      <LangEN>108 充值功能受限</LangEN>
+    </Langres>
+    <Langres>
+      <LangKey>POSERR.201</LangKey>
+      <LangCHT>201 餘額不足，請充值</LangCHT>
+      <LangEN>201 餘額不足，請充值</LangEN>
+    </Langres>
+    <Langres>
+      <LangKey>POSERR.202</LangKey>
+      <LangCHT>202 無效卡</LangCHT>
+      <LangEN>202 無效卡</LangEN>
+    </Langres>
+    <Langres>
+      <LangKey>POSERR.203</LangKey>
+      <LangCHT>203 請用戶放置卡</LangCHT>
+      <LangEN>203 請用戶放置卡</LangEN>
+    </Langres>
+    <Langres>
+      <LangKey>POSERR.301</LangKey>
+      <LangCHT>301 系統忙碌中，請稍後再試</LangCHT>
+      <LangEN>301 系統忙碌中，請稍後再試</LangEN>
+    </Langres>
+    <Langres>
+      <LangKey>POSERR.302</LangKey>
+      <LangCHT>302 黑名單已過期，請重新登入</LangCHT>
+      <LangEN>302 黑名單已過期，請重新登入</LangEN>
+    </Langres>
+    <Langres>
+      <LangKey>POSERR.303</LangKey>
+      <LangCHT>303 請技術人員檢查網絡連接</LangCHT>
+      <LangEN>303 請技術人員檢查網絡連接</LangEN>
+    </Langres>
+    <Langres>
+      <LangKey>POSERR.304</LangKey>
+      <LangCHT>304 請技術人員檢查網絡連接</LangCHT>
+      <LangEN>304 請技術人員檢查網絡連接</LangEN>
+    </Langres>
+    <Langres>
+      <LangKey>POSERR.305</LangKey>
+      <LangCHT>305 請重新登錄機器</LangCHT>
+      <LangEN>305 請重新登錄機器</LangEN>
+    </Langres>
+    <Langres>
+      <LangKey>POSERR.306</LangKey>
+      <LangCHT>306 請技術人員檢查網絡連接</LangCHT>
+      <LangEN>306 請技術人員檢查網絡連接</LangEN>
+    </Langres>
+    <Langres>
+      <LangKey>POSERR.401</LangKey>
+      <LangCHT>401 未能成功結算銀聯交易</LangCHT>
+      <LangEN>401 未能成功結算銀聯交易</LangEN>
+    </Langres>
+    <Langres>
+      <LangKey>POSERR.402</LangKey>
+      <LangCHT>402 未能成功結算澳門通交易</LangCHT>
+      <LangEN>402 未能成功結算澳門通交易</LangEN>
+    </Langres>
+    <Langres>
+      <LangKey>POSERR.403</LangKey>
+      <LangCHT>403 未能成功結算，請聯繫澳門通</LangCHT>
+      <LangEN>403 未能成功結算，請聯繫澳門通</LangEN>
+    </Langres>
+    <Langres>
+      <LangKey>POSERR.404</LangKey>
+      <LangCHT>404 請先結算</LangCHT>
+      <LangEN>404 請先結算</LangEN>
+    </Langres>
+
+    <Langres>
+      <LangKey>MacauPass.POSCom.Package.SaleBrifInfo.SaleTime</LangKey>
+      <LangCHT>交易時間</LangCHT>
+      <LangEN>SaleTime</LangEN>
+    </Langres>
+    <Langres>
+      <LangKey>MacauPass.POSCom.Package.SaleBrifInfo.TerminalID</LangKey>
+      <LangCHT>終端編號</LangCHT>
+      <LangEN>TerminalID</LangEN>
+    </Langres>
+    <Langres>
+      <LangKey>MacauPass.POSCom.Package.SaleBrifInfo.CardTransacionType</LangKey>
+      <LangCHT>交易類型</LangCHT>
+      <LangEN>CardTransacionType</LangEN>
+    </Langres>
+    <Langres>
+      <LangKey>MacauPass.POSCom.Package.SaleBrifInfo.TotalAMT</LangKey>
+      <LangCHT>交易金額</LangCHT>
+      <LangEN>TotalAMT</LangEN>
+    </Langres>
+    <Langres>
+      <LangKey>MacauPass.POSCom.Package.SaleBrifInfo.OragBalance</LangKey>
+      <LangCHT>餘額</LangCHT>
+      <LangEN>OragBalance</LangEN>
+    </Langres>
+
+  </LanguageResources>
+</LangResList>

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "iRyNIiGYs7I=",
+  "success": true,
+  "projectFilePath": "D:\\WEB\\CAR_MOD\\src\\CarPark.Device.SerialComm\\CarPark.Device.SerialComm.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\168v\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\168v\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net40\\1.0.3\\microsoft.netframework.referenceassemblies.net40.1.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

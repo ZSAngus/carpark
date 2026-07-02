@@ -1,0 +1,6 @@
+D:\WEB\CAR_MOD\output\N910POSDll.dll
+D:\WEB\CAR_MOD\src\N910POSDll\obj\x86\Release\N910POSDll.csproj.AssemblyReference.cache
+D:\WEB\CAR_MOD\src\N910POSDll\obj\x86\Release\N910POSDll.GeneratedMSBuildEditorConfig.editorconfig
+D:\WEB\CAR_MOD\src\N910POSDll\obj\x86\Release\N910POSDll.csproj.CoreCompileInputs.cache
+D:\WEB\CAR_MOD\src\N910POSDll\obj\x86\Release\N910POSDll.csproj.Up2Date
+D:\WEB\CAR_MOD\src\N910POSDll\obj\x86\Release\N910POSDll.dll

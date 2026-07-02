@@ -1,0 +1,228 @@
+2026-07-02 00:00:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:01:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:02:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:03:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:04:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:05:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:06:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:07:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:08:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:09:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:10:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:11:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:12:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:13:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:14:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:15:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:16:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:17:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:18:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:19:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:20:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:21:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:22:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:23:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:24:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:25:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:26:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:27:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:28:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:29:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:30:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:31:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:32:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:33:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:34:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:35:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:36:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:37:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:38:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:39:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:40:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:41:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:42:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:43:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:44:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:45:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:46:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:47:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:48:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:49:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:50:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:51:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:52:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:53:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:54:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:55:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:56:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:57:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:58:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 00:59:39 ERROR  CarPark2018.FormMain CarPark2018.FormMain.NewDelegate(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.NewDelegate() 
+2026-07-02 09:57:53 ERROR  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogError(:0) 未将对象引用设置到对象的实例。 
+2026-07-02 09:57:53 ERROR  CarPark2018.Device.CashierBusiness.Fee CarPark2018.Device.CashierBusiness.Fee.InitDevices(:0) System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   在 System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   在 System.Convert.ChangeType(Object value, Type conversionType)
+   在 CarPark2018.Device.CashierBusiness.Fee.getSettingVal[T](String index, String key)
+   在 CarPark2018.Device.CashierBusiness.Fee.initSetting(String JsonStr)
+   在 CarPark2018.Device.CashierBusiness.Fee.InitDevices() 
+2026-07-02 09:57:53 ERROR  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogError(:0) 未将对象引用设置到对象的实例。 
+2026-07-02 09:57:53 ERROR  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogError(:0) 未将对象引用设置到对象的实例。 
+2026-07-02 09:57:53 ERROR  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogError(:0) 未将对象引用设置到对象的实例。 
+2026-07-02 09:57:53 ERROR  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogError(:0) 未将对象引用设置到对象的实例。 
+2026-07-02 09:57:53 ERROR  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogError(:0) 未将对象引用设置到对象的实例。 
+2026-07-02 09:57:53 ERROR  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogError(:0) 未将对象引用设置到对象的实例。 
+2026-07-02 09:57:53 ERROR  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogError(:0) 未将对象引用设置到对象的实例。 
+2026-07-02 09:57:56 ERROR  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogError(:0) 未将对象引用设置到对象的实例。 
+2026-07-02 09:57:56 ERROR  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogError(:0) 未将对象引用设置到对象的实例。 
+2026-07-02 09:57:56 ERROR  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogError(:0) 未将对象引用设置到对象的实例。 
+2026-07-02 09:57:56 ERROR  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogError(:0) 未将对象引用设置到对象的实例。 
+2026-07-02 09:57:59 ERROR  CarPark2018.FormMain CarPark2018.FormMain.<FormMain_Load>b__107_0(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.<FormMain_Load>b__107_0(Object <p0>) 
+2026-07-02 10:13:33 ERROR  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogError(:0) 未将对象引用设置到对象的实例。 
+2026-07-02 10:13:33 ERROR  CarPark2018.Device.CashierBusiness.Fee CarPark2018.Device.CashierBusiness.Fee.InitDevices(:0) System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   在 System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   在 System.Convert.ChangeType(Object value, Type conversionType)
+   在 CarPark2018.Device.CashierBusiness.Fee.getSettingVal[T](String index, String key)
+   在 CarPark2018.Device.CashierBusiness.Fee.initSetting(String JsonStr)
+   在 CarPark2018.Device.CashierBusiness.Fee.InitDevices() 
+2026-07-02 10:13:33 ERROR  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogError(:0) 未将对象引用设置到对象的实例。 
+2026-07-02 10:13:33 ERROR  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogError(:0) 未将对象引用设置到对象的实例。 
+2026-07-02 10:13:33 ERROR  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogError(:0) 未将对象引用设置到对象的实例。 
+2026-07-02 10:13:34 ERROR  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogError(:0) 未将对象引用设置到对象的实例。 
+2026-07-02 10:13:34 ERROR  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogError(:0) 未将对象引用设置到对象的实例。 
+2026-07-02 10:13:34 ERROR  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogError(:0) 未将对象引用设置到对象的实例。 
+2026-07-02 10:13:34 ERROR  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogError(:0) 未将对象引用设置到对象的实例。 
+2026-07-02 10:13:36 ERROR  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogError(:0) 未将对象引用设置到对象的实例。 
+2026-07-02 10:13:36 ERROR  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogError(:0) 未将对象引用设置到对象的实例。 
+2026-07-02 10:13:36 ERROR  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogError(:0) 未将对象引用设置到对象的实例。 
+2026-07-02 10:13:36 ERROR  CarPark2018.CashierServiceCallBack CarPark2018.CashierServiceCallBack.LogError(:0) 未将对象引用设置到对象的实例。 
+2026-07-02 10:13:38 ERROR  CarPark2018.FormMain CarPark2018.FormMain.<FormMain_Load>b__107_0(:0) System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CarPark2018.Device.CashierBusiness.Fee.Logon()
+   在 CarPark2018.FormMain.<FormMain_Load>b__107_0(Object <p0>) 

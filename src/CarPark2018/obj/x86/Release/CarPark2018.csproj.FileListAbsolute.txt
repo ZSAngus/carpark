@@ -1,0 +1,10 @@
+D:\WEB\CAR_MOD\output\CarPark2018.exe.config
+D:\WEB\CAR_MOD\output\CarPark2018.exe
+D:\WEB\CAR_MOD\src\CarPark2018\obj\x86\Release\CarPark2018.csproj.AssemblyReference.cache
+D:\WEB\CAR_MOD\src\CarPark2018\obj\x86\Release\CarPark2018.Properties.Resources.resources
+D:\WEB\CAR_MOD\src\CarPark2018\obj\x86\Release\CarPark2018.csproj.GenerateResource.cache
+D:\WEB\CAR_MOD\src\CarPark2018\obj\x86\Release\CarPark2018.GeneratedMSBuildEditorConfig.editorconfig
+D:\WEB\CAR_MOD\src\CarPark2018\obj\x86\Release\CarPark2018.csproj.CoreCompileInputs.cache
+D:\WEB\CAR_MOD\src\CarPark2018\obj\x86\Release\CarPark2.47CF2038.Up2Date
+D:\WEB\CAR_MOD\src\CarPark2018\obj\x86\Release\CarPark2018.exe
+D:\WEB\CAR_MOD\src\CarPark2018\obj\x86\Release\CarPark2018.exe.config

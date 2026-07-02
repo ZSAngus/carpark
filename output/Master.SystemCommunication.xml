@@ -1,0 +1,798 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Master.SystemCommunication</name>
+    </assembly>
+    <members>
+        <member name="T:Master.SystemCommunication.Carpark.LocalService.ICarparkStatusService">
+            <summary>
+            发布车场状态
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Carpark.LocalService.ICarparkStatusServiceCallBack">
+            <summary>
+            车场状态回调
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.BaseFunc.ILongConnectionCallBack">
+            <summary>
+            長連回調
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Carpark.LocalService.IParkingSpacesEventCallback">
+            <summary>
+            車位回調
+            </summary>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.IParkingSpacesEventCallback.ParkingSpacesChangeNotice(CarPark.DB.ParkAreaExtend)">
+            <summary>
+            車位改變通知
+            </summary>
+            <param name="parkAreaExtend"></param>
+        </member>
+        <member name="T:Master.SystemCommunication.Carpark.LocalService.IGateStatusEventCallback">
+            <summary>
+            閘機設備狀態改變
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Carpark.LocalService.ISystemEventCallback">
+            <summary>
+            系統通知
+            </summary>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.ISystemEventCallback.SystemNotice(Master.SystemCommunication.Lib.NoticeArgs)">
+            <summary>
+            系統消息通知
+            </summary>
+            <param name="noticeArgs"></param>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.ISystemEventCallback.PassTraceChange(CarPark.DB.PassTrace)">
+            <summary>
+            車輛出入事件
+            </summary>
+            <param name="passTrace"></param>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.ISystemEventCallback.ServerStatusChange(Master.SystemCommunication.Lib.ServerStatusChangeArgs)">
+            <summary>
+            數據庫狀態改變
+            </summary>
+            <param name="serverStatusChangeArgs"></param>
+        </member>
+        <member name="T:Master.SystemCommunication.Carpark.LocalService.CarparkStatusServiceProxy">
+            <summary>
+            车场状态
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Carpark.LocalService.CarparkStatusServiceContext`1">
+             <summary>
+            车场状态上下文
+             </summary>
+             <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:Master.SystemCommunication.CarparkCloud.IMCCloudService">
+            <summary>
+            車場雲後臺接口
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Carpark.LocalService.ILPRSData">
+            <summary>
+            車牌流程接口
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Carpark.LocalService.IGateCallBack">
+            <summary>
+            閘機回調
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Carpark.LocalService.IGateEventCallBack">
+            <summary>
+            閘機事件通知
+            </summary>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.IGateEventCallBack.ParkingSpacesChangeNotice(Master.SystemCommunication.Lib.ParkingSpacesChangeNoticeArgs)">
+            <summary>
+            車位改變
+            </summary>
+            <param name="parkingSpacesChangeNoticeArgs"></param>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.IGateEventCallBack.SystemNotice(Master.SystemCommunication.Lib.NoticeArgs)">
+            <summary>
+            系統通知
+            </summary>
+            <param name="noticeArgs"></param>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.IGateCallBack.ManualChange(Master.SystemCommunication.Lib.ManualChangeArgs)">
+            <summary>
+            手動滿字
+            </summary>       
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.IGateCallBack.ManualUpBar(Master.SystemCommunication.Lib.ManualUpBarArgs)">
+            <summary>
+            人手起閘
+            </summary>
+            <param name="gateID"></param>
+            <param name="systemName">系統名稱</param>
+            <param name="userName">用戶code</param>
+            <returns></returns>
+        </member>
+        <member name="T:Master.SystemCommunication.APSInterface.IAPSMXtraService">
+            <summary>
+            aps監測系統接口
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Carpark.LocalService.IDisability">
+            <summary>
+            傷殘接口
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.RFIDInterface.IRFIDControlContext`1">
+            <summary>
+            車場閘機服務
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:Master.SystemCommunication.LPRSInterface.ILPRSService">
+            <summary>
+            車牌識別通信接口
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Carpark.LocalService.ICarpark2018">
+            <summary>
+            2018版車場接口
+            時租、月租、銀聯、澳門通
+            Roger Zhang20171215
+            </summary>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.ICarpark2018.GetOfflineCard(Master.SystemCommunication.Lib.GetOfflineCardArgs)">
+            <summary>
+            獲取月租卡信息，用於離線通行
+            </summary>
+            <param name="getOfflineCardArgs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.ICarpark2018.PackMPassTransactionData(Master.SystemCommunication.Lib.PackMPassTransactionDataArgs,CarPark.DB.MPass_Gate_Transaction_SIStrings)">
+            <summary>
+            保存澳门通打包数据, ReaderNo
+            </summary>          SIString
+            <param name="packMPassTransactionDataArgs"></param>
+            <param name="mPass_Gate_Transaction_SIStrings"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.ICarpark2018.UpdatePassTraceOpenGate(System.Int32)">
+            <summary>
+            更新开闸状态
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.ICarpark2018.UpdateLicensePlate_PassTrace(Master.SystemCommunication.Lib.UpdateLicensePlate_PassTraceArgs)">
+            <summary>
+            更新车牌表信息
+            </summary>
+            <param name="updateLicensePlate_PassTraceArgs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.ICarpark2018.SavePassTrace(CarPark.DB.PassTrace)">
+            <summary>
+            保存通过轨迹
+            </summary>
+            <param name="passTrace"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.ICarpark2018.GetSynTime">
+            <summary>
+            取服務器時間
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.ICarpark2018.SaveUpBarrierCount(Master.SystemCommunication.Lib.SaveUpBarrierCountArgs)">
+            <summary>
+            保存起杆次數
+            </summary>
+            <param name="saveUpBarrierCountArgs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.ICarpark2018.EnterTicket(Master.SystemCommunication.Lib.EnterTicketArgs,CarPark.Core.EnumParkType)">
+            <summary>
+            時租入口
+            </summary>
+            <param name="enterTicketArgs"></param>
+            <param name="parkType"></param>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.ICarpark2018.EnterMonth(Master.SystemCommunication.Lib.EnterMonthArgs,CarPark.Core.EnumParkType)">
+            <summary>
+            月租入口
+            </summary>
+            <param name="enterMonthArgs"></param>
+            <param name="parkType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.ICarpark2018.EnterMPass(Master.SystemCommunication.Lib.EnterMPassArgs,CarPark.Core.EnumParkType,CarPark.DB.MPass_Gate_Transaction)">
+            <summary>
+            澳門通入口
+            </summary>
+            <param name="enterMPassArgs"></param>
+            <param name="parkType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.ICarpark2018.EnterQPass(Master.SystemCommunication.Lib.EnterQPassArgs,CarPark.Core.EnumParkType,CarPark.DB.BOC_Gate_TransactionExtend)">
+             <summary>
+            銀聯入口
+             </summary>
+             <param name="enterQPassArgs"></param>
+             <param name="parkType"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.ICarpark2018.ExitTicket(Master.SystemCommunication.Lib.ExitTicketArgs,CarPark.Core.EnumParkType)">
+            <summary>
+            时租出口
+            </summary>
+            <param name="exitTicketArgs"></param>
+            <param name="parkType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.ICarpark2018.ExitMonth(Master.SystemCommunication.Lib.ExitMonthArgs,CarPark.Core.EnumParkType)">
+            <summary>
+            月租出口
+            </summary>
+            <param name="exitMonthArgs"></param>
+            <param name="parkType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.ICarpark2018.ExitMPassCalcCheck(Master.SystemCommunication.Lib.ExitMPassCalcCheckArgs,CarPark.Core.EnumParkType,CarPark.DB.ChargeRecord@)">
+            <summary>
+            出口澳门通校验并计算费用
+            </summary>
+            <param name="exitMPassCalcCheckArgs"></param>
+            <param name="parkType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.ICarpark2018.ExitMPassSave(Master.SystemCommunication.Lib.ExitMPassSaveArgs,CarPark.Core.EnumParkType,CarPark.DB.ChargeRecord,CarPark.DB.MPass_Gate_Transaction)">
+            <summary>
+            出口澳门通保存扣值结果
+            </summary>
+            <param name="exitMPassSaveArgs"></param>
+            <param name="parkType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.ICarpark2018.ExitQPassCalcCheck(Master.SystemCommunication.Lib.ExitQPassCalcCheckArgs,CarPark.Core.EnumParkType,CarPark.DB.ChargeRecord@)">
+            <summary>
+            出口校验闪付并计算收费用
+            </summary>
+            <param name="exitQPasssCalcCheckArgs"></param>
+            <param name="parkType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.ICarpark2018.ExitQPassSave(Master.SystemCommunication.Lib.ExitQPassSaveArgs,CarPark.Core.EnumParkType,CarPark.DB.ChargeRecord,CarPark.DB.BOC_Gate_TransactionExtend)">
+            <summary>
+            出口闪付保存扣值结果
+            </summary>
+            <param name="exitQPasssSaveArgs"></param>
+            <param name="parkType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.ICarpark2018.EnterLicensePlate(Master.SystemCommunication.Lib.EnterLicensePlateArgs,CarPark.Core.EnumParkType)">
+            <summary>
+            入口檢測到車牌
+            </summary>
+            <param name="enterLicensePlateArgs"></param>
+            <param name="parkType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.ICarpark2018.ExitLicensePlate(Master.SystemCommunication.Lib.ExitLicensePlateArgs,CarPark.Core.EnumParkType)">
+            <summary>
+             出口檢測到車牌
+            </summary>
+            <param name="exitLicensePlateArgs"></param>
+            <param name="parkType"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Master.SystemCommunication.Carpark.LocalService.IReceiptData">
+            <summary>
+            收據打印接口
+            </summary>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.IGateService2018.GetParkGate(Master.SystemCommunication.Lib.GetParkGateArgs,CarPark.DB.ParkGate@)">
+            <summary>
+            取閘機信息
+            </summary>
+            <param name="getParkGateArgs"></param>
+            <param name="parkAreaExtends"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.IGateService2018CallBack.ManualChange(Master.SystemCommunication.Lib.ManualChangeArgs)">
+            <summary>
+            手動滿字
+            </summary>       
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.IGateService2018CallBack.ManualUpBar(Master.SystemCommunication.Lib.ManualUpBarArgs)">
+            <summary>
+            人手起閘
+            </summary>
+            <param name="gateID"></param>
+            <param name="systemName">系統名稱</param>
+            <param name="userName">用戶code</param>
+            <returns></returns>
+        </member>
+        <member name="T:Master.SystemCommunication.Carpark.LocalService.ICashierService">
+            <summary>
+            收費處接口
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Carpark.LocalService.IFee">
+            <summary>
+            收費系統接口定義
+            </summary>     
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.IFee.ManualUpBar(Master.SystemCommunication.Lib.ManualUpBarArgs)">
+            <summary>
+            人手起閘
+            </summary>
+            <param name="gateID"></param>
+            <param name="systemName">系統名稱</param>
+            <param name="userName">用戶code</param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.IFee.ManualChange(Master.SystemCommunication.Lib.ManualChangeArgs)">
+            <summary>
+            手動滿字
+            </summary>       
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.IFee.GetDeviceStatus">
+            <summary>
+            獲取閘機狀態
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.IFee.UpdateParkAreaExtend(Master.SystemCommunication.Lib.ParkAreaExtendArgs)">
+            <summary>
+            更改車位
+            </summary>
+            <param name="parkAreaExtendArgs"></param>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.IFee.RefreshSystem(System.Int32)">
+            <summary>
+            刷新系統
+            </summary>
+            <param name="parkAreaExtendArgs"></param>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.IFee.GetTransactionData(Master.SystemCommunication.Lib.GetTransactionDataArgs,CarPark.DB.TransactionData@)">
+            <summary>
+            取入場信息
+            </summary>
+            <param name="getTransactionDataArgs"></param>
+            <param name="transactionData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.IFee.CreateLost(Master.SystemCommunication.Lib.CreateLostArgs)">
+            <summary>
+            生成一個失票號
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.IFee.CalcTicketFee(Master.SystemCommunication.Lib.CalcTicketFeeArgs,CarPark.Core.EnumParkType,CarPark.Core.EnumBillType,CarPark.DB.ChargeRecord@)">
+            <summary>
+            計算收費
+            </summary>
+            <param name="calcTicketFeeArgs"></param>
+            <param name="chargeRecord"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.IFee.SaveChargeRecord(Master.SystemCommunication.Lib.SaveChargeRecordArgs,CarPark.Core.EnumParkType,CarPark.DB.ChargeRecord)">
+            <summary>
+            保存收費
+            </summary>
+            <param name="saveChargeRecordArgs"></param>
+            <param name="chargeRecord"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.IFee.GetCurrChargeRecord(Master.SystemCommunication.Lib.GetCurrChargeRecordArgs,System.Collections.Generic.List{CarPark.DB.ChargeRecord}@)">
+            <summary>
+            取當前收費記錄
+            </summary>
+            <param name="getCurrChargeRecordArgs"></param>
+            <param name="chargeRecords"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.IFee.EndCurrShiftRecord(Master.SystemCommunication.Lib.EndCurrShiftRecordArgs,CarPark.DB.ShiftRecord@)">
+            <summary>
+            結更
+            </summary>
+            <param name="endCurrShiftRecordArgs"></param>
+            <param name="shiftRecord">結更的數據</param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.IFee.GetFreeTypeAndFreeTenat(Master.SystemCommunication.Lib.GetFreeTypeAndFreeTenatArgs,System.Collections.Generic.List{CarPark.DB.CustomFreeType}@,System.Collections.Generic.List{CarPark.DB.CustomFreeTenat}@)">
+            <summary>
+            獲取免費商戶同類型
+            </summary>
+            <param name="getFreeTypeAndFreeTenatArgs"></param>
+            <param name="customFreeTypes"></param>
+            <param name="customFreeTenats"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.IFee.CashierLogin(Master.SystemCommunication.Lib.CashierLoginArgs,CarPark.DB.StaffInfo@,System.Collections.Generic.List{CarPark.DB.SysRole}@)">
+            <summary>
+            收費處登錄
+            </summary>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.IFee.UpdatePassword(Master.SystemCommunication.Lib.UpdatePasswordArgs)">
+            <summary>
+            修改密碼
+            </summary>
+            <param name="updatePasswordArgs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.IFee.GetInitInfo(Master.SystemCommunication.Lib.GetInitInfoArgs,System.Collections.Generic.List{CarPark.DB.CardType}@,System.Collections.Generic.List{CarPark.DB.StaffType}@,System.Collections.Generic.List{CarPark.DB.ParkGate}@,System.Collections.Generic.List{CarPark.DB.ParkArea}@,System.Collections.Generic.List{CarPark.DB.ParkAreaExtend}@,CarPark.DB.ShiftRecord@,CarPark.DB.CompanyInfo@)">
+            <summary>
+            取初始化信息
+            </summary>
+            <param name="getInitInfoArgs"></param>
+            <param name="CardTypes"></param>
+            <param name="StaffTypes"></param>
+            <param name="ParkGates"></param>
+            <param name="ParkAreas"></param>
+            <param name="ParkAreaExtends"></param>
+            <param name="shiftRecord"></param>
+            <param name="companyInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.IFee.GetParkAreaExtend(Master.SystemCommunication.Lib.GetParkAreaArgs,System.Collections.Generic.List{CarPark.DB.ParkAreaExtend}@,System.Collections.Generic.List{CarPark.DB.ParkArea}@)">
+            <summary>
+            取所有區域車位信息
+            </summary>
+            <param name="getParkAreaExtendArgs"></param>
+            <param name="parkAreaExtends"></param>
+            <param name="parkAreas"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.IFee.ModifyParkAreaExtend(Master.SystemCommunication.Lib.ModifyParkAreaExtendArgs,CarPark.DB.ParkAreaExtend)">
+            <summary>
+            更新車位信息
+            </summary>
+            <param name="updateParkAreaExtendArgs"></param>
+            <param name="parkAreaExtend"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.IFee.AddTimeCharge(Master.SystemCommunication.Lib.AddTimeChargeArgs,CarPark.DB.TimeCharge)">
+            <summary>
+            添加收費規則
+            </summary>
+            <param name="addTimeChargeArgs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.IFee.DeleteTimeCharge(Master.SystemCommunication.Lib.DeleteTimeChargeArgs,CarPark.DB.TimeCharge)">
+            <summary>
+            刪除收費規則
+            </summary>
+            <param name="deleteTimeChargeArgs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.IFee.UpdateTimeCharge(Master.SystemCommunication.Lib.UpdateTimeChargeArgs,CarPark.DB.TimeCharge,System.Collections.Generic.List{CarPark.DB.TimeChargeExt})">
+            <summary>
+            修改收費規則
+            </summary>
+            <param name="updateTimeChargeArgs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.IFee.GetTimeCharge(Master.SystemCommunication.Lib.GetTimeChargeArgs,System.Collections.Generic.List{CarPark.DB.TimeCharge}@,System.Collections.Generic.List{CarPark.DB.TimeChargeExt}@)">
+            <summary>
+            獲取所有收費規則
+            </summary>
+            <param name="getTimeChargeArgs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.IFee.TimeCompensationFare(Master.SystemCommunication.Lib.TimeCompensationFareArgs,CarPark.DB.TransactionData@)">
+            <summary>
+            補票操作
+            </summary>
+            <param name="timeCompensationFareArgs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.IFee.GetLastChargeRecord(Master.SystemCommunication.Lib.GetLastChargeRecordArgs,CarPark.DB.ChargeRecord@,CarPark.DB.MPass_POS_Transaction_Detail@,CarPark.DB.TransactionData@)">
+            <summary>
+            打印收據
+            </summary>
+            <param name="getLastChargeRecordArgs"></param>
+            <param name="chargeRecord"></param>
+            <param name="mPass_POS_Transaction_Detail"></param>
+            <param name="transactionData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.IFee.SaveVoidCharge(CarPark.DB.VoidCharge)">
+            <summary>
+            保存退優惠信息
+            </summary>
+            <param name="voidCharge"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.IFee.SaveElectronicChargeRecord(Master.SystemCommunication.Lib.SaveChargeRecordArgs,CarPark.Core.EnumParkType,CarPark.DB.ChargeRecord,CarPark.DB.MPass_POS_Transaction_Detail,CarPark.DB.BOC_Gate_TransactionExtend)">
+            <summary>
+            保存电子支付收費(保存收費)
+            </summary>
+            <param name="saveChargeRecordArgs"></param>
+            <param name="parkType"></param>
+            <param name="chargeRecord"></param>
+            <param name="mPass_POS_Transaction_Detail"></param>
+            <param name="bOC_Gate_TransactionExtend"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.IFee.SaveMPassCharge(Master.SystemCommunication.Lib.SaveMPassChargeArgs,CarPark.DB.ChargeRecord,CarPark.DB.MPass_POS_Transaction_Detail,CarPark.DB.BOC_Gate_TransactionExtend)">
+            <summary>
+            保存澳門通收費
+            收按金，收租金，更改卡有效期
+            </summary>
+            <param name="saveMPassChargeArgs"></param>
+            <param name="mPass_POS_Transaction_Detail"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Master.SystemCommunication.Carpark.LocalService.ILicensePlatePayment">
+            <summary>
+            車牌付接收費處接口
+            </summary>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.ILicensePlatePayment.CorrectLicensePlate(Master.SystemCommunication.Lib.CorrectLicensePlateArgs)">
+             <summary>
+            糾正車牌
+             </summary>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.ILicensePlatePayment.ManualEntryLicensePlate(Master.SystemCommunication.Lib.ManualEntryLicensePlateArgs,CarPark.Core.EnumParkType,CarPark.Core.EnumBillType)">
+            <summary>
+            補錄入場車牌
+            </summary>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.ILicensePlatePayment.CalcTicketFeeV2(Master.SystemCommunication.Lib.CalcTicketFeeArgsV2,CarPark.Core.EnumParkType,CarPark.Core.EnumBillType,CarPark.DB.ChargeRecord@)">
+            <summary>
+            計算收費2.0
+            </summary>
+            <param name="calcTicketFeeArgs"></param>
+            <param name="chargeRecord"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.ICashierService.SystemNotice(Master.SystemCommunication.Lib.NoticeArgs)">
+            <summary>
+            系統通知
+            </summary>
+            <param name="noticeArgs"></param>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.ICashierService.GetCardInfo(Master.SystemCommunication.Lib.GetCardInfoArgs,System.Collections.Generic.List{CarPark.DB.Card}@)">
+            <summary>
+            查月租卡信息
+            </summary>
+            <param name="getCardInfoArgs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.ICashierService.GetView_TransactionAndLP(Master.SystemCommunication.Lib.GetView_TransactionAndLPArgs,System.Collections.Generic.List{CarPark.DB.view_transactionandlp}@)">
+            <summary>
+            獲取在場車輛信息
+            </summary>
+            <param name="getView_TransactionAndLPArgs"></param>
+            <param name="_view_transactionandlp"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Master.SystemCommunication.Carpark.LocalService.ICashierServiceCallBack">
+            <summary>
+            收費處回調
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Carpark.LocalService.IFeeCallBack">
+            <summary>
+            收費系統回調
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Carpark.LocalService.ILicensePlatePaymentCallBack">
+            <summary>
+            車牌付回調
+            </summary>
+        </member>
+        <member name="M:Master.SystemCommunication.APSInterface.IAPSService.CalcCharge(Master.SystemCommunication.Lib.CalcChargeArgs)">
+            <summary>
+            計算收費
+            </summary>
+            <param name="calcChargeArgs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.APSInterface.IAPSService.CalcChargeByDiscount(Master.SystemCommunication.Lib.CalcChargeArgs,CarPark.DB.barsys_Discount)">
+            <summary>
+            有優惠
+            </summary>
+            <param name="calcChargeArgs"></param>
+            <param name="discount"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.APSInterface.IAPSService.SaveCharge(CarPark.DB.ChargeRecord,CarPark.DB.APS_TimeChargeRecord,CarPark.DB.barsys_Discount)">
+            <summary>
+            保存收費
+            </summary>
+            <param name="aps_TimeChargeRecord"></param>
+            <param name="discount"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.APSInterface.IAPSService.SaveChargeRecord(CarPark.DB.ChargeRecord,CarPark.DB.APS_TimeChargeRecord,CarPark.DB.CustomFreeRecord)">
+            <summary>
+            重新上傳收費
+            </summary>
+            <param name="aps_TimeChargeRecord"></param>
+            <param name="customFreeRecord"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.APSInterface.IAPSService.CheckBarsys_Discount(Master.SystemCommunication.Lib.CheckBarsys_DiscountArgs)">
+            <summary>
+            檢查優惠券是否有效
+            </summary>
+            <param name="checkBarsys_DiscountArgs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.APSInterface.IAPSService.GetListAPS_TimeChargeRecord(System.Int32)">
+            <summary>
+            Aps機站臺號
+            </summary>
+            <param name="StationID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.APSInterface.IAPSService.GetSerial(Master.SystemCommunication.Lib.GetSerialArgs)">
+            <summary>
+            取場號
+            </summary>
+            <param name="getSerialArgs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.APSInterface.IAPSService.EndShift(Master.SystemCommunication.Lib.EndShiftArgs)">
+            <summary>
+            轉更
+            </summary>
+            <param name="endShiftArgs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.APSInterface.IAPSService.GetSystemTime">
+             <summary>
+            取系統時間
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.APSInterface.IAPSService.EndShiftAPS_ShiftRecordDetailed(System.String)">
+            <summary>
+            取更次詳細信息
+            </summary>
+            <param name="shiftRecordID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.APSInterface.IAPSService.APS_CertificateUse(CarPark.DB.APS_CertificateUseRecord,System.String,System.Boolean)">
+            <summary>
+            憑證使用記錄
+            </summary>
+            <param name="aps_CertificateUseRecord"></param>
+            <param name="staffCode"></param>
+            <param name="isInsert"></param>
+        </member>
+        <member name="M:Master.SystemCommunication.APSInterface.IAPSService.GetApsSystemSetting">
+            <summary>
+            獲取aps系統參數
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="E:Master.SystemCommunication.BaseFunc.LongConnection.ClientLeavesEvent">
+            <summary>
+            客戶端斷線事件
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.LPRSInterface.ILPRSCallback">
+            <summary>
+            車牌識別回調
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Carpark.LocalService.IGateService">
+            <summary>
+            閘機服務
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Carpark.LocalService.ICarpark">
+            <summary>
+            車場普通時月租接口
+            </summary>
+        </member>
+        <member name="M:Master.SystemCommunication.Carpark.LocalService.IGateEvent.SystemNotice(Master.SystemCommunication.Lib.NoticeArgs)">
+            <summary>
+            系統通知
+            </summary>
+            <param name="noticeArgs"></param>
+        </member>
+        <member name="T:Master.SystemCommunication.RFIDInterface.IRFIDService">
+            <summary>
+            rfid服務
+            </summary>
+        </member>
+        <member name="M:Master.SystemCommunication.RFIDInterface.IRFIDService.ShowMessage(Master.SystemCommunication.Lib.ShowMessageArgs)">
+            <summary>
+            顯示屏顯示信息
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:Master.SystemCommunication.RFIDInterface.IRFIDService.Beep(Master.SystemCommunication.Lib.BeepArgs)">
+            <summary>
+            發出聲響
+            </summary>
+            <param name="second"></param>
+        </member>
+        <member name="M:Master.SystemCommunication.RFIDInterface.IRFIDService.GetTimeChargRemain(Master.SystemCommunication.Lib.GetTimeChargRemainArgs,CarPark.Core.EnumParkType)">
+            <summary>
+            車位數
+            </summary>
+            <param name="getTimeChargRemainArgs"></param>
+            <param name="parkType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.RFIDInterface.IRFIDService.GetParkAreaExtend">
+            <summary>
+            取車位詳細列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Master.SystemCommunication.RFIDInterface.IRFIDControlService">
+            <summary>
+            RFID控制，讀
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Carpark.LocalService.CashierServiceProxy">
+            <summary>
+            收費代理
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Carpark.LocalService.CashierServiceContext`1">
+             <summary>
+            收費處上下文
+             </summary>
+             <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:Master.SystemCommunication.Carpark.LocalService.IGateService2018Context`1">
+            <summary>
+            車場閘機服務
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:Master.SystemCommunication.Carpark.LocalService.ChargeContext">
+            <summary>
+            收費上下文
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.Carpark.LocalService.GateSingleChannelContext">
+            <summary>
+            閘機單向服務
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.PrintInterface.CouponPrintProxy">
+            <summary>
+            優惠券打印服務協議
+            Roger Zhang
+            20180413
+            </summary>
+        </member>
+        <member name="T:Master.SystemCommunication.PrintInterface.ICouponPrintService">
+            <summary>
+            優惠券打印服務
+            Roger Zhang
+            20180413
+            </summary>
+        </member>
+        <member name="M:Master.SystemCommunication.PrintInterface.ICouponPrintService.PrintCoupon(Master.SystemCommunication.Lib.PrintCouponArgs)">
+            <summary>
+            打印一張優惠券
+            </summary>
+            <param name="printCouponArgs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Master.SystemCommunication.PrintInterface.ICouponPrintService.PrintCouponList(System.Collections.Generic.List{Master.SystemCommunication.Lib.PrintCouponArgs})">
+            <summary>
+            打印多張優惠券
+            </summary>
+            <param name="printCouponArgs"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Master.SystemCommunication.PrintInterface.CouponPrintContext">
+            <summary>
+            優惠券打印服務上下文
+            Roger Zhang
+            20180413
+            </summary>
+        </member>
+    </members>
+</doc>

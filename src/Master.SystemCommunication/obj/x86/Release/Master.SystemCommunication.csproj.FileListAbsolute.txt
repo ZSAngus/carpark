@@ -1,0 +1,6 @@
+D:\WEB\CAR_MOD\output\Master.SystemCommunication.dll
+D:\WEB\CAR_MOD\src\Master.SystemCommunication\obj\x86\Release\Master.SystemCommunication.csproj.AssemblyReference.cache
+D:\WEB\CAR_MOD\src\Master.SystemCommunication\obj\x86\Release\Master.SystemCommunication.GeneratedMSBuildEditorConfig.editorconfig
+D:\WEB\CAR_MOD\src\Master.SystemCommunication\obj\x86\Release\Master.SystemCommunication.csproj.CoreCompileInputs.cache
+D:\WEB\CAR_MOD\src\Master.SystemCommunication\obj\x86\Release\Master.S.993D3EC3.Up2Date
+D:\WEB\CAR_MOD\src\Master.SystemCommunication\obj\x86\Release\Master.SystemCommunication.dll

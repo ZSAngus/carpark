@@ -1,0 +1,6 @@
+D:\WEB\CAR_MOD\output\CarPark.Device.dll
+D:\WEB\CAR_MOD\src\CarPark.Device\obj\x86\Release\CarPark.Device.csproj.AssemblyReference.cache
+D:\WEB\CAR_MOD\src\CarPark.Device\obj\x86\Release\CarPark.Device.GeneratedMSBuildEditorConfig.editorconfig
+D:\WEB\CAR_MOD\src\CarPark.Device\obj\x86\Release\CarPark.Device.csproj.CoreCompileInputs.cache
+D:\WEB\CAR_MOD\src\CarPark.Device\obj\x86\Release\CarPark..0BE255C3.Up2Date
+D:\WEB\CAR_MOD\src\CarPark.Device\obj\x86\Release\CarPark.Device.dll

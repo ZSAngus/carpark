@@ -1,0 +1,1640 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CarParkDBStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="AD_ExtCardExpiryDate">
+      <EntityTypeMapping TypeName="CarPark.DB.AD_ExtCardExpiryDate">
+        <MappingFragment StoreEntitySet="AD_ExtCardExpiryDate">
+          <ScalarProperty Name="ReturnValue" ColumnName="ReturnValue" />
+          <ScalarProperty Name="Error_msg" ColumnName="Error_msg" />
+          <ScalarProperty Name="Add_date" ColumnName="Add_date" />
+          <ScalarProperty Name="Add_user" ColumnName="Add_user" />
+          <ScalarProperty Name="New_validation_date" ColumnName="New_validation_date" />
+          <ScalarProperty Name="New_acctivation_date" ColumnName="New_acctivation_date" />
+          <ScalarProperty Name="Txn_location" ColumnName="Txn_location" />
+          <ScalarProperty Name="Txn_date" ColumnName="Txn_date" />
+          <ScalarProperty Name="Terminal_ID" ColumnName="Terminal_ID" />
+          <ScalarProperty Name="Pay_type" ColumnName="Pay_type" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Card_no" ColumnName="Card_no" />
+          <ScalarProperty Name="Holder_ID" ColumnName="Holder_ID" />
+          <ScalarProperty Name="AutoID" ColumnName="AutoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AD_SCSCP_CARD_DATA">
+      <EntityTypeMapping TypeName="CarPark.DB.AD_SCSCP_CARD_DATA">
+        <MappingFragment StoreEntitySet="AD_SCSCP_CARD_DATA">
+          <ScalarProperty Name="Last_modify_time" ColumnName="Last_modify_time" />
+          <ScalarProperty Name="CARD_STATUS" ColumnName="CARD_STATUS" />
+          <ScalarProperty Name="CARD_EFFECTIVE_DATE" ColumnName="CARD_EFFECTIVE_DATE" />
+          <ScalarProperty Name="CARD_SERIAL_NO" ColumnName="CARD_SERIAL_NO" />
+          <ScalarProperty Name="REFERENCE_UNIT" ColumnName="REFERENCE_UNIT" />
+          <ScalarProperty Name="HOLDER_STATUS" ColumnName="HOLDER_STATUS" />
+          <ScalarProperty Name="HOLDER_NAME_CH" ColumnName="HOLDER_NAME_CH" />
+          <ScalarProperty Name="HOLDER_NAME" ColumnName="HOLDER_NAME" />
+          <ScalarProperty Name="HOLDER_TYPE" ColumnName="HOLDER_TYPE" />
+          <ScalarProperty Name="FULL_HOLDER_ID" ColumnName="FULL_HOLDER_ID" />
+          <ScalarProperty Name="HOLDER_ID" ColumnName="HOLDER_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AdminCharge">
+      <EntityTypeMapping TypeName="CarPark.DB.AdminCharge">
+        <MappingFragment StoreEntitySet="AdminCharge">
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CreateStaffCode" ColumnName="CreateStaffCode" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="CardID" ColumnName="CardID" />
+          <ScalarProperty Name="CustomID" ColumnName="CustomID" />
+          <ScalarProperty Name="ChargeTime" ColumnName="ChargeTime" />
+          <ScalarProperty Name="BillTypeID" ColumnName="BillTypeID" />
+          <ScalarProperty Name="ChargeAmount" ColumnName="ChargeAmount" />
+          <ScalarProperty Name="ChargeTypeID" ColumnName="ChargeTypeID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AppSetting">
+      <EntityTypeMapping TypeName="CarPark.DB.AppSetting">
+        <MappingFragment StoreEntitySet="AppSetting">
+          <ScalarProperty Name="SettingString" ColumnName="SettingString" />
+          <ScalarProperty Name="OnlyID" ColumnName="OnlyID" />
+          <ScalarProperty Name="AppTypeID" ColumnName="AppTypeID" />
+          <ScalarProperty Name="AreaID" ColumnName="AreaID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="APS_Alarm">
+      <EntityTypeMapping TypeName="CarPark.DB.APS_Alarm">
+        <MappingFragment StoreEntitySet="APS_Alarm">
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="APSReactionPT" ColumnName="APSReactionPT" />
+          <ScalarProperty Name="APSReactionCN" ColumnName="APSReactionCN" />
+          <ScalarProperty Name="NamePT" ColumnName="NamePT" />
+          <ScalarProperty Name="NameCN" ColumnName="NameCN" />
+          <ScalarProperty Name="AlarmCode" ColumnName="AlarmCode" />
+          <ScalarProperty Name="AlarmID" ColumnName="AlarmID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="APS_CashBoxAcceptor">
+      <EntityTypeMapping TypeName="CarPark.DB.APS_CashBoxAcceptor">
+        <MappingFragment StoreEntitySet="APS_CashBoxAcceptor">
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="ExistQty" ColumnName="ExistQty" />
+          <ScalarProperty Name="CurrencyValue" ColumnName="CurrencyValue" />
+          <ScalarProperty Name="CurrencyID" ColumnName="CurrencyID" />
+          <ScalarProperty Name="CashBoxTypeID" ColumnName="CashBoxTypeID" />
+          <ScalarProperty Name="CashBoxID" ColumnName="CashBoxID" />
+          <ScalarProperty Name="StationID" ColumnName="StationID" />
+          <ScalarProperty Name="CashBoxAcceptorID" ColumnName="CashBoxAcceptorID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="APS_CashBoxDispenser">
+      <EntityTypeMapping TypeName="CarPark.DB.APS_CashBoxDispenser">
+        <MappingFragment StoreEntitySet="APS_CashBoxDispenser">
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="ForceChange" ColumnName="ForceChange" />
+          <ScalarProperty Name="ResetQty" ColumnName="ResetQty" />
+          <ScalarProperty Name="LowlevelQty" ColumnName="LowlevelQty" />
+          <ScalarProperty Name="RemainQty" ColumnName="RemainQty" />
+          <ScalarProperty Name="CurrencyValue" ColumnName="CurrencyValue" />
+          <ScalarProperty Name="CurrencyID" ColumnName="CurrencyID" />
+          <ScalarProperty Name="CashBoxTypeID" ColumnName="CashBoxTypeID" />
+          <ScalarProperty Name="CashBoxID" ColumnName="CashBoxID" />
+          <ScalarProperty Name="StationID" ColumnName="StationID" />
+          <ScalarProperty Name="CashBoxDispenserID" ColumnName="CashBoxDispenserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="APS_CashBoxType">
+      <EntityTypeMapping TypeName="CarPark.DB.APS_CashBoxType">
+        <MappingFragment StoreEntitySet="APS_CashBoxType">
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="DetectStatus" ColumnName="DetectStatus" />
+          <ScalarProperty Name="AcceptWarningQty" ColumnName="AcceptWarningQty" />
+          <ScalarProperty Name="AcceptorQty" ColumnName="AcceptorQty" />
+          <ScalarProperty Name="IsBanknote" ColumnName="IsBanknote" />
+          <ScalarProperty Name="IsAcceprot" ColumnName="IsAcceprot" />
+          <ScalarProperty Name="CashBoxNamePT" ColumnName="CashBoxNamePT" />
+          <ScalarProperty Name="CashBoxNameCN" ColumnName="CashBoxNameCN" />
+          <ScalarProperty Name="CashBoxTypeID" ColumnName="CashBoxTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="APS_Certificate">
+      <EntityTypeMapping TypeName="CarPark.DB.APS_Certificate">
+        <MappingFragment StoreEntitySet="APS_Certificate">
+          <ScalarProperty Name="CancelStaffName" ColumnName="CancelStaffName" />
+          <ScalarProperty Name="CancelTime" ColumnName="CancelTime" />
+          <ScalarProperty Name="IsCancel" ColumnName="IsCancel" />
+          <ScalarProperty Name="PrintCount" ColumnName="PrintCount" />
+          <ScalarProperty Name="LastPrintTime" ColumnName="LastPrintTime" />
+          <ScalarProperty Name="LastUsedTime" ColumnName="LastUsedTime" />
+          <ScalarProperty Name="LastUpdateTime" ColumnName="LastUpdateTime" />
+          <ScalarProperty Name="ExpireDate" ColumnName="ExpireDate" />
+          <ScalarProperty Name="Barcode" ColumnName="Barcode" />
+          <ScalarProperty Name="CreateStaffCode" ColumnName="CreateStaffCode" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="ServiceTimeEnd" ColumnName="ServiceTimeEnd" />
+          <ScalarProperty Name="ServiceTimeStart" ColumnName="ServiceTimeStart" />
+          <ScalarProperty Name="StaffType" ColumnName="StaffType" />
+          <ScalarProperty Name="UsageMode" ColumnName="UsageMode" />
+          <ScalarProperty Name="CertificateType" ColumnName="CertificateType" />
+          <ScalarProperty Name="CertificateCode" ColumnName="CertificateCode" />
+          <ScalarProperty Name="CertificateID" ColumnName="CertificateID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="APS_CertificateType">
+      <EntityTypeMapping TypeName="CarPark.DB.APS_CertificateType">
+        <MappingFragment StoreEntitySet="APS_CertificateType">
+          <ScalarProperty Name="IsCancel" ColumnName="IsCancel" />
+          <ScalarProperty Name="Enable" ColumnName="Enable" />
+          <ScalarProperty Name="ServiceTimeEnd" ColumnName="ServiceTimeEnd" />
+          <ScalarProperty Name="ServiceTimeStart" ColumnName="ServiceTimeStart" />
+          <ScalarProperty Name="Period" ColumnName="Period" />
+          <ScalarProperty Name="CertificateNamePt" ColumnName="CertificateNamePt" />
+          <ScalarProperty Name="CertificateNameCn" ColumnName="CertificateNameCn" />
+          <ScalarProperty Name="CertificateTypeID" ColumnName="CertificateTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="APS_CertificateUseRecord">
+      <EntityTypeMapping TypeName="CarPark.DB.APS_CertificateUseRecord">
+        <MappingFragment StoreEntitySet="APS_CertificateUseRecord">
+          <ScalarProperty Name="IsInsert" ColumnName="IsInsert" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="StaffCode" ColumnName="StaffCode" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="CertificateType" ColumnName="CertificateType" />
+          <ScalarProperty Name="CertificateCode" ColumnName="CertificateCode" />
+          <ScalarProperty Name="CertificateID" ColumnName="CertificateID" />
+          <ScalarProperty Name="CertificateUseID" ColumnName="CertificateUseID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="APS_CouponSetting">
+      <EntityTypeMapping TypeName="CarPark.DB.APS_CouponSetting">
+        <MappingFragment StoreEntitySet="APS_CouponSetting">
+          <ScalarProperty Name="WarningQty" ColumnName="WarningQty" />
+          <ScalarProperty Name="ExistQty" ColumnName="ExistQty" />
+          <ScalarProperty Name="TrayQty" ColumnName="TrayQty" />
+          <ScalarProperty Name="StationID" ColumnName="StationID" />
+          <ScalarProperty Name="CouponSettingID" ColumnName="CouponSettingID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="APS_CurrencyInfo">
+      <EntityTypeMapping TypeName="CarPark.DB.APS_CurrencyInfo">
+        <MappingFragment StoreEntitySet="APS_CurrencyInfo">
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="NamePT" ColumnName="NamePT" />
+          <ScalarProperty Name="NameCN" ColumnName="NameCN" />
+          <ScalarProperty Name="Symbol" ColumnName="Symbol" />
+          <ScalarProperty Name="CurrencyInfoID" ColumnName="CurrencyInfoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="APS_FinishApsAcceptLog">
+      <EntityTypeMapping TypeName="CarPark.DB.APS_FinishApsAcceptLog">
+        <MappingFragment StoreEntitySet="APS_FinishApsAcceptLog">
+          <ScalarProperty Name="Malfunction" ColumnName="Malfunction" />
+          <ScalarProperty Name="CurrencyValue" ColumnName="CurrencyValue" />
+          <ScalarProperty Name="CurrencySymbol" ColumnName="CurrencySymbol" />
+          <ScalarProperty Name="CurrencyID" ColumnName="CurrencyID" />
+          <ScalarProperty Name="IsBanknote" ColumnName="IsBanknote" />
+          <ScalarProperty Name="CashBoxID" ColumnName="CashBoxID" />
+          <ScalarProperty Name="AcceptTime" ColumnName="AcceptTime" />
+          <ScalarProperty Name="TicketCode" ColumnName="TicketCode" />
+          <ScalarProperty Name="StationID" ColumnName="StationID" />
+          <ScalarProperty Name="FinishApsAcceptLogID" ColumnName="FinishApsAcceptLogID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="APS_FinishApsDispenseLog">
+      <EntityTypeMapping TypeName="CarPark.DB.APS_FinishApsDispenseLog">
+        <MappingFragment StoreEntitySet="APS_FinishApsDispenseLog">
+          <ScalarProperty Name="ReturnCount" ColumnName="ReturnCount" />
+          <ScalarProperty Name="LastUpdateTime" ColumnName="LastUpdateTime" />
+          <ScalarProperty Name="OutCount" ColumnName="OutCount" />
+          <ScalarProperty Name="OrderCount" ColumnName="OrderCount" />
+          <ScalarProperty Name="CurrencyValue" ColumnName="CurrencyValue" />
+          <ScalarProperty Name="CurrencySymbol" ColumnName="CurrencySymbol" />
+          <ScalarProperty Name="CurrencyID" ColumnName="CurrencyID" />
+          <ScalarProperty Name="IsBanknote" ColumnName="IsBanknote" />
+          <ScalarProperty Name="CashBoxID" ColumnName="CashBoxID" />
+          <ScalarProperty Name="DispenseTime" ColumnName="DispenseTime" />
+          <ScalarProperty Name="TicketCode" ColumnName="TicketCode" />
+          <ScalarProperty Name="StationID" ColumnName="StationID" />
+          <ScalarProperty Name="FinishApsDispenseLogID" ColumnName="FinishApsDispenseLogID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="APS_MxtraSyslog">
+      <EntityTypeMapping TypeName="CarPark.DB.APS_MxtraSyslog">
+        <MappingFragment StoreEntitySet="APS_MxtraSyslog">
+          <ScalarProperty Name="APS_AlarmCode" ColumnName="APS_AlarmCode" />
+          <ScalarProperty Name="LogType" ColumnName="LogType" />
+          <ScalarProperty Name="LogAPSID" ColumnName="LogAPSID" />
+          <ScalarProperty Name="LogKeyCode" ColumnName="LogKeyCode" />
+          <ScalarProperty Name="LogFuct" ColumnName="LogFuct" />
+          <ScalarProperty Name="LogPCName" ColumnName="LogPCName" />
+          <ScalarProperty Name="LogUName" ColumnName="LogUName" />
+          <ScalarProperty Name="LogDateTime" ColumnName="LogDateTime" />
+          <ScalarProperty Name="APSMxtraLogID" ColumnName="APSMxtraLogID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="APS_RedoTicket">
+      <EntityTypeMapping TypeName="CarPark.DB.APS_RedoTicket">
+        <MappingFragment StoreEntitySet="APS_RedoTicket">
+          <ScalarProperty Name="RedoType" ColumnName="RedoType" />
+          <ScalarProperty Name="APSID" ColumnName="APSID" />
+          <ScalarProperty Name="PCName" ColumnName="PCName" />
+          <ScalarProperty Name="StaffCode" ColumnName="StaffCode" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="TicketCode" ColumnName="TicketCode" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="APS_ShiftRecordDetailed">
+      <EntityTypeMapping TypeName="CarPark.DB.APS_ShiftRecordDetailed">
+        <MappingFragment StoreEntitySet="APS_ShiftRecordDetailed">
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="CurrencyValue" ColumnName="CurrencyValue" />
+          <ScalarProperty Name="ShiftID" ColumnName="ShiftID" />
+          <ScalarProperty Name="CashBoxTypeID" ColumnName="CashBoxTypeID" />
+          <ScalarProperty Name="APSID" ColumnName="APSID" />
+          <ScalarProperty Name="CurrencyID" ColumnName="CurrencyID" />
+          <ScalarProperty Name="ShiftRecord_ID" ColumnName="ShiftRecord_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="APS_Station">
+      <EntityTypeMapping TypeName="CarPark.DB.APS_Station">
+        <MappingFragment StoreEntitySet="APS_Station">
+          <ScalarProperty Name="PCName" ColumnName="PCName" />
+          <ScalarProperty Name="StationCode" ColumnName="StationCode" />
+          <ScalarProperty Name="StationNamePT" ColumnName="StationNamePT" />
+          <ScalarProperty Name="StationNameCN" ColumnName="StationNameCN" />
+          <ScalarProperty Name="APSStationID" ColumnName="APSStationID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="APS_Syslog">
+      <EntityTypeMapping TypeName="CarPark.DB.APS_Syslog">
+        <MappingFragment StoreEntitySet="APS_Syslog">
+          <ScalarProperty Name="APS_AlarmCode" ColumnName="APS_AlarmCode" />
+          <ScalarProperty Name="LogType" ColumnName="LogType" />
+          <ScalarProperty Name="LogAPSID" ColumnName="LogAPSID" />
+          <ScalarProperty Name="LogKeyCode" ColumnName="LogKeyCode" />
+          <ScalarProperty Name="LogFuct" ColumnName="LogFuct" />
+          <ScalarProperty Name="LogPCName" ColumnName="LogPCName" />
+          <ScalarProperty Name="LogUName" ColumnName="LogUName" />
+          <ScalarProperty Name="LogDateTime" ColumnName="LogDateTime" />
+          <ScalarProperty Name="APSLogID" ColumnName="APSLogID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="APS_SystemSetting">
+      <EntityTypeMapping TypeName="CarPark.DB.APS_SystemSetting">
+        <MappingFragment StoreEntitySet="APS_SystemSetting">
+          <ScalarProperty Name="WamingQty" ColumnName="WamingQty" />
+          <ScalarProperty Name="TrayQty" ColumnName="TrayQty" />
+          <ScalarProperty Name="CoinsDispenserResetQty" ColumnName="CoinsDispenserResetQty" />
+          <ScalarProperty Name="CoinsDispenserLowlevelQty" ColumnName="CoinsDispenserLowlevelQty" />
+          <ScalarProperty Name="BankNotesDispenserResetQty" ColumnName="BankNotesDispenserResetQty" />
+          <ScalarProperty Name="BankNotesDispenserLowlevelQty" ColumnName="BankNotesDispenserLowlevelQty" />
+          <ScalarProperty Name="CoinsAcceptorWamingQty" ColumnName="CoinsAcceptorWamingQty" />
+          <ScalarProperty Name="CoinsAcceptorQty" ColumnName="CoinsAcceptorQty" />
+          <ScalarProperty Name="BankNotesAcceptorWamingQty" ColumnName="BankNotesAcceptorWamingQty" />
+          <ScalarProperty Name="BankNotesAcceptorQty" ColumnName="BankNotesAcceptorQty" />
+          <ScalarProperty Name="CheckInterval" ColumnName="CheckInterval" />
+          <ScalarProperty Name="UpdateStatusTime" ColumnName="UpdateStatusTime" />
+          <ScalarProperty Name="UploadRecordTime" ColumnName="UploadRecordTime" />
+          <ScalarProperty Name="RepairWarnTime" ColumnName="RepairWarnTime" />
+          <ScalarProperty Name="RepairWaitTime" ColumnName="RepairWaitTime" />
+          <ScalarProperty Name="FinanceWarnTime" ColumnName="FinanceWarnTime" />
+          <ScalarProperty Name="FinanceWaitTime" ColumnName="FinanceWaitTime" />
+          <ScalarProperty Name="LoginWaitTime" ColumnName="LoginWaitTime" />
+          <ScalarProperty Name="FinishWaitTime" ColumnName="FinishWaitTime" />
+          <ScalarProperty Name="HourlyWaitTime" ColumnName="HourlyWaitTime" />
+          <ScalarProperty Name="MsgShowTime" ColumnName="MsgShowTime" />
+          <ScalarProperty Name="SettingID" ColumnName="SettingID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="APS_TimeChargeRecord">
+      <EntityTypeMapping TypeName="CarPark.DB.APS_TimeChargeRecord">
+        <MappingFragment StoreEntitySet="APS_TimeChargeRecord">
+          <ScalarProperty Name="FirstTime" ColumnName="FirstTime" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="BillType" ColumnName="BillType" />
+          <ScalarProperty Name="BufferTime" ColumnName="BufferTime" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="ShiftID" ColumnName="ShiftID" />
+          <ScalarProperty Name="StaffName" ColumnName="StaffName" />
+          <ScalarProperty Name="StaffID" ColumnName="StaffID" />
+          <ScalarProperty Name="IsAllFree" ColumnName="IsAllFree" />
+          <ScalarProperty Name="IsOverTime" ColumnName="IsOverTime" />
+          <ScalarProperty Name="IsDamage" ColumnName="IsDamage" />
+          <ScalarProperty Name="IsLost" ColumnName="IsLost" />
+          <ScalarProperty Name="OthChangeAmount" ColumnName="OthChangeAmount" />
+          <ScalarProperty Name="MOPChangeAmount" ColumnName="MOPChangeAmount" />
+          <ScalarProperty Name="HKDChangeAmount" ColumnName="HKDChangeAmount" />
+          <ScalarProperty Name="ChangeCurrencyString" ColumnName="ChangeCurrencyString" />
+          <ScalarProperty Name="PaidCurrencyString" ColumnName="PaidCurrencyString" />
+          <ScalarProperty Name="OthPaidAmoun" ColumnName="OthPaidAmoun" />
+          <ScalarProperty Name="MOPPaidAmount" ColumnName="MOPPaidAmount" />
+          <ScalarProperty Name="HKDPaidAmount" ColumnName="HKDPaidAmount" />
+          <ScalarProperty Name="FreeCharge" ColumnName="FreeCharge" />
+          <ScalarProperty Name="PenaltyAmount" ColumnName="PenaltyAmount" />
+          <ScalarProperty Name="ActualCharge" ColumnName="ActualCharge" />
+          <ScalarProperty Name="TotalCharge" ColumnName="TotalCharge" />
+          <ScalarProperty Name="ChargeMin" ColumnName="ChargeMin" />
+          <ScalarProperty Name="ChargeFreeMin" ColumnName="ChargeFreeMin" />
+          <ScalarProperty Name="OriginalFeeMin" ColumnName="OriginalFeeMin" />
+          <ScalarProperty Name="FeeTime" ColumnName="FeeTime" />
+          <ScalarProperty Name="InTime" ColumnName="InTime" />
+          <ScalarProperty Name="CouponCode" ColumnName="CouponCode" />
+          <ScalarProperty Name="CouponID" ColumnName="CouponID" />
+          <ScalarProperty Name="LicensePlate" ColumnName="LicensePlate" />
+          <ScalarProperty Name="ParkTypeID" ColumnName="ParkTypeID" />
+          <ScalarProperty Name="CardCode" ColumnName="CardCode" />
+          <ScalarProperty Name="CardID" ColumnName="CardID" />
+          <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+          <ScalarProperty Name="FromAPS" ColumnName="FromAPS" />
+          <ScalarProperty Name="StationID" ColumnName="StationID" />
+          <ScalarProperty Name="TimeChargeRecordID" ColumnName="TimeChargeRecordID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="barsys_Discount">
+      <EntityTypeMapping TypeName="CarPark.DB.barsys_Discount">
+        <MappingFragment StoreEntitySet="barsys_Discount">
+          <ScalarProperty Name="Licenseplate" ColumnName="Licenseplate" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="DiscountType" ColumnName="DiscountType" />
+          <ScalarProperty Name="CompHr" ColumnName="CompHr" />
+          <ScalarProperty Name="TotalTicketAmt" ColumnName="TotalTicketAmt" />
+          <ScalarProperty Name="TicketNo" ColumnName="TicketNo" />
+          <ScalarProperty Name="PrintState" ColumnName="PrintState" />
+          <ScalarProperty Name="carparkRemark" ColumnName="carparkRemark" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="CancellationStaff" ColumnName="CancellationStaff" />
+          <ScalarProperty Name="CancellationTime" ColumnName="CancellationTime" />
+          <ScalarProperty Name="PrintTime" ColumnName="PrintTime" />
+          <ScalarProperty Name="PrintStaff" ColumnName="PrintStaff" />
+          <ScalarProperty Name="PrintNumber" ColumnName="PrintNumber" />
+          <ScalarProperty Name="PrintFlag" ColumnName="PrintFlag" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="UseTime" ColumnName="UseTime" />
+          <ScalarProperty Name="ReductionTime" ColumnName="ReductionTime" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="DiscountBanks" ColumnName="DiscountBanks" />
+          <ScalarProperty Name="TenatID" ColumnName="TenatID" />
+          <ScalarProperty Name="CustomFreeTypeID" ColumnName="CustomFreeTypeID" />
+          <ScalarProperty Name="Discount_BatchID" ColumnName="Discount_BatchID" />
+          <ScalarProperty Name="DiscountID" ColumnName="DiscountID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="barsys_Discount_Batch">
+      <EntityTypeMapping TypeName="CarPark.DB.barsys_Discount_Batch">
+        <MappingFragment StoreEntitySet="barsys_Discount_Batch">
+          <ScalarProperty Name="DiscountType" ColumnName="DiscountType" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="IssTime" ColumnName="IssTime" />
+          <ScalarProperty Name="IssStaff" ColumnName="IssStaff" />
+          <ScalarProperty Name="FreeTime" ColumnName="FreeTime" />
+          <ScalarProperty Name="EndDiscount" ColumnName="EndDiscount" />
+          <ScalarProperty Name="StartDiscount" ColumnName="StartDiscount" />
+          <ScalarProperty Name="PrintAmount" ColumnName="PrintAmount" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="TenatID" ColumnName="TenatID" />
+          <ScalarProperty Name="DiscountID" ColumnName="DiscountID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="barsys_Discount_Record">
+      <EntityTypeMapping TypeName="CarPark.DB.barsys_Discount_Record">
+        <MappingFragment StoreEntitySet="barsys_Discount_Record">
+          <ScalarProperty Name="UseTime" ColumnName="UseTime" />
+          <ScalarProperty Name="TimeChargeID" ColumnName="TimeChargeID" />
+          <ScalarProperty Name="TicketNo" ColumnName="TicketNo" />
+          <ScalarProperty Name="DiscountID" ColumnName="DiscountID" />
+          <ScalarProperty Name="DiscountUsedID" ColumnName="DiscountUsedID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BatteryChargeRecord">
+      <EntityTypeMapping TypeName="CarPark.DB.BatteryChargeRecord">
+        <MappingFragment StoreEntitySet="BatteryChargeRecord">
+          <ScalarProperty Name="ParkID" ColumnName="ParkID" />
+          <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+          <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+          <ScalarProperty Name="Outtime" ColumnName="Outtime" />
+          <ScalarProperty Name="Intime" ColumnName="Intime" />
+          <ScalarProperty Name="Licenseplate" ColumnName="Licenseplate" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BlackList">
+      <EntityTypeMapping TypeName="CarPark.DB.BlackList">
+        <MappingFragment StoreEntitySet="BlackList">
+          <ScalarProperty Name="RecordDate" ColumnName="RecordDate" />
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+          <ScalarProperty Name="Context" ColumnName="Context" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="BID" ColumnName="BID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BOC_Gate_TransactionExtend">
+      <EntityTypeMapping TypeName="CarPark.DB.BOC_Gate_TransactionExtend">
+        <MappingFragment StoreEntitySet="BOC_Gate_TransactionExtend">
+          <ScalarProperty Name="ChargeTransactionID" ColumnName="ChargeTransactionID" />
+          <ScalarProperty Name="ISUploaded" ColumnName="ISUploaded" />
+          <ScalarProperty Name="TransactionTime" ColumnName="TransactionTime" />
+          <ScalarProperty Name="SysTransacionID" ColumnName="SysTransacionID" />
+          <ScalarProperty Name="FromGateID" ColumnName="FromGateID" />
+          <ScalarProperty Name="IsBlack" ColumnName="IsBlack" />
+          <ScalarProperty Name="Valid" ColumnName="Valid" />
+          <ScalarProperty Name="StaffInfo" ColumnName="StaffInfo" />
+          <ScalarProperty Name="CardReaderNumber" ColumnName="CardReaderNumber" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="EncryptedCardNumber" ColumnName="EncryptedCardNumber" />
+          <ScalarProperty Name="Purchase_FullData" ColumnName="Purchase_FullData" />
+          <ScalarProperty Name="OffLineRemain_RMB" ColumnName="OffLineRemain_RMB" />
+          <ScalarProperty Name="OffLineRemain_MOP" ColumnName="OffLineRemain_MOP" />
+          <ScalarProperty Name="BillAreaB" ColumnName="BillAreaB" />
+          <ScalarProperty Name="CardAppType" ColumnName="CardAppType" />
+          <ScalarProperty Name="CardPhyType" ColumnName="CardPhyType" />
+          <ScalarProperty Name="PURCHASE_CARD_State" ColumnName="PURCHASE_CARD_State" />
+          <ScalarProperty Name="REQUEST_CARD_State" ColumnName="REQUEST_CARD_State" />
+          <ScalarProperty Name="ErrorCode" ColumnName="ErrorCode" />
+          <ScalarProperty Name="ReplyCode" ColumnName="ReplyCode" />
+          <ScalarProperty Name="MD5" ColumnName="MD5" />
+          <ScalarProperty Name="AlternateData" ColumnName="AlternateData" />
+          <ScalarProperty Name="IC_Data" ColumnName="IC_Data" />
+          <ScalarProperty Name="ReceiverCode" ColumnName="ReceiverCode" />
+          <ScalarProperty Name="DeviceCode" ColumnName="DeviceCode" />
+          <ScalarProperty Name="LogicNo" ColumnName="LogicNo" />
+          <ScalarProperty Name="ServerCode" ColumnName="ServerCode" />
+          <ScalarProperty Name="BillTime" ColumnName="BillTime" />
+          <ScalarProperty Name="BillDate" ColumnName="BillDate" />
+          <ScalarProperty Name="TxnNo" ColumnName="TxnNo" />
+          <ScalarProperty Name="BillArea" ColumnName="BillArea" />
+          <ScalarProperty Name="CardNumber" ColumnName="CardNumber" />
+          <ScalarProperty Name="CardRemain" ColumnName="CardRemain" />
+          <ScalarProperty Name="CardBillAmount" ColumnName="CardBillAmount" />
+          <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BOC_Gate_TransactionExtend_PackData_File">
+      <EntityTypeMapping TypeName="CarPark.DB.BOC_Gate_TransactionExtend_PackData_File">
+        <MappingFragment StoreEntitySet="BOC_Gate_TransactionExtend_PackData_File">
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="FileContent" ColumnName="FileContent" />
+          <ScalarProperty Name="IsUploaded" ColumnName="IsUploaded" />
+          <ScalarProperty Name="ZIPTime" ColumnName="ZIPTime" />
+          <ScalarProperty Name="UploadTime" ColumnName="UploadTime" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="AutoID" ColumnName="AutoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BOC_N910_POS_Card_Payment_DetailEX">
+      <EntityTypeMapping TypeName="CarPark.DB.BOC_N910_POS_Card_Payment_DetailEX">
+        <MappingFragment StoreEntitySet="BOC_N910_POS_Card_Payment_DetailEX">
+          <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+          <ScalarProperty Name="ChargeRecordID" ColumnName="ChargeRecordID" />
+          <ScalarProperty Name="REQUESTID" ColumnName="REQUESTID" />
+          <ScalarProperty Name="ISSIGNATURE" ColumnName="ISSIGNATURE" />
+          <ScalarProperty Name="REFERENCENO" ColumnName="REFERENCENO" />
+          <ScalarProperty Name="BATCHNO" ColumnName="BATCHNO" />
+          <ScalarProperty Name="CARDHOLDERNAME" ColumnName="CARDHOLDERNAME" />
+          <ScalarProperty Name="CARDTYPE" ColumnName="CARDTYPE" />
+          <ScalarProperty Name="MERCHANTID" ColumnName="MERCHANTID" />
+          <ScalarProperty Name="TERMINALID" ColumnName="TERMINALID" />
+          <ScalarProperty Name="TRACEID" ColumnName="TRACEID" />
+          <ScalarProperty Name="ENTERMODE" ColumnName="ENTERMODE" />
+          <ScalarProperty Name="EXPIRYDATE" ColumnName="EXPIRYDATE" />
+          <ScalarProperty Name="PAN" ColumnName="PAN" />
+          <ScalarProperty Name="AUTHCODE" ColumnName="AUTHCODE" />
+          <ScalarProperty Name="AMOUNT" ColumnName="AMOUNT" />
+          <ScalarProperty Name="MESSAGE" ColumnName="MESSAGE" />
+          <ScalarProperty Name="RCODE" ColumnName="RCODE" />
+          <ScalarProperty Name="TXNTIME" ColumnName="TXNTIME" />
+          <ScalarProperty Name="TXNDATE" ColumnName="TXNDATE" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="CMD" ColumnName="CMD" />
+          <ScalarProperty Name="VERSION" ColumnName="VERSION" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BOC_Smart_Payment_DetailEX">
+      <EntityTypeMapping TypeName="CarPark.DB.BOC_Smart_Payment_DetailEX">
+        <MappingFragment StoreEntitySet="BOC_Smart_Payment_DetailEX">
+          <ScalarProperty Name="ParkingLotNo" ColumnName="ParkingLotNo" />
+          <ScalarProperty Name="ActPayAmt" ColumnName="ActPayAmt" />
+          <ScalarProperty Name="MarketEnNm" ColumnName="MarketEnNm" />
+          <ScalarProperty Name="MarketCnNm" ColumnName="MarketCnNm" />
+          <ScalarProperty Name="MercMarketFlg" ColumnName="MercMarketFlg" />
+          <ScalarProperty Name="UsrId" ColumnName="UsrId" />
+          <ScalarProperty Name="CashFeeType" ColumnName="CashFeeType" />
+          <ScalarProperty Name="CashFee" ColumnName="CashFee" />
+          <ScalarProperty Name="ThdLogNo" ColumnName="ThdLogNo" />
+          <ScalarProperty Name="PayType" ColumnName="PayType" />
+          <ScalarProperty Name="ValTime" ColumnName="ValTime" />
+          <ScalarProperty Name="ResultMessage" ColumnName="ResultMessage" />
+          <ScalarProperty Name="Result" ColumnName="Result" />
+          <ScalarProperty Name="LogNo" ColumnName="LogNo" />
+          <ScalarProperty Name="NotifyUrl" ColumnName="NotifyUrl" />
+          <ScalarProperty Name="ValNum" ColumnName="ValNum" />
+          <ScalarProperty Name="OrdTm" ColumnName="OrdTm" />
+          <ScalarProperty Name="OrdDt" ColumnName="OrdDt" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="AuthCode" ColumnName="AuthCode" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="PayOrderNo" ColumnName="PayOrderNo" />
+          <ScalarProperty Name="TrmNo" ColumnName="TrmNo" />
+          <ScalarProperty Name="MerchantId" ColumnName="MerchantId" />
+          <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+          <ScalarProperty Name="ChargeRecordID" ColumnName="ChargeRecordID" />
+          <ScalarProperty Name="SmartPaymentID" ColumnName="SmartPaymentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Card">
+      <EntityTypeMapping TypeName="CarPark.DB.Card">
+        <MappingFragment StoreEntitySet="Card">
+          <ScalarProperty Name="CardOwner" ColumnName="CardOwner" />
+          <ScalarProperty Name="ForensicsAddress" ColumnName="ForensicsAddress" />
+          <ScalarProperty Name="ForensicsType" ColumnName="ForensicsType" />
+          <ScalarProperty Name="CardCodeExt" ColumnName="CardCodeExt" />
+          <ScalarProperty Name="Deposit" ColumnName="Deposit" />
+          <ScalarProperty Name="RuleID" ColumnName="RuleID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="ParkID" ColumnName="ParkID" />
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+          <ScalarProperty Name="CardTypeID" ColumnName="CardTypeID" />
+          <ScalarProperty Name="LicensePlate" ColumnName="LicensePlate" />
+          <ScalarProperty Name="AllowedAreaID" ColumnName="AllowedAreaID" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Remain" ColumnName="Remain" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ExpireDate" ColumnName="ExpireDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="CreateStaffCode" ColumnName="CreateStaffCode" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="RentalTypeID" ColumnName="RentalTypeID" />
+          <ScalarProperty Name="CardCode" ColumnName="CardCode" />
+          <ScalarProperty Name="CardID" ColumnName="CardID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CardType">
+      <EntityTypeMapping TypeName="CarPark.DB.CardType">
+        <MappingFragment StoreEntitySet="CardType">
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+          <ScalarProperty Name="IsCheckLoop" ColumnName="IsCheckLoop" />
+          <ScalarProperty Name="LPRSDisable" ColumnName="LPRSDisable" />
+          <ScalarProperty Name="AntipassBack" ColumnName="AntipassBack" />
+          <ScalarProperty Name="CardNamePt" ColumnName="CardNamePt" />
+          <ScalarProperty Name="CardNameCn" ColumnName="CardNameCn" />
+          <ScalarProperty Name="CardTypeID" ColumnName="CardTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChargeRecord">
+      <EntityTypeMapping TypeName="CarPark.DB.ChargeRecord">
+        <MappingFragment StoreEntitySet="ChargeRecord">
+          <ScalarProperty Name="AuthCode" ColumnName="AuthCode" />
+          <ScalarProperty Name="subPayType" ColumnName="subPayType" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="Remark2" ColumnName="Remark2" />
+          <ScalarProperty Name="PayType" ColumnName="PayType" />
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+          <ScalarProperty Name="Fine" ColumnName="Fine" />
+          <ScalarProperty Name="FirstTime" ColumnName="FirstTime" />
+          <ScalarProperty Name="Currency" ColumnName="Currency" />
+          <ScalarProperty Name="BufferTime" ColumnName="BufferTime" />
+          <ScalarProperty Name="PeriodofTime" ColumnName="PeriodofTime" />
+          <ScalarProperty Name="FromStation" ColumnName="FromStation" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="ParkTypeID" ColumnName="ParkTypeID" />
+          <ScalarProperty Name="CardCode" ColumnName="CardCode" />
+          <ScalarProperty Name="ParkMin" ColumnName="ParkMin" />
+          <ScalarProperty Name="ChargeMin" ColumnName="ChargeMin" />
+          <ScalarProperty Name="ShiftID" ColumnName="ShiftID" />
+          <ScalarProperty Name="BillType" ColumnName="BillType" />
+          <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+          <ScalarProperty Name="FreeCharge" ColumnName="FreeCharge" />
+          <ScalarProperty Name="FreeMin" ColumnName="FreeMin" />
+          <ScalarProperty Name="TotalCharge" ColumnName="TotalCharge" />
+          <ScalarProperty Name="StaffCode" ColumnName="StaffCode" />
+          <ScalarProperty Name="ChargeTime" ColumnName="ChargeTime" />
+          <ScalarProperty Name="TimeChargeID" ColumnName="TimeChargeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CloudDiscount">
+      <EntityTypeMapping TypeName="CarPark.DB.CloudDiscount">
+        <MappingFragment StoreEntitySet="CloudDiscount">
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="DiscountStatus" ColumnName="DiscountStatus" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="TransactionDataID" ColumnName="TransactionDataID" />
+          <ScalarProperty Name="DiscountID" ColumnName="DiscountID" />
+          <ScalarProperty Name="CustomFreeTypeID" ColumnName="CustomFreeTypeID" />
+          <ScalarProperty Name="CustomFreeTenatID" ColumnName="CustomFreeTenatID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CompanyInfo">
+      <EntityTypeMapping TypeName="CarPark.DB.CompanyInfo">
+        <MappingFragment StoreEntitySet="CompanyInfo">
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+          <ScalarProperty Name="AntiPass" ColumnName="AntiPass" />
+          <ScalarProperty Name="LoopDetector" ColumnName="LoopDetector" />
+          <ScalarProperty Name="DefaultBufferTime" ColumnName="DefaultBufferTime" />
+          <ScalarProperty Name="ExitTimeOutMin" ColumnName="ExitTimeOutMin" />
+          <ScalarProperty Name="AllowedParkType" ColumnName="AllowedParkType" />
+          <ScalarProperty Name="AllowedCardType" ColumnName="AllowedCardType" />
+          <ScalarProperty Name="DefaultFreeMin" ColumnName="DefaultFreeMin" />
+          <ScalarProperty Name="TaxNo" ColumnName="TaxNo" />
+          <ScalarProperty Name="WebSite" ColumnName="WebSite" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="CompanyNamePt" ColumnName="CompanyNamePt" />
+          <ScalarProperty Name="CompanyNameCn" ColumnName="CompanyNameCn" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customer">
+      <EntityTypeMapping TypeName="CarPark.DB.Customer">
+        <MappingFragment StoreEntitySet="Customer">
+          <ScalarProperty Name="DrivingLicense" ColumnName="DrivingLicense" />
+          <ScalarProperty Name="CustomerNamePt" ColumnName="CustomerNamePt" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="BuckleSalary" ColumnName="BuckleSalary" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="UniversityStaffName" ColumnName="UniversityStaffName" />
+          <ScalarProperty Name="UniversityDepartment" ColumnName="UniversityDepartment" />
+          <ScalarProperty Name="ContractExpiredDate" ColumnName="ContractExpiredDate" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="CustomerType" ColumnName="CustomerType" />
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="CreatorStaff" ColumnName="CreatorStaff" />
+          <ScalarProperty Name="SmartCardCode" ColumnName="SmartCardCode" />
+          <ScalarProperty Name="PicImage" ColumnName="PicImage" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+          <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="CustomerCode" ColumnName="CustomerCode" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomFreeRecord">
+      <EntityTypeMapping TypeName="CarPark.DB.CustomFreeRecord">
+        <MappingFragment StoreEntitySet="CustomFreeRecord">
+          <ScalarProperty Name="FreeImagePath" ColumnName="FreeImagePath" />
+          <ScalarProperty Name="FormType" ColumnName="FormType" />
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+          <ScalarProperty Name="BarCode" ColumnName="BarCode" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="ChargeRecordID" ColumnName="ChargeRecordID" />
+          <ScalarProperty Name="FreeTime" ColumnName="FreeTime" />
+          <ScalarProperty Name="StaffCode" ColumnName="StaffCode" />
+          <ScalarProperty Name="ShiftID" ColumnName="ShiftID" />
+          <ScalarProperty Name="FreeCharge" ColumnName="FreeCharge" />
+          <ScalarProperty Name="FreeMinutes" ColumnName="FreeMinutes" />
+          <ScalarProperty Name="FreeTenatID" ColumnName="FreeTenatID" />
+          <ScalarProperty Name="FreeType" ColumnName="FreeType" />
+          <ScalarProperty Name="FreeRecordID" ColumnName="FreeRecordID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomFreeTenat">
+      <EntityTypeMapping TypeName="CarPark.DB.CustomFreeTenat">
+        <MappingFragment StoreEntitySet="CustomFreeTenat">
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="TenatTypeID" ColumnName="TenatTypeID" />
+          <ScalarProperty Name="InteriorType" ColumnName="InteriorType" />
+          <ScalarProperty Name="FreeType" ColumnName="FreeType" />
+          <ScalarProperty Name="TenatNo" ColumnName="TenatNo" />
+          <ScalarProperty Name="AllowedFreeType" ColumnName="AllowedFreeType" />
+          <ScalarProperty Name="TenatNamePt" ColumnName="TenatNamePt" />
+          <ScalarProperty Name="TenatNameCn" ColumnName="TenatNameCn" />
+          <ScalarProperty Name="TenatID" ColumnName="TenatID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomFreeType">
+      <EntityTypeMapping TypeName="CarPark.DB.CustomFreeType">
+        <MappingFragment StoreEntitySet="CustomFreeType">
+          <ScalarProperty Name="DiscountMinutes" ColumnName="DiscountMinutes" />
+          <ScalarProperty Name="DiscountAmount" ColumnName="DiscountAmount" />
+          <ScalarProperty Name="IsDiscountByAmount" ColumnName="IsDiscountByAmount" />
+          <ScalarProperty Name="DiscountPercentage" ColumnName="DiscountPercentage" />
+          <ScalarProperty Name="IsDiscountByPercentage" ColumnName="IsDiscountByPercentage" />
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+          <ScalarProperty Name="EmployeesAmount" ColumnName="EmployeesAmount" />
+          <ScalarProperty Name="IsEmployeesPrice" ColumnName="IsEmployeesPrice" />
+          <ScalarProperty Name="FreeAmount" ColumnName="FreeAmount" />
+          <ScalarProperty Name="FreeMinutes" ColumnName="FreeMinutes" />
+          <ScalarProperty Name="IsFreeByTime" ColumnName="IsFreeByTime" />
+          <ScalarProperty Name="IsAllFree" ColumnName="IsAllFree" />
+          <ScalarProperty Name="CustomFreeNamePt" ColumnName="CustomFreeNamePt" />
+          <ScalarProperty Name="CustomFreeNameCn" ColumnName="CustomFreeNameCn" />
+          <ScalarProperty Name="CustomFreeTypeID" ColumnName="CustomFreeTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FreeRegister">
+      <EntityTypeMapping TypeName="CarPark.DB.FreeRegister">
+        <MappingFragment StoreEntitySet="FreeRegister">
+          <ScalarProperty Name="TenatID" ColumnName="TenatID" />
+          <ScalarProperty Name="CustomFreeTypeID" ColumnName="CustomFreeTypeID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CreateStaff" ColumnName="CreateStaff" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="ExpireDate" ColumnName="ExpireDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="CarNumber" ColumnName="CarNumber" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ICBC_Gate_TransactionExtend">
+      <EntityTypeMapping TypeName="CarPark.DB.ICBC_Gate_TransactionExtend">
+        <MappingFragment StoreEntitySet="ICBC_Gate_TransactionExtend">
+          <ScalarProperty Name="ChargeTransactionID" ColumnName="ChargeTransactionID" />
+          <ScalarProperty Name="OffLineRemain_RMB" ColumnName="OffLineRemain_RMB" />
+          <ScalarProperty Name="OffLineRemain_MOP" ColumnName="OffLineRemain_MOP" />
+          <ScalarProperty Name="BillAreaB" ColumnName="BillAreaB" />
+          <ScalarProperty Name="CardAppType" ColumnName="CardAppType" />
+          <ScalarProperty Name="CardPhyType" ColumnName="CardPhyType" />
+          <ScalarProperty Name="Purchase_FullData" ColumnName="Purchase_FullData" />
+          <ScalarProperty Name="TransactionTime" ColumnName="TransactionTime" />
+          <ScalarProperty Name="ISUploaded" ColumnName="ISUploaded" />
+          <ScalarProperty Name="SysTransacionID" ColumnName="SysTransacionID" />
+          <ScalarProperty Name="FromGateID" ColumnName="FromGateID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsBlack" ColumnName="IsBlack" />
+          <ScalarProperty Name="Valid" ColumnName="Valid" />
+          <ScalarProperty Name="StaffInfo" ColumnName="StaffInfo" />
+          <ScalarProperty Name="EncryptedCardNumber" ColumnName="EncryptedCardNumber" />
+          <ScalarProperty Name="PURCHASE_CARD_State" ColumnName="PURCHASE_CARD_State" />
+          <ScalarProperty Name="REQUEST_CARD_State" ColumnName="REQUEST_CARD_State" />
+          <ScalarProperty Name="ErrorCode" ColumnName="ErrorCode" />
+          <ScalarProperty Name="ReplyCode" ColumnName="ReplyCode" />
+          <ScalarProperty Name="AlternateData" ColumnName="AlternateData" />
+          <ScalarProperty Name="IC_Data" ColumnName="IC_Data" />
+          <ScalarProperty Name="CardVaildDate" ColumnName="CardVaildDate" />
+          <ScalarProperty Name="PosNo" ColumnName="PosNo" />
+          <ScalarProperty Name="CardReaderNumber" ColumnName="CardReaderNumber" />
+          <ScalarProperty Name="ReceiverCode" ColumnName="ReceiverCode" />
+          <ScalarProperty Name="DeviceCode" ColumnName="DeviceCode" />
+          <ScalarProperty Name="ServerCode" ColumnName="ServerCode" />
+          <ScalarProperty Name="BillTime" ColumnName="BillTime" />
+          <ScalarProperty Name="BillDate" ColumnName="BillDate" />
+          <ScalarProperty Name="TxnNo" ColumnName="TxnNo" />
+          <ScalarProperty Name="BillArea" ColumnName="BillArea" />
+          <ScalarProperty Name="CardNumber" ColumnName="CardNumber" />
+          <ScalarProperty Name="CardRemain" ColumnName="CardRemain" />
+          <ScalarProperty Name="CardBillAmount" ColumnName="CardBillAmount" />
+          <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ICBC_Gate_TransactionExtend_PackData_File">
+      <EntityTypeMapping TypeName="CarPark.DB.ICBC_Gate_TransactionExtend_PackData_File">
+        <MappingFragment StoreEntitySet="ICBC_Gate_TransactionExtend_PackData_File">
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="FileContent" ColumnName="FileContent" />
+          <ScalarProperty Name="IsUploaded" ColumnName="IsUploaded" />
+          <ScalarProperty Name="ZIPTime" ColumnName="ZIPTime" />
+          <ScalarProperty Name="UploadTime" ColumnName="UploadTime" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="AutoID" ColumnName="AutoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LicensePlate_PassTrace">
+      <EntityTypeMapping TypeName="CarPark.DB.LicensePlate_PassTrace">
+        <MappingFragment StoreEntitySet="LicensePlate_PassTrace">
+          <ScalarProperty Name="UpdateLPRemark" ColumnName="UpdateLPRemark" />
+          <ScalarProperty Name="Similarity" ColumnName="Similarity" />
+          <ScalarProperty Name="PassReturn" ColumnName="PassReturn" />
+          <ScalarProperty Name="StaffCode" ColumnName="StaffCode" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="AnalysisResult" ColumnName="AnalysisResult" />
+          <ScalarProperty Name="PassTraceID" ColumnName="PassTraceID" />
+          <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+          <ScalarProperty Name="LicensePlateID" ColumnName="LicensePlateID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MPass_Gate_Transaction">
+      <EntityTypeMapping TypeName="CarPark.DB.MPass_Gate_Transaction">
+        <MappingFragment StoreEntitySet="MPass_Gate_Transaction">
+          <ScalarProperty Name="ChargeTransactionID" ColumnName="ChargeTransactionID" />
+          <ScalarProperty Name="TransactionTime" ColumnName="TransactionTime" />
+          <ScalarProperty Name="CardReaderNo" ColumnName="CardReaderNo" />
+          <ScalarProperty Name="IsBlack" ColumnName="IsBlack" />
+          <ScalarProperty Name="UploadTime" ColumnName="UploadTime" />
+          <ScalarProperty Name="ISUploaded" ColumnName="ISUploaded" />
+          <ScalarProperty Name="SysTransacionID" ColumnName="SysTransacionID" />
+          <ScalarProperty Name="FromGateID" ColumnName="FromGateID" />
+          <ScalarProperty Name="CardIsValid" ColumnName="CardIsValid" />
+          <ScalarProperty Name="CardRemain" ColumnName="CardRemain" />
+          <ScalarProperty Name="CardBillAmount" ColumnName="CardBillAmount" />
+          <ScalarProperty Name="CardNumber" ColumnName="CardNumber" />
+          <ScalarProperty Name="LogicalCardNumber" ColumnName="LogicalCardNumber" />
+          <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MPass_Gate_Transaction_PackData">
+      <EntityTypeMapping TypeName="CarPark.DB.MPass_Gate_Transaction_PackData">
+        <MappingFragment StoreEntitySet="MPass_Gate_Transaction_PackData">
+          <ScalarProperty Name="IsUploaded" ColumnName="IsUploaded" />
+          <ScalarProperty Name="UploadTime" ColumnName="UploadTime" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MPass_Gate_Transaction_PackData_File">
+      <EntityTypeMapping TypeName="CarPark.DB.MPass_Gate_Transaction_PackData_File">
+        <MappingFragment StoreEntitySet="MPass_Gate_Transaction_PackData_File">
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="FileContent" ColumnName="FileContent" />
+          <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+          <ScalarProperty Name="AutoID" ColumnName="AutoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MPass_Gate_Transaction_SIFiles">
+      <EntityTypeMapping TypeName="CarPark.DB.MPass_Gate_Transaction_SIFiles">
+        <MappingFragment StoreEntitySet="MPass_Gate_Transaction_SIFiles">
+          <ScalarProperty Name="IsUploaded" ColumnName="IsUploaded" />
+          <ScalarProperty Name="ReaderNo" ColumnName="ReaderNo" />
+          <ScalarProperty Name="FIFileName" ColumnName="FIFileName" />
+          <ScalarProperty Name="SIFile" ColumnName="SIFile" />
+          <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MPass_Gate_Transaction_SIStrings">
+      <EntityTypeMapping TypeName="CarPark.DB.MPass_Gate_Transaction_SIStrings">
+        <MappingFragment StoreEntitySet="MPass_Gate_Transaction_SIStrings">
+          <ScalarProperty Name="GenFileName" ColumnName="GenFileName" />
+          <ScalarProperty Name="IsPacked" ColumnName="IsPacked" />
+          <ScalarProperty Name="SIString" ColumnName="SIString" />
+          <ScalarProperty Name="FromGateID" ColumnName="FromGateID" />
+          <ScalarProperty Name="ReaderNo" ColumnName="ReaderNo" />
+          <ScalarProperty Name="PackTime" ColumnName="PackTime" />
+          <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MPass_POS_Signin">
+      <EntityTypeMapping TypeName="CarPark.DB.MPass_POS_Signin">
+        <MappingFragment StoreEntitySet="MPass_POS_Signin">
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="RETCODE" ColumnName="RETCODE" />
+          <ScalarProperty Name="ErrDescription" ColumnName="ErrDescription" />
+          <ScalarProperty Name="CommandResult" ColumnName="CommandResult" />
+          <ScalarProperty Name="TXNNO" ColumnName="TXNNO" />
+          <ScalarProperty Name="ERRORNUM" ColumnName="ERRORNUM" />
+          <ScalarProperty Name="MCRAMT" ColumnName="MCRAMT" />
+          <ScalarProperty Name="MCRNUM" ColumnName="MCRNUM" />
+          <ScalarProperty Name="MCSAMT" ColumnName="MCSAMT" />
+          <ScalarProperty Name="MCSNUM" ColumnName="MCSNUM" />
+          <ScalarProperty Name="MSCHAR" ColumnName="MSCHAR" />
+          <ScalarProperty Name="MDEPOSIT" ColumnName="MDEPOSIT" />
+          <ScalarProperty Name="MAAMT" ColumnName="MAAMT" />
+          <ScalarProperty Name="MANUM" ColumnName="MANUM" />
+          <ScalarProperty Name="MRAMT" ColumnName="MRAMT" />
+          <ScalarProperty Name="MRNUM" ColumnName="MRNUM" />
+          <ScalarProperty Name="MSAMT" ColumnName="MSAMT" />
+          <ScalarProperty Name="MSNUM" ColumnName="MSNUM" />
+          <ScalarProperty Name="CSCHAR" ColumnName="CSCHAR" />
+          <ScalarProperty Name="CDEPOSIT" ColumnName="CDEPOSIT" />
+          <ScalarProperty Name="CAAMT" ColumnName="CAAMT" />
+          <ScalarProperty Name="CANUM" ColumnName="CANUM" />
+          <ScalarProperty Name="CRAMT_RMB" ColumnName="CRAMT_RMB" />
+          <ScalarProperty Name="CRAMT_HKD" ColumnName="CRAMT_HKD" />
+          <ScalarProperty Name="CRAMT" ColumnName="CRAMT" />
+          <ScalarProperty Name="CRNUM_RMB" ColumnName="CRNUM_RMB" />
+          <ScalarProperty Name="CRNUM_HKD" ColumnName="CRNUM_HKD" />
+          <ScalarProperty Name="CRNUM" ColumnName="CRNUM" />
+          <ScalarProperty Name="CSAMT" ColumnName="CSAMT" />
+          <ScalarProperty Name="CSNUM" ColumnName="CSNUM" />
+          <ScalarProperty Name="TXNTIME" ColumnName="TXNTIME" />
+          <ScalarProperty Name="TXNDATE" ColumnName="TXNDATE" />
+          <ScalarProperty Name="BATCHNO" ColumnName="BATCHNO" />
+          <ScalarProperty Name="MERCHANTID" ColumnName="MERCHANTID" />
+          <ScalarProperty Name="TERMINALID" ColumnName="TERMINALID" />
+          <ScalarProperty Name="ShiftID" ColumnName="ShiftID" />
+          <ScalarProperty Name="SignInTime" ColumnName="SignInTime" />
+          <ScalarProperty Name="SigiInID" ColumnName="SigiInID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MPass_POS_Signin_Detail">
+      <EntityTypeMapping TypeName="CarPark.DB.MPass_POS_Signin_Detail">
+        <MappingFragment StoreEntitySet="MPass_POS_Signin_Detail">
+          <ScalarProperty Name="TOTALAMT" ColumnName="TOTALAMT" />
+          <ScalarProperty Name="AUTH" ColumnName="AUTH" />
+          <ScalarProperty Name="PAN" ColumnName="PAN" />
+          <ScalarProperty Name="TXNTIME" ColumnName="TXNTIME" />
+          <ScalarProperty Name="TXNDATE" ColumnName="TXNDATE" />
+          <ScalarProperty Name="TXNTYPE" ColumnName="TXNTYPE" />
+          <ScalarProperty Name="INVOICENO" ColumnName="INVOICENO" />
+          <ScalarProperty Name="ERRORNO" ColumnName="ERRORNO" />
+          <ScalarProperty Name="SiginInID" ColumnName="SiginInID" />
+          <ScalarProperty Name="SignInDetailID" ColumnName="SignInDetailID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MPass_POS_Transaction_Detail">
+      <EntityTypeMapping TypeName="CarPark.DB.MPass_POS_Transaction_Detail">
+        <MappingFragment StoreEntitySet="MPass_POS_Transaction_Detail">
+          <ScalarProperty Name="MERCHANTORDERNO" ColumnName="MERCHANTORDERNO" />
+          <ScalarProperty Name="ACTUALAMT" ColumnName="ACTUALAMT" />
+          <ScalarProperty Name="COUPONDEDAMT" ColumnName="COUPONDEDAMT" />
+          <ScalarProperty Name="COUPONCODE" ColumnName="COUPONCODE" />
+          <ScalarProperty Name="COUPONTYPE" ColumnName="COUPONTYPE" />
+          <ScalarProperty Name="DISCOUNTTYPE" ColumnName="DISCOUNTTYPE" />
+          <ScalarProperty Name="ORIGTXNAMT" ColumnName="ORIGTXNAMT" />
+          <ScalarProperty Name="DISCOUNTAMT" ColumnName="DISCOUNTAMT" />
+          <ScalarProperty Name="PAY_INVOICENO" ColumnName="PAY_INVOICENO" />
+          <ScalarProperty Name="PAY_TOTALAMT" ColumnName="PAY_TOTALAMT" />
+          <ScalarProperty Name="PAY_PURSETYPE" ColumnName="PAY_PURSETYPE" />
+          <ScalarProperty Name="PAY_ACCOUNT" ColumnName="PAY_ACCOUNT" />
+          <ScalarProperty Name="PAY_MODE" ColumnName="PAY_MODE" />
+          <ScalarProperty Name="CashType" ColumnName="CashType" />
+          <ScalarProperty Name="TransactionSEQ" ColumnName="TransactionSEQ" />
+          <ScalarProperty Name="RETCODE" ColumnName="RETCODE" />
+          <ScalarProperty Name="ErrDescription" ColumnName="ErrDescription" />
+          <ScalarProperty Name="CommandResult" ColumnName="CommandResult" />
+          <ScalarProperty Name="TransactionType" ColumnName="TransactionType" />
+          <ScalarProperty Name="APPLAB" ColumnName="APPLAB" />
+          <ScalarProperty Name="ATC" ColumnName="ATC" />
+          <ScalarProperty Name="TSI" ColumnName="TSI" />
+          <ScalarProperty Name="TVR" ColumnName="TVR" />
+          <ScalarProperty Name="TC" ColumnName="TC" />
+          <ScalarProperty Name="AID" ColumnName="AID" />
+          <ScalarProperty Name="AUTH" ColumnName="AUTH" />
+          <ScalarProperty Name="REFNO" ColumnName="REFNO" />
+          <ScalarProperty Name="VOCNO" ColumnName="VOCNO" />
+          <ScalarProperty Name="BATCHNO" ColumnName="BATCHNO" />
+          <ScalarProperty Name="EPAAMT" ColumnName="EPAAMT" />
+          <ScalarProperty Name="EPA" ColumnName="EPA" />
+          <ScalarProperty Name="EXPDATE" ColumnName="EXPDATE" />
+          <ScalarProperty Name="PURSETYPE" ColumnName="PURSETYPE" />
+          <ScalarProperty Name="TXNNO" ColumnName="TXNNO" />
+          <ScalarProperty Name="TXNTAC" ColumnName="TXNTAC" />
+          <ScalarProperty Name="CHARGE" ColumnName="CHARGE" />
+          <ScalarProperty Name="DEPOSIT" ColumnName="DEPOSIT" />
+          <ScalarProperty Name="ORIGBALANCE" ColumnName="ORIGBALANCE" />
+          <ScalarProperty Name="M1CARDTYPE" ColumnName="M1CARDTYPE" />
+          <ScalarProperty Name="LOGNO" ColumnName="LOGNO" />
+          <ScalarProperty Name="BALANCE" ColumnName="BALANCE" />
+          <ScalarProperty Name="TOTALAMT" ColumnName="TOTALAMT" />
+          <ScalarProperty Name="PAN" ColumnName="PAN" />
+          <ScalarProperty Name="MPTXNTYPE" ColumnName="MPTXNTYPE" />
+          <ScalarProperty Name="CARDTYPE" ColumnName="CARDTYPE" />
+          <ScalarProperty Name="TXNTYPE" ColumnName="TXNTYPE" />
+          <ScalarProperty Name="TXNTIME" ColumnName="TXNTIME" />
+          <ScalarProperty Name="TXNDATE" ColumnName="TXNDATE" />
+          <ScalarProperty Name="INVOICENO" ColumnName="INVOICENO" />
+          <ScalarProperty Name="MERCHANTID" ColumnName="MERCHANTID" />
+          <ScalarProperty Name="TERMINALID" ColumnName="TERMINALID" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="TransactionTime" ColumnName="TransactionTime" />
+          <ScalarProperty Name="ChargeTransactionID" ColumnName="ChargeTransactionID" />
+          <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NoFeelPayment">
+      <EntityTypeMapping TypeName="CarPark.DB.NoFeelPayment">
+        <MappingFragment StoreEntitySet="NoFeelPayment">
+          <ScalarProperty Name="AuthCode" ColumnName="AuthCode" />
+          <ScalarProperty Name="LicensePlate" ColumnName="LicensePlate" />
+          <ScalarProperty Name="isUploadCharge" ColumnName="isUploadCharge" />
+          <ScalarProperty Name="isUploadTrans" ColumnName="isUploadTrans" />
+          <ScalarProperty Name="RFIDNO" ColumnName="RFIDNO" />
+          <ScalarProperty Name="RFIDTID" ColumnName="RFIDTID" />
+          <ScalarProperty Name="BindingTagFlag" ColumnName="BindingTagFlag" />
+          <ScalarProperty Name="AddCode" ColumnName="AddCode" />
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+          <ScalarProperty Name="CustomerNo" ColumnName="CustomerNo" />
+          <ScalarProperty Name="TrancationID" ColumnName="TrancationID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Park">
+      <EntityTypeMapping TypeName="CarPark.DB.Park">
+        <MappingFragment StoreEntitySet="Park">
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Occupied" ColumnName="Occupied" />
+          <ScalarProperty Name="DeleteStaffCode" ColumnName="DeleteStaffCode" />
+          <ScalarProperty Name="DeleteDate" ColumnName="DeleteDate" />
+          <ScalarProperty Name="CreateStaffCode" ColumnName="CreateStaffCode" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="ParkLimit" ColumnName="ParkLimit" />
+          <ScalarProperty Name="ParkCode" ColumnName="ParkCode" />
+          <ScalarProperty Name="ParkID" ColumnName="ParkID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ParkArea">
+      <EntityTypeMapping TypeName="CarPark.DB.ParkArea">
+        <MappingFragment StoreEntitySet="ParkArea">
+          <ScalarProperty Name="AreaNamePt" ColumnName="AreaNamePt" />
+          <ScalarProperty Name="AreaNameCn" ColumnName="AreaNameCn" />
+          <ScalarProperty Name="AreaID" ColumnName="AreaID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ParkAreaExtend">
+      <EntityTypeMapping TypeName="CarPark.DB.ParkAreaExtend">
+        <MappingFragment StoreEntitySet="ParkAreaExtend">
+          <ScalarProperty Name="FloatParkUse10" ColumnName="FloatParkUse10" />
+          <ScalarProperty Name="FloatParkSupply10" ColumnName="FloatParkSupply10" />
+          <ScalarProperty Name="FloatParkUse9" ColumnName="FloatParkUse9" />
+          <ScalarProperty Name="FloatParkSupply9" ColumnName="FloatParkSupply9" />
+          <ScalarProperty Name="FloatParkUse8" ColumnName="FloatParkUse8" />
+          <ScalarProperty Name="FloatParkSupply8" ColumnName="FloatParkSupply8" />
+          <ScalarProperty Name="FloatParkUse7" ColumnName="FloatParkUse7" />
+          <ScalarProperty Name="FloatParkSupply7" ColumnName="FloatParkSupply7" />
+          <ScalarProperty Name="FloatParkUse6" ColumnName="FloatParkUse6" />
+          <ScalarProperty Name="FloatParkSupply6" ColumnName="FloatParkSupply6" />
+          <ScalarProperty Name="FloatParkUse5" ColumnName="FloatParkUse5" />
+          <ScalarProperty Name="FloatParkSupply5" ColumnName="FloatParkSupply5" />
+          <ScalarProperty Name="FloatParkUse4" ColumnName="FloatParkUse4" />
+          <ScalarProperty Name="FloatParkSupply4" ColumnName="FloatParkSupply4" />
+          <ScalarProperty Name="FloatParkUse3" ColumnName="FloatParkUse3" />
+          <ScalarProperty Name="FloatParkSupply3" ColumnName="FloatParkSupply3" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+          <ScalarProperty Name="SerialNo" ColumnName="SerialNo" />
+          <ScalarProperty Name="QuotaCount" ColumnName="QuotaCount" />
+          <ScalarProperty Name="CustomFunnSigh" ColumnName="CustomFunnSigh" />
+          <ScalarProperty Name="ExtendNamePt" ColumnName="ExtendNamePt" />
+          <ScalarProperty Name="ExtendNameCn" ColumnName="ExtendNameCn" />
+          <ScalarProperty Name="TimeChargeUse" ColumnName="TimeChargeUse" />
+          <ScalarProperty Name="TimeChargeSupply" ColumnName="TimeChargeSupply" />
+          <ScalarProperty Name="FloatParkUse" ColumnName="FloatParkUse" />
+          <ScalarProperty Name="FloatParkSupply" ColumnName="FloatParkSupply" />
+          <ScalarProperty Name="FixParkUse" ColumnName="FixParkUse" />
+          <ScalarProperty Name="FixParkSupply" ColumnName="FixParkSupply" />
+          <ScalarProperty Name="ExtendCount" ColumnName="ExtendCount" />
+          <ScalarProperty Name="CurrentUse" ColumnName="CurrentUse" />
+          <ScalarProperty Name="TotalSupply" ColumnName="TotalSupply" />
+          <ScalarProperty Name="ParkTypeID" ColumnName="ParkTypeID" />
+          <ScalarProperty Name="AreaID" ColumnName="AreaID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ParkGate">
+      <EntityTypeMapping TypeName="CarPark.DB.ParkGate">
+        <MappingFragment StoreEntitySet="ParkGate">
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+          <ScalarProperty Name="LPRSDisable" ColumnName="LPRSDisable" />
+          <ScalarProperty Name="BarrierCode" ColumnName="BarrierCode" />
+          <ScalarProperty Name="GateDirection" ColumnName="GateDirection" />
+          <ScalarProperty Name="ParentGate" ColumnName="ParentGate" />
+          <ScalarProperty Name="AllowedType" ColumnName="AllowedType" />
+          <ScalarProperty Name="GateCode" ColumnName="GateCode" />
+          <ScalarProperty Name="GateAreaID" ColumnName="GateAreaID" />
+          <ScalarProperty Name="GateNamePt" ColumnName="GateNamePt" />
+          <ScalarProperty Name="GateNameCn" ColumnName="GateNameCn" />
+          <ScalarProperty Name="GateID" ColumnName="GateID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PassTrace">
+      <EntityTypeMapping TypeName="CarPark.DB.PassTrace">
+        <MappingFragment StoreEntitySet="PassTrace">
+          <ScalarProperty Name="OfflineStatus" ColumnName="OfflineStatus" />
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+          <ScalarProperty Name="CardTypeID" ColumnName="CardTypeID" />
+          <ScalarProperty Name="LPRSDisable" ColumnName="LPRSDisable" />
+          <ScalarProperty Name="IsOpenGate" ColumnName="IsOpenGate" />
+          <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+          <ScalarProperty Name="PassBillType" ColumnName="PassBillType" />
+          <ScalarProperty Name="RentalTypeID" ColumnName="RentalTypeID" />
+          <ScalarProperty Name="PassRemarkPt" ColumnName="PassRemarkPt" />
+          <ScalarProperty Name="PassRemarkCn" ColumnName="PassRemarkCn" />
+          <ScalarProperty Name="PassRemarkCode" ColumnName="PassRemarkCode" />
+          <ScalarProperty Name="PassDirection" ColumnName="PassDirection" />
+          <ScalarProperty Name="PassStatus" ColumnName="PassStatus" />
+          <ScalarProperty Name="ParkTypeID" ColumnName="ParkTypeID" />
+          <ScalarProperty Name="PassCardCode" ColumnName="PassCardCode" />
+          <ScalarProperty Name="PassTime" ColumnName="PassTime" />
+          <ScalarProperty Name="PassGateID" ColumnName="PassGateID" />
+          <ScalarProperty Name="PassTraceID" ColumnName="PassTraceID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PreOffer">
+      <EntityTypeMapping TypeName="CarPark.DB.PreOffer">
+        <MappingFragment StoreEntitySet="PreOffer">
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="CarateStaffCode" ColumnName="CarateStaffCode" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="BarcodeID" ColumnName="BarcodeID" />
+          <ScalarProperty Name="CustomFreeTypeID" ColumnName="CustomFreeTypeID" />
+          <ScalarProperty Name="CustomFreeTenatID" ColumnName="CustomFreeTenatID" />
+          <ScalarProperty Name="TransactionDataID" ColumnName="TransactionDataID" />
+          <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RentalType">
+      <EntityTypeMapping TypeName="CarPark.DB.RentalType">
+        <MappingFragment StoreEntitySet="RentalType">
+          <ScalarProperty Name="RuleControlID" ColumnName="RuleControlID" />
+          <ScalarProperty Name="RealCountStr" ColumnName="RealCountStr" />
+          <ScalarProperty Name="ChargingModeFee" ColumnName="ChargingModeFee" />
+          <ScalarProperty Name="ReissueCharge" ColumnName="ReissueCharge" />
+          <ScalarProperty Name="LimitCharge" ColumnName="LimitCharge" />
+          <ScalarProperty Name="ChargingMode" ColumnName="ChargingMode" />
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+          <ScalarProperty Name="ParkLimit" ColumnName="ParkLimit" />
+          <ScalarProperty Name="FixParkID" ColumnName="FixParkID" />
+          <ScalarProperty Name="Deposit" ColumnName="Deposit" />
+          <ScalarProperty Name="RealCountType" ColumnName="RealCountType" />
+          <ScalarProperty Name="CheckLoop" ColumnName="CheckLoop" />
+          <ScalarProperty Name="NormalCharge" ColumnName="NormalCharge" />
+          <ScalarProperty Name="ParkTypeID" ColumnName="ParkTypeID" />
+          <ScalarProperty Name="RentalNamePt" ColumnName="RentalNamePt" />
+          <ScalarProperty Name="RentalNameCn" ColumnName="RentalNameCn" />
+          <ScalarProperty Name="RentalTypeID" ColumnName="RentalTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RuleControl">
+      <EntityTypeMapping TypeName="CarPark.DB.RuleControl">
+        <MappingFragment StoreEntitySet="RuleControl">
+          <ScalarProperty Name="ControlObj" ColumnName="ControlObj" />
+          <ScalarProperty Name="IgnoreLoop" ColumnName="IgnoreLoop" />
+          <ScalarProperty Name="CreateStaffCode" ColumnName="CreateStaffCode" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="IsLPInOut" ColumnName="IsLPInOut" />
+          <ScalarProperty Name="CheckRegistrationLP" ColumnName="CheckRegistrationLP" />
+          <ScalarProperty Name="AcceptGateID" ColumnName="AcceptGateID" />
+          <ScalarProperty Name="ForbidTimes" ColumnName="ForbidTimes" />
+          <ScalarProperty Name="UseCycle" ColumnName="UseCycle" />
+          <ScalarProperty Name="RuleNo" ColumnName="RuleNo" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SalaryBlock">
+      <EntityTypeMapping TypeName="CarPark.DB.SalaryBlock">
+        <MappingFragment StoreEntitySet="SalaryBlock">
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="ChangeType" ColumnName="ChangeType" />
+          <ScalarProperty Name="ChangeDate" ColumnName="ChangeDate" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="OptType" ColumnName="OptType" />
+          <ScalarProperty Name="Endate" ColumnName="Endate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScanPayment">
+      <EntityTypeMapping TypeName="CarPark.DB.ScanPayment">
+        <MappingFragment StoreEntitySet="ScanPayment">
+          <ScalarProperty Name="LastUpdateTime" ColumnName="LastUpdateTime" />
+          <ScalarProperty Name="ResultMessage" ColumnName="ResultMessage" />
+          <ScalarProperty Name="Result" ColumnName="Result" />
+          <ScalarProperty Name="ParkingLotNo" ColumnName="ParkingLotNo" />
+          <ScalarProperty Name="UserData" ColumnName="UserData" />
+          <ScalarProperty Name="PayType" ColumnName="PayType" />
+          <ScalarProperty Name="AuthCode" ColumnName="AuthCode" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="ChargeTime" ColumnName="ChargeTime" />
+          <ScalarProperty Name="LogNo" ColumnName="LogNo" />
+          <ScalarProperty Name="PayOrderNo" ColumnName="PayOrderNo" />
+          <ScalarProperty Name="TrmNo" ColumnName="TrmNo" />
+          <ScalarProperty Name="MerchantId" ColumnName="MerchantId" />
+          <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+          <ScalarProperty Name="ChargeRecordID" ColumnName="ChargeRecordID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ShiftRecord">
+      <EntityTypeMapping TypeName="CarPark.DB.ShiftRecord">
+        <MappingFragment StoreEntitySet="ShiftRecord">
+          <ScalarProperty Name="ReceiptObj" ColumnName="ReceiptObj" />
+          <ScalarProperty Name="NoSenseCount" ColumnName="NoSenseCount" />
+          <ScalarProperty Name="NoSenseCharge" ColumnName="NoSenseCharge" />
+          <ScalarProperty Name="ManualChargeCharge" ColumnName="ManualChargeCharge" />
+          <ScalarProperty Name="ManualChargeRemark" ColumnName="ManualChargeRemark" />
+          <ScalarProperty Name="MPassGateCharge" ColumnName="MPassGateCharge" />
+          <ScalarProperty Name="MPassGateCount" ColumnName="MPassGateCount" />
+          <ScalarProperty Name="MPassPosCharge" ColumnName="MPassPosCharge" />
+          <ScalarProperty Name="MPassPosCount" ColumnName="MPassPosCount" />
+          <ScalarProperty Name="PaymentConversionCharge" ColumnName="PaymentConversionCharge" />
+          <ScalarProperty Name="PaymentConversionCount" ColumnName="PaymentConversionCount" />
+          <ScalarProperty Name="OpenGateCount" ColumnName="OpenGateCount" />
+          <ScalarProperty Name="FeeCharge" ColumnName="FeeCharge" />
+          <ScalarProperty Name="FeeCount" ColumnName="FeeCount" />
+          <ScalarProperty Name="CashCharge" ColumnName="CashCharge" />
+          <ScalarProperty Name="TotalCount" ColumnName="TotalCount" />
+          <ScalarProperty Name="VoidRentalCharge" ColumnName="VoidRentalCharge" />
+          <ScalarProperty Name="VoidRentalCount" ColumnName="VoidRentalCount" />
+          <ScalarProperty Name="VoidDepositCharge" ColumnName="VoidDepositCharge" />
+          <ScalarProperty Name="VoidDepositCount" ColumnName="VoidDepositCount" />
+          <ScalarProperty Name="RentalDepositCharge" ColumnName="RentalDepositCharge" />
+          <ScalarProperty Name="RentalDepositCount" ColumnName="RentalDepositCount" />
+          <ScalarProperty Name="RentalCharge" ColumnName="RentalCharge" />
+          <ScalarProperty Name="RentalCount" ColumnName="RentalCount" />
+          <ScalarProperty Name="TimeoutCharge" ColumnName="TimeoutCharge" />
+          <ScalarProperty Name="TimeoutCount" ColumnName="TimeoutCount" />
+          <ScalarProperty Name="DamageCharge" ColumnName="DamageCharge" />
+          <ScalarProperty Name="DamageCount" ColumnName="DamageCount" />
+          <ScalarProperty Name="LostCharge" ColumnName="LostCharge" />
+          <ScalarProperty Name="LostCount" ColumnName="LostCount" />
+          <ScalarProperty Name="TimeCharge" ColumnName="TimeCharge" />
+          <ScalarProperty Name="TimeChargeCount" ColumnName="TimeChargeCount" />
+          <ScalarProperty Name="MPassDecalCharge" ColumnName="MPassDecalCharge" />
+          <ScalarProperty Name="MPassDecalCount" ColumnName="MPassDecalCount" />
+          <ScalarProperty Name="MPassCharge" ColumnName="MPassCharge" />
+          <ScalarProperty Name="MPassCount" ColumnName="MPassCount" />
+          <ScalarProperty Name="QPassCharge" ColumnName="QPassCharge" />
+          <ScalarProperty Name="QPassCount" ColumnName="QPassCount" />
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+          <ScalarProperty Name="CREDIT_CARD" ColumnName="CREDIT_CARD" />
+          <ScalarProperty Name="HKD" ColumnName="HKD" />
+          <ScalarProperty Name="MOP" ColumnName="MOP" />
+          <ScalarProperty Name="FromStation" ColumnName="FromStation" />
+          <ScalarProperty Name="TotalCharge" ColumnName="TotalCharge" />
+          <ScalarProperty Name="TotalRentalDeposit" ColumnName="TotalRentalDeposit" />
+          <ScalarProperty Name="TotalRentalCharge" ColumnName="TotalRentalCharge" />
+          <ScalarProperty Name="TotalTimeCharge" ColumnName="TotalTimeCharge" />
+          <ScalarProperty Name="EndBalance" ColumnName="EndBalance" />
+          <ScalarProperty Name="StartBalance" ColumnName="StartBalance" />
+          <ScalarProperty Name="IsComplete" ColumnName="IsComplete" />
+          <ScalarProperty Name="EndStaffCode" ColumnName="EndStaffCode" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="StartStaffCode" ColumnName="StartStaffCode" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="ShiftID" ColumnName="ShiftID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StaffInfo">
+      <EntityTypeMapping TypeName="CarPark.DB.StaffInfo">
+        <MappingFragment StoreEntitySet="StaffInfo">
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+          <ScalarProperty Name="StaffPwd" ColumnName="StaffPwd" />
+          <ScalarProperty Name="StaffImage" ColumnName="StaffImage" />
+          <ScalarProperty Name="AllowUse" ColumnName="AllowUse" />
+          <ScalarProperty Name="CreateStaffCode" ColumnName="CreateStaffCode" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="SmartCardCode" ColumnName="SmartCardCode" />
+          <ScalarProperty Name="IDNo" ColumnName="IDNo" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="StaffTypeId" ColumnName="StaffTypeId" />
+          <ScalarProperty Name="StaffName" ColumnName="StaffName" />
+          <ScalarProperty Name="StaffCode" ColumnName="StaffCode" />
+          <ScalarProperty Name="StaffId" ColumnName="StaffId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StaffOperat">
+      <EntityTypeMapping TypeName="CarPark.DB.StaffOperat">
+        <MappingFragment StoreEntitySet="StaffOperat">
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="OperationCode" ColumnName="OperationCode" />
+          <ScalarProperty Name="ShiftID" ColumnName="ShiftID" />
+          <ScalarProperty Name="StaffCode" ColumnName="StaffCode" />
+          <ScalarProperty Name="OperationTime" ColumnName="OperationTime" />
+          <ScalarProperty Name="OperationID" ColumnName="OperationID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StaffType">
+      <EntityTypeMapping TypeName="CarPark.DB.StaffType">
+        <MappingFragment StoreEntitySet="StaffType">
+          <ScalarProperty Name="SystemCode" ColumnName="SystemCode" />
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+          <ScalarProperty Name="StaffTypeNamePt" ColumnName="StaffTypeNamePt" />
+          <ScalarProperty Name="StaffTypeNameCn" ColumnName="StaffTypeNameCn" />
+          <ScalarProperty Name="StaffTypeID" ColumnName="StaffTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Statistics_NotExitData">
+      <EntityTypeMapping TypeName="CarPark.DB.Statistics_NotExitData">
+        <MappingFragment StoreEntitySet="Statistics_NotExitData">
+          <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Statistics_UpdateUtil">
+      <EntityTypeMapping TypeName="CarPark.DB.Statistics_UpdateUtil">
+        <MappingFragment StoreEntitySet="Statistics_UpdateUtil">
+          <ScalarProperty Name="lastId" ColumnName="lastId" />
+          <ScalarProperty Name="updateTime" ColumnName="updateTime" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Statistics_UseTime">
+      <EntityTypeMapping TypeName="CarPark.DB.Statistics_UseTime">
+        <MappingFragment StoreEntitySet="Statistics_UseTime">
+          <ScalarProperty Name="Data_Time" ColumnName="Data_Time" />
+          <ScalarProperty Name="Data_Day" ColumnName="Data_Day" />
+          <ScalarProperty Name="Data_Month" ColumnName="Data_Month" />
+          <ScalarProperty Name="Data_Year" ColumnName="Data_Year" />
+          <ScalarProperty Name="UseTime" ColumnName="UseTime" />
+          <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SysRole">
+      <EntityTypeMapping TypeName="CarPark.DB.SysRole">
+        <MappingFragment StoreEntitySet="SysRole">
+          <ScalarProperty Name="FunctionUrl" ColumnName="FunctionUrl" />
+          <ScalarProperty Name="FunctionName" ColumnName="FunctionName" />
+          <ScalarProperty Name="RoleClass" ColumnName="RoleClass" />
+          <ScalarProperty Name="InUse" ColumnName="InUse" />
+          <ScalarProperty Name="ParentRoleID" ColumnName="ParentRoleID" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="RoleNamePt" ColumnName="RoleNamePt" />
+          <ScalarProperty Name="RolNameCn" ColumnName="RolNameCn" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SysRoleGroup">
+      <EntityTypeMapping TypeName="CarPark.DB.SysRoleGroup">
+        <MappingFragment StoreEntitySet="SysRoleGroup">
+          <ScalarProperty Name="IsUseInLogo" ColumnName="IsUseInLogo" />
+          <ScalarProperty Name="RoleList" ColumnName="RoleList" />
+          <ScalarProperty Name="DiscriptionPt" ColumnName="DiscriptionPt" />
+          <ScalarProperty Name="DiscriptionCN" ColumnName="DiscriptionCN" />
+          <ScalarProperty Name="SystemID" ColumnName="SystemID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SysStaffRole">
+      <EntityTypeMapping TypeName="CarPark.DB.SysStaffRole">
+        <MappingFragment StoreEntitySet="SysStaffRole">
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="StaffTypeID" ColumnName="StaffTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TempStop">
+      <EntityTypeMapping TypeName="CarPark.DB.TempStop">
+        <MappingFragment StoreEntitySet="TempStop">
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+          <ScalarProperty Name="AllowGateID" ColumnName="AllowGateID" />
+          <ScalarProperty Name="CreateStaffCode" ColumnName="CreateStaffCode" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="EndDateTime" ColumnName="EndDateTime" />
+          <ScalarProperty Name="StartDateTime" ColumnName="StartDateTime" />
+          <ScalarProperty Name="SubjectName" ColumnName="SubjectName" />
+          <ScalarProperty Name="SubjectNo" ColumnName="SubjectNo" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TempStopList">
+      <EntityTypeMapping TypeName="CarPark.DB.TempStopList">
+        <MappingFragment StoreEntitySet="TempStopList">
+          <ScalarProperty Name="ParkTypeID" ColumnName="ParkTypeID" />
+          <ScalarProperty Name="LicensePlate" ColumnName="LicensePlate" />
+          <ScalarProperty Name="SID" ColumnName="SID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TicketSeq">
+      <EntityTypeMapping TypeName="CarPark.DB.TicketSeq">
+        <MappingFragment StoreEntitySet="TicketSeq">
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="ShiftID" ColumnName="ShiftID" />
+          <ScalarProperty Name="StaffCode" ColumnName="StaffCode" />
+          <ScalarProperty Name="Seq" ColumnName="Seq" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TimeCharge">
+      <EntityTypeMapping TypeName="CarPark.DB.TimeCharge">
+        <MappingFragment StoreEntitySet="TimeCharge">
+          <ScalarProperty Name="ChargeType" ColumnName="ChargeType" />
+          <ScalarProperty Name="AreaID" ColumnName="AreaID" />
+          <ScalarProperty Name="FirstNormalChargeB" ColumnName="FirstNormalChargeB" />
+          <ScalarProperty Name="FirstMinB" ColumnName="FirstMinB" />
+          <ScalarProperty Name="FirstNormalChargeA" ColumnName="FirstNormalChargeA" />
+          <ScalarProperty Name="FirstMinA" ColumnName="FirstMinA" />
+          <ScalarProperty Name="FineChargeA" ColumnName="FineChargeA" />
+          <ScalarProperty Name="NormalChargeA" ColumnName="NormalChargeA" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="FineChargeB" ColumnName="FineChargeB" />
+          <ScalarProperty Name="ParkTypeID" ColumnName="ParkTypeID" />
+          <ScalarProperty Name="NormalChargeB" ColumnName="NormalChargeB" />
+          <ScalarProperty Name="TimeChargeNamePt" ColumnName="TimeChargeNamePt" />
+          <ScalarProperty Name="TimeChargeNameCn" ColumnName="TimeChargeNameCn" />
+          <ScalarProperty Name="TimeChargeTypeID" ColumnName="TimeChargeTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TimeChargeExt">
+      <EntityTypeMapping TypeName="CarPark.DB.TimeChargeExt">
+        <MappingFragment StoreEntitySet="TimeChargeExt">
+          <ScalarProperty Name="TimeChargeTypeID" ColumnName="TimeChargeTypeID" />
+          <ScalarProperty Name="WeekNum" ColumnName="WeekNum" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="AfterFlag" ColumnName="AfterFlag" />
+          <ScalarProperty Name="Charge" ColumnName="Charge" />
+          <ScalarProperty Name="EndHR" ColumnName="EndHR" />
+          <ScalarProperty Name="StartHR" ColumnName="StartHR" />
+          <ScalarProperty Name="ParkTypeID" ColumnName="ParkTypeID" />
+          <ScalarProperty Name="ExtID" ColumnName="ExtID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TransactionData">
+      <EntityTypeMapping TypeName="CarPark.DB.TransactionData">
+        <MappingFragment StoreEntitySet="TransactionData">
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="ParkMin" ColumnName="ParkMin" />
+          <ScalarProperty Name="TransactionBillType" ColumnName="TransactionBillType" />
+          <ScalarProperty Name="RentalType" ColumnName="RentalType" />
+          <ScalarProperty Name="ParkTypeID" ColumnName="ParkTypeID" />
+          <ScalarProperty Name="TransactionStatus" ColumnName="TransactionStatus" />
+          <ScalarProperty Name="OutGateID" ColumnName="OutGateID" />
+          <ScalarProperty Name="OutTime" ColumnName="OutTime" />
+          <ScalarProperty Name="OutCardCode" ColumnName="OutCardCode" />
+          <ScalarProperty Name="InGateID" ColumnName="InGateID" />
+          <ScalarProperty Name="InTime" ColumnName="InTime" />
+          <ScalarProperty Name="InCardCode" ColumnName="InCardCode" />
+          <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TransactionDataFinished">
+      <EntityTypeMapping TypeName="CarPark.DB.TransactionDataFinished">
+        <MappingFragment StoreEntitySet="TransactionDataFinished">
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="ParkMin" ColumnName="ParkMin" />
+          <ScalarProperty Name="TransactionBillType" ColumnName="TransactionBillType" />
+          <ScalarProperty Name="RentalType" ColumnName="RentalType" />
+          <ScalarProperty Name="ParkTypeID" ColumnName="ParkTypeID" />
+          <ScalarProperty Name="TransactionStatus" ColumnName="TransactionStatus" />
+          <ScalarProperty Name="OutGateID" ColumnName="OutGateID" />
+          <ScalarProperty Name="OutTime" ColumnName="OutTime" />
+          <ScalarProperty Name="OutCardCode" ColumnName="OutCardCode" />
+          <ScalarProperty Name="InGateID" ColumnName="InGateID" />
+          <ScalarProperty Name="InTime" ColumnName="InTime" />
+          <ScalarProperty Name="InCardCode" ColumnName="InCardCode" />
+          <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+          <ScalarProperty Name="TransactionFinishedID" ColumnName="TransactionFinishedID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypeDictionary">
+      <EntityTypeMapping TypeName="CarPark.DB.TypeDictionary">
+        <MappingFragment StoreEntitySet="TypeDictionary">
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+          <ScalarProperty Name="Ext2" ColumnName="Ext2" />
+          <ScalarProperty Name="Ext1" ColumnName="Ext1" />
+          <ScalarProperty Name="C_type" ColumnName="C_type" />
+          <ScalarProperty Name="TypeNamePT" ColumnName="TypeNamePT" />
+          <ScalarProperty Name="TypeNameCN" ColumnName="TypeNameCN" />
+          <ScalarProperty Name="AutoID" ColumnName="AutoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UMRefNum">
+      <EntityTypeMapping TypeName="CarPark.DB.UMRefNum">
+        <MappingFragment StoreEntitySet="UMRefNum">
+          <ScalarProperty Name="CreateStaff" ColumnName="CreateStaff" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="RefNo" ColumnName="RefNo" />
+          <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VoidCharge">
+      <EntityTypeMapping TypeName="CarPark.DB.VoidCharge">
+        <MappingFragment StoreEntitySet="VoidCharge">
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="AuditTime" ColumnName="AuditTime" />
+          <ScalarProperty Name="Auditor" ColumnName="Auditor" />
+          <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+          <ScalarProperty Name="VoidChargeAmt" ColumnName="VoidChargeAmt" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="StaffCode" ColumnName="StaffCode" />
+          <ScalarProperty Name="ChargeRecordID" ColumnName="ChargeRecordID" />
+          <ScalarProperty Name="AutoID" ColumnName="AutoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="view_parkintime2018">
+      <EntityTypeMapping TypeName="CarPark.DB.view_parkintime2018">
+        <MappingFragment StoreEntitySet="view_parkintime2018">
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+          <ScalarProperty Name="LicensePlate" ColumnName="LicensePlate" />
+          <ScalarProperty Name="InCardCode" ColumnName="InCardCode" />
+          <ScalarProperty Name="CardCode" ColumnName="CardCode" />
+          <ScalarProperty Name="inUserd" ColumnName="inUserd" />
+          <ScalarProperty Name="CreateStaffCode" ColumnName="CreateStaffCode" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="ParkLimit" ColumnName="ParkLimit" />
+          <ScalarProperty Name="ParkCode" ColumnName="ParkCode" />
+          <ScalarProperty Name="ParkID" ColumnName="ParkID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="view_transactionandlp">
+      <EntityTypeMapping TypeName="CarPark.DB.view_transactionandlp">
+        <MappingFragment StoreEntitySet="view_transactionandlp">
+          <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+          <ScalarProperty Name="AnalysisResult" ColumnName="AnalysisResult" />
+          <ScalarProperty Name="TransactionBillType" ColumnName="TransactionBillType" />
+          <ScalarProperty Name="RentalType" ColumnName="RentalType" />
+          <ScalarProperty Name="ParkTypeID" ColumnName="ParkTypeID" />
+          <ScalarProperty Name="InGateID" ColumnName="InGateID" />
+          <ScalarProperty Name="InTime" ColumnName="InTime" />
+          <ScalarProperty Name="InCardCode" ColumnName="InCardCode" />
+          <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="view_transactiondata">
+      <EntityTypeMapping TypeName="CarPark.DB.view_transactiondata">
+        <MappingFragment StoreEntitySet="view_transactiondata">
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="ParkMin" ColumnName="ParkMin" />
+          <ScalarProperty Name="TransactionBillType" ColumnName="TransactionBillType" />
+          <ScalarProperty Name="RentalType" ColumnName="RentalType" />
+          <ScalarProperty Name="ParkTypeID" ColumnName="ParkTypeID" />
+          <ScalarProperty Name="TransactionStatus" ColumnName="TransactionStatus" />
+          <ScalarProperty Name="OutGateID" ColumnName="OutGateID" />
+          <ScalarProperty Name="OutTime" ColumnName="OutTime" />
+          <ScalarProperty Name="OutCardCode" ColumnName="OutCardCode" />
+          <ScalarProperty Name="InGateID" ColumnName="InGateID" />
+          <ScalarProperty Name="InTime" ColumnName="InTime" />
+          <ScalarProperty Name="InCardCode" ColumnName="InCardCode" />
+          <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

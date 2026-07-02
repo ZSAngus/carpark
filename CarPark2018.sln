@@ -1,0 +1,84 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarPark.Core", "src\CarPark.Core\CarPark.Core.csproj", "{A1B2C3D4-E5F6-7890-ABCD-EF1234567801}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAT.Entity", "src\DAT.Entity\DAT.Entity.csproj", "{A1B2C3D4-E5F6-7890-ABCD-EF1234567802}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N910POSDll", "src\N910POSDll\N910POSDll.csproj", "{A1B2C3D4-E5F6-7890-ABCD-EF1234567803}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarPark.DataStore", "src\CarPark.DataStore\CarPark.DataStore.csproj", "{A1B2C3D4-E5F6-7890-ABCD-EF1234567804}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarPark.Device.SerialComm", "src\CarPark.Device.SerialComm\CarPark.Device.SerialComm.csproj", "{A1B2C3D4-E5F6-7890-ABCD-EF1234567805}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarPark.DB", "src\CarPark.DB\CarPark.DB.csproj", "{A1B2C3D4-E5F6-7890-ABCD-EF1234567806}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Master.SystemCommunication.Lib", "src\Master.SystemCommunication.Lib\Master.SystemCommunication.Lib.csproj", "{A1B2C3D4-E5F6-7890-ABCD-EF1234567807}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Master.SystemCommunication", "src\Master.SystemCommunication\Master.SystemCommunication.csproj", "{A1B2C3D4-E5F6-7890-ABCD-EF1234567808}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarPark.Lib", "src\CarPark.Lib\CarPark.Lib.csproj", "{A1B2C3D4-E5F6-7890-ABCD-EF1234567809}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarPark.Device", "src\CarPark.Device\CarPark.Device.csproj", "{A1B2C3D4-E5F6-7890-ABCD-EF1234567810}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarPark.Device.CashierBusiness", "src\CarPark.Device.CashierBusiness\CarPark.Device.CashierBusiness.csproj", "{A1B2C3D4-E5F6-7890-ABCD-EF1234567811}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarPark2018", "src\CarPark2018\CarPark2018.csproj", "{A1B2C3D4-E5F6-7890-ABCD-EF1234567812}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567801}.Debug|x86.ActiveCfg = Debug|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567801}.Debug|x86.Build.0 = Debug|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567801}.Release|x86.ActiveCfg = Release|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567801}.Release|x86.Build.0 = Release|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567802}.Debug|x86.ActiveCfg = Debug|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567802}.Debug|x86.Build.0 = Debug|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567802}.Release|x86.ActiveCfg = Release|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567802}.Release|x86.Build.0 = Release|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567803}.Debug|x86.ActiveCfg = Debug|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567803}.Debug|x86.Build.0 = Debug|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567803}.Release|x86.ActiveCfg = Release|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567803}.Release|x86.Build.0 = Release|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567804}.Debug|x86.ActiveCfg = Debug|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567804}.Debug|x86.Build.0 = Debug|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567804}.Release|x86.ActiveCfg = Release|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567804}.Release|x86.Build.0 = Release|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567805}.Debug|x86.ActiveCfg = Debug|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567805}.Debug|x86.Build.0 = Debug|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567805}.Release|x86.ActiveCfg = Release|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567805}.Release|x86.Build.0 = Release|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567806}.Debug|x86.ActiveCfg = Debug|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567806}.Debug|x86.Build.0 = Debug|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567806}.Release|x86.ActiveCfg = Release|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567806}.Release|x86.Build.0 = Release|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567807}.Debug|x86.ActiveCfg = Debug|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567807}.Debug|x86.Build.0 = Debug|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567807}.Release|x86.ActiveCfg = Release|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567807}.Release|x86.Build.0 = Release|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567808}.Debug|x86.ActiveCfg = Debug|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567808}.Debug|x86.Build.0 = Debug|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567808}.Release|x86.ActiveCfg = Release|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567808}.Release|x86.Build.0 = Release|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567809}.Debug|x86.ActiveCfg = Debug|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567809}.Debug|x86.Build.0 = Debug|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567809}.Release|x86.ActiveCfg = Release|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567809}.Release|x86.Build.0 = Release|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567810}.Debug|x86.ActiveCfg = Debug|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567810}.Debug|x86.Build.0 = Debug|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567810}.Release|x86.ActiveCfg = Release|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567810}.Release|x86.Build.0 = Release|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567811}.Debug|x86.ActiveCfg = Debug|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567811}.Debug|x86.Build.0 = Debug|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567811}.Release|x86.ActiveCfg = Release|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567811}.Release|x86.Build.0 = Release|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567812}.Debug|x86.ActiveCfg = Debug|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567812}.Debug|x86.Build.0 = Debug|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567812}.Release|x86.ActiveCfg = Release|x86
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567812}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+EndGlobal
