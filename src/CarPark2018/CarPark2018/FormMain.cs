@@ -2706,27 +2706,33 @@ public class FormMain : Form
 			try
 			{
 				string text = File.ReadAllText(path);
+				// 內容未變則跳過（防止 FileSystemWatcher 重複觸發）
+				if (text == lastContent)
+					return;
 				if (!isFirstLoad)
 				{
-					if (string.IsNullOrWhiteSpace(lastContent) && !string.IsNullOrWhiteSpace(text))
+					if (!string.IsNullOrWhiteSpace(text))
 					{
-						MessageBox.Show("通告已更新，請留意！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-					}
-					else if (!string.IsNullOrWhiteSpace(lastContent) && !text.Equals(lastContent))
-					{
+						// 先記下內容再彈窗，避免排隊中的後續 BeginInvoke 重複彈出
+						lastContent = text;
+						lblNotice.Text = text;
+						lblNotice.Visible = true;
 						MessageBox.Show("通告已更新，請留意！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
 					}
 				}
-				lblNotice.Text = text;
-			lblNotice.Visible = !string.IsNullOrWhiteSpace(text);
-				lastContent = text;
+				else
+				{
+					lblNotice.Text = text;
+					lblNotice.Visible = !string.IsNullOrWhiteSpace(text);
+					lastContent = text;
+				}
 				isFirstLoad = false;
 				return;
 			}
 			catch (Exception message)
 			{
 				Logger.Error(message);
-			lblNotice.Visible = false;
+				lblNotice.Visible = false;
 				return;
 			}
 		}
