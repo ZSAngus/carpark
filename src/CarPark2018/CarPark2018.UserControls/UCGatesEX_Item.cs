@@ -128,10 +128,13 @@ public class UCGatesEX_Item : UserControl
 	{
 		try
 		{
+			// 修复：静态事件订阅后无论走哪条路径（含点取消提前 return）都必须退订，否则控件无法释放、重复挂接
+			FormManualUpBarDialog.m_FormManualUpBarDialog_Event += FormManualUpBarDialog_m_FormManualUpBarDialog_Event;
+			try
+			{
 			DataBuffer2018.CheckRole(MethodBase.GetCurrentMethod());
 			using (FormManualUpBarDialog formManualUpBarDialog = new FormManualUpBarDialog())
 			{
-				FormManualUpBarDialog.m_FormManualUpBarDialog_Event += FormManualUpBarDialog_m_FormManualUpBarDialog_Event;
 				if (formManualUpBarDialog.ShowDialog(LangManager.GetLangString("ShowMessage.UpBar"), OkFocus: false) == DialogResult.Cancel)
 				{
 					return;
@@ -142,7 +145,6 @@ public class UCGatesEX_Item : UserControl
 			manualUpBarArgs.OperationPC = Settings.Default.OnlyID;
 			manualUpBarArgs.ShiffCode = DataBuffer2018.CurrentStaff.StaffCode;
 			manualUpBarArgs.Extend1 = strLP.ToUpper().Trim();
-			FormManualUpBarDialog.m_FormManualUpBarDialog_Event -= FormManualUpBarDialog_m_FormManualUpBarDialog_Event;
 			strLP = "";
 			try
 			{
@@ -320,6 +322,11 @@ public class UCGatesEX_Item : UserControl
 		{
 			Global.ShowMessage(ex5.Message);
 		}
+			}
+			finally
+			{
+				FormManualUpBarDialog.m_FormManualUpBarDialog_Event -= FormManualUpBarDialog_m_FormManualUpBarDialog_Event;
+			}
 	}
 
 	private void btn_Camera_Click(object sender, EventArgs e)
@@ -509,18 +516,18 @@ public class UCGatesEX_Item : UserControl
 			}
 			if (str == "Disability")
 			{
-				result = m_ParkAreaExtend.Where((ParkAreaExtend m) => m.ParkTypeID == 4 && m.AreaID == AreaID).FirstOrDefault().TimeChargRemain;
+				result = m_ParkAreaExtend.Where((ParkAreaExtend m) => m.ParkTypeID == 4 && m.AreaID == AreaID).FirstOrDefault()?.TimeChargRemain ?? 0;
 			}
 			else if (str == "Electric")
 			{
-				result = m_ParkAreaExtend.Where((ParkAreaExtend m) => m.ParkTypeID == 5 && m.AreaID == AreaID).FirstOrDefault().TimeChargRemain;
+				result = m_ParkAreaExtend.Where((ParkAreaExtend m) => m.ParkTypeID == 5 && m.AreaID == AreaID).FirstOrDefault()?.TimeChargRemain ?? 0;
 			}
 			return result;
 		}
 		catch (Exception ex)
 		{
 			Logger.Error(ex);
-			throw ex;
+			throw;
 		}
 	}
 

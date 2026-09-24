@@ -2,6 +2,7 @@ using System;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
@@ -339,171 +340,197 @@ public class UCPasstraceEX2 : UserControl
 
 	public void Add(PassTrace context)
 	{
-		try
+		// 修复：数据库查询移出 UI 线程，避免 232 较慢时卡死整个界面（业务判定逻辑保持不变）
+		Task.Factory.StartNew(delegate
 		{
-			Invoke((MethodInvoker)delegate
+			try
 			{
-				Tuple<string, string> analysisResultByPassTraceID = LPDBHelper.GetAnalysisResultByPassTraceID(context.PassTraceID, context.PassCardCode, context.ParkTypeID);
-				string item = analysisResultByPassTraceID.Item1;
-				_ = analysisResultByPassTraceID.Item2;
-				if (context.PassGateID == 2)
+				ProcessAdd(context);
+			}
+			catch (Exception message)
+			{
+				Logger.Error(message);
+			}
+		});
+	}
+
+	private readonly object _addLock = new object();
+
+	// 最近一条已加入记录的备注（供「該卡已進場」车证重复核查判断用，替代后台线程直读 bs）
+	private string lastAddedRemark;
+
+	private void ProcessAdd(PassTrace context)
+	{
+		lock (_addLock)
+		{
+			Tuple<string, string> analysisResultByPassTraceID = LPDBHelper.GetAnalysisResultByPassTraceID(context.PassTraceID, context.PassCardCode, context.ParkTypeID);
+			string item = analysisResultByPassTraceID.Item1;
+			_ = analysisResultByPassTraceID.Item2;
+			if (context.PassGateID == 2)
+			{
+				StoredAnalysisResult = ((context.PassStatus == 1) ? item : string.Empty);
+			}
+			if (context.PassGateID == 1)
+			{
+				if (Settings.Default.verify != "0" && context.PassStatus == 2)
 				{
-					StoredAnalysisResult = ((context.PassStatus == 1) ? item : string.Empty);
-				}
-				if (context.PassGateID == 1)
-				{
-					if (Settings.Default.verify != "0" && context.PassStatus == 2)
+					if (previousItem != null && previousItem == item)
 					{
-						if (previousItem != null && previousItem == item)
+						context.PassRemarkCn = "請審核";
+					}
+					else
+					{
+						previousItem = item;
+					}
+				}
+				if (Settings.Default.verify == "1" && (context.PassBillType == 12 || context.PassBillType == 0))
+				{
+					context.PassRemarkCn = "請審核";
+				}
+			}
+			if (context.PassStatus == 2 && context.PassBillType == 10)
+			{
+				if (context.PassCardCode.StartsWith("13"))
+				{
+					context.PassRemarkCn = "MPark";
+				}
+				else if (context.PassCardCode.StartsWith("14"))
+				{
+					context.PassRemarkCn = "大豐";
+				}
+			}
+			if (context.PassRemarkCn != null)
+			{
+				context.PassRemarkCn = context.PassRemarkCn.Replace("GateErrorCodes.", "");
+				context.PassRemarkCn = context.PassRemarkCn.Replace("澳門通無感提示:扣費失敗。詳情:支付失敗:澳門通查詢付費結果沒有支付,未支付(1002)", "澳門通無感:扣費失敗。客戶未支付");
+				context.PassRemarkCn = context.PassRemarkCn.Replace("澳門通無感提示:扣費失敗。詳情:支付失敗:", "澳門通無感:扣費失敗。");
+			}
+			if (!string.IsNullOrEmpty(item))
+			{
+				if (context.PassBillType != 1 || context.PassStatus != 1)
+				{
+					context.PassCardCode = item;
+				}
+				if (Settings.Default.verify != "0" && (context.PassBillType == 12 || context.PassBillType == 0) && context.PassStatus == 2)
+				{
+					string text = item;
+					bool flag = false;
+					if (text.StartsWith("CM") && context.ParkTypeID == 2)
+					{
+						if (text.Length != 7 || !text.Substring(2).All(char.IsDigit))
 						{
-							context.PassRemarkCn = "請審核";
-						}
-						else
-						{
-							previousItem = item;
+							flag = true;
 						}
 					}
-					if (Settings.Default.verify == "1" && (context.PassBillType == 12 || context.PassBillType == 0))
+					else if (text.StartsWith("EX") || text.StartsWith("ES"))
+					{
+						string text2 = text.Substring(2);
+						if (text2.Length < 1 || text2.Length > 4 || !text2.All(char.IsDigit))
+						{
+							flag = true;
+						}
+					}
+					else if (text.StartsWith("M") && text.Length == 5)
+					{
+						if (!text.Substring(1).All(char.IsDigit))
+						{
+							flag = true;
+						}
+					}
+					else if (text.Length == 6)
+					{
+						string source = text.Substring(0, 2);
+						string source2 = text.Substring(2);
+						if (!source.All(char.IsLetter) || !source2.All(char.IsDigit))
+						{
+							flag = true;
+						}
+					}
+					else
+					{
+						flag = true;
+					}
+					if (flag && context.PassGateID == 1)
 					{
 						context.PassRemarkCn = "請審核";
 					}
 				}
-				if (context.PassStatus == 2 && context.PassBillType == 10)
+			}
+			// 設計說明：僅收銀機（CashierA）執行此查詢，避免多台電腦開軟件時重複查詢加重數據庫負擔
+			if (context.PassStatus == 2 && context.PassGateID == 1 && Settings.Default.OnlyID == "CashierA" && (context.PassBillType == 12 || context.PassBillType == 0 || context.PassBillType == 10))
+			{
+				Tuple<int?, int?, string> tuple = LPDBHelper.CheckFreeRegisterExists(context.PassCardCode, context.ParkTypeID, context.PassTime);
+				int? item2 = tuple.Item1;
+				int? item3 = tuple.Item2;
+				string item4 = tuple.Item3;
+				int? transactionID = context.TransactionID;
+				if (item2.HasValue && item3.HasValue && transactionID.HasValue)
 				{
-					if (context.PassCardCode.StartsWith("13"))
-					{
-						context.PassRemarkCn = "MPark";
-					}
-					else if (context.PassCardCode.StartsWith("14"))
-					{
-						context.PassRemarkCn = "大豐";
-					}
+					LPDBHelper.SetFreeRecord(item2.Value, item3.Value, transactionID.Value);
+					context.PassRemarkCn = item4;
 				}
-				if (context.PassRemarkCn != null)
+				if (lastAddedRemark == "該卡已進場")
 				{
-					context.PassRemarkCn = context.PassRemarkCn.Replace("GateErrorCodes.", "");
-					context.PassRemarkCn = context.PassRemarkCn.Replace("澳門通無感提示:扣費失敗。詳情:支付失敗:澳門通查詢付費結果沒有支付,未支付(1002)", "澳門通無感:扣費失敗。客戶未支付");
-					context.PassRemarkCn = context.PassRemarkCn.Replace("澳門通無感提示:扣費失敗。詳情:支付失敗:", "澳門通無感:扣費失敗。");
-				}
-				if (!string.IsNullOrEmpty(item))
-				{
-					if (context.PassBillType != 1 || context.PassStatus != 1)
-					{
-						context.PassCardCode = item;
-					}
-					if (Settings.Default.verify != "0" && (context.PassBillType == 12 || context.PassBillType == 0) && context.PassStatus == 2)
-					{
-						string text = item;
-						bool flag = false;
-						if (text.StartsWith("CM") && context.ParkTypeID == 2)
-						{
-							if (text.Length != 7 || !text.Substring(2).All(char.IsDigit))
-							{
-								flag = true;
-							}
-						}
-						else if (text.StartsWith("EX") || text.StartsWith("ES"))
-						{
-							string text2 = text.Substring(2);
-							if (text2.Length < 1 || text2.Length > 4 || !text2.All(char.IsDigit))
-							{
-								flag = true;
-							}
-						}
-						else if (text.StartsWith("M") && text.Length == 5)
-						{
-							if (!text.Substring(1).All(char.IsDigit))
-							{
-								flag = true;
-							}
-						}
-						else if (text.Length == 6)
-						{
-							string source = text.Substring(0, 2);
-							string source2 = text.Substring(2);
-							if (!source.All(char.IsLetter) || !source2.All(char.IsDigit))
-							{
-								flag = true;
-							}
-						}
-						else
-						{
-							flag = true;
-						}
-						if (flag && context.PassGateID == 1)
-						{
-							context.PassRemarkCn = "請審核";
-						}
-					}
-				}
-				if (context.PassStatus == 2 && context.PassGateID == 1 && Settings.Default.OnlyID == "CashierA" && (context.PassBillType == 12 || context.PassBillType == 0 || context.PassBillType == 10))
-				{
-					Tuple<int?, int?, string> tuple = LPDBHelper.CheckFreeRegisterExists(context.PassCardCode, context.ParkTypeID, context.PassTime);
-					int? item2 = tuple.Item1;
-					int? item3 = tuple.Item2;
-					string item4 = tuple.Item3;
-					int? transactionID = context.TransactionID;
-					if (item2.HasValue && item3.HasValue && transactionID.HasValue)
-					{
-						LPDBHelper.SetFreeRecord(item2.Value, item3.Value, transactionID.Value);
-						context.PassRemarkCn = item4;
-					}
-					if (bs.Count > 0 && bs[bs.Count - 1] is PassTrace { PassRemarkCn: "該卡已進場" })
-					{
-						Task.Factory.StartNew(delegate
-						{
-							bool isMonthIn = LPDBHelper.CheckMonthIn(item, context.ParkTypeID);
-							BeginInvoke((Action)delegate
-							{
-								if (isMonthIn)
-								{
-									using (SingleBtnMessageBox singleBtnMessageBox = new SingleBtnMessageBox("車牌：" + item + "為車證車輛， \n車證和時鐘重複入場，\n請核查原因，避免錯誤收費！", "車輛核查"))
-									{
-										singleBtnMessageBox.ShowDialog();
-									}
-								}
-							});
-						});
-					}
-				}
-				int[] source3 = new int[4] { 0, 3, 10, 12 };
-				if (context.PassStatus == 2 && context.PassGateID == 2 && Settings.Default.OnlyID == "CashierA" && source3.Contains(context.PassBillType) && context.TransactionID.HasValue)
-				{
-					string totalChargeByTransactionID = LPDBHelper.GetTotalChargeByTransactionID(context.TransactionID.Value);
-					PassTrace passTrace2 = context;
-					passTrace2.PassRemarkCn = passTrace2.PassRemarkCn + "收費:" + totalChargeByTransactionID;
-				}
-				bool flag2 = context.PassStatus == 1;
-				bool flag3 = context.PassRemarkCn == "沒有進場紀錄" || ((context.PassBillType == 11 || context.PassBillType == 12) && context.PassRemarkCn == "該卡已進場");
-				if (Settings.Default.OnlyID == "CashierA" && flag2 && flag3 && LPDBHelper.IsRecentPassMatched(context.PassCardCode, context.ParkTypeID, context.PassTime, context.PassGateID))
-				{
-					context.PassRemarkCn = "查詢已存在完成記錄，自動起桿";
 					Task.Factory.StartNew(delegate
 					{
-						try
+						bool isMonthIn = LPDBHelper.CheckMonthIn(item, context.ParkTypeID);
+						BeginInvoke((Action)delegate
 						{
-							TryManualUpBar(context.PassGateID);
-						}
-						catch (Exception message2)
-						{
-							Logger.Error(message2);
-						}
+							if (isMonthIn)
+							{
+								using (SingleBtnMessageBox singleBtnMessageBox = new SingleBtnMessageBox("車牌：" + item + "為車證車輛， \n車證和時鐘重複入場，\n請核查原因，避免錯誤收費！", "車輛核查"))
+								{
+									singleBtnMessageBox.ShowDialog();
+								}
+							}
+						});
 					});
 				}
-				if (bs.Count >= 50)
+			}
+			int[] source3 = new int[4] { 0, 3, 10, 12 };
+			if (context.PassStatus == 2 && context.PassGateID == 2 && Settings.Default.OnlyID == "CashierA" && source3.Contains(context.PassBillType) && context.TransactionID.HasValue)
+			{
+				string totalChargeByTransactionID = LPDBHelper.GetTotalChargeByTransactionID(context.TransactionID.Value);
+				PassTrace passTrace2 = context;
+				passTrace2.PassRemarkCn = passTrace2.PassRemarkCn + "收費:" + totalChargeByTransactionID;
+			}
+			bool flag2 = context.PassStatus == 1;
+			bool flag3 = context.PassRemarkCn == "沒有進場紀錄" || ((context.PassBillType == 11 || context.PassBillType == 12) && context.PassRemarkCn == "該卡已進場");
+			if (Settings.Default.OnlyID == "CashierA" && flag2 && flag3 && LPDBHelper.IsRecentPassMatched(context.PassCardCode, context.ParkTypeID, context.PassTime, context.PassGateID))
+			{
+				context.PassRemarkCn = "查詢已存在完成記錄，自動起桿";
+				Task.Factory.StartNew(delegate
 				{
-					bs.RemoveAt(0);
-				}
-				bs.Add(context);
-				currentTrace = context.PassTraceID;
-				bs.MoveLast();
-				RefreshDataGrid();
-				dataMain.ClearSelection();
-			});
-		}
-		catch (Exception message)
-		{
-			Logger.Error(message);
+					try
+					{
+						TryManualUpBar(context.PassGateID);
+					}
+					catch (Exception message2)
+					{
+						Logger.Error(message2);
+					}
+				});
+			}
+			try
+			{
+				BeginInvoke((MethodInvoker)delegate
+				{
+					if (bs.Count >= 50)
+					{
+						bs.RemoveAt(0);
+					}
+					bs.Add(context);
+					lastAddedRemark = context.PassRemarkCn;
+					currentTrace = context.PassTraceID;
+					bs.MoveLast();
+					RefreshDataGrid();
+					dataMain.ClearSelection();
+				});
+			}
+			catch (Exception message)
+			{
+				Logger.Error(message);
+			}
 		}
 	}
 
@@ -615,25 +642,63 @@ public class UCPasstraceEX2 : UserControl
 
 	private void dataMain_MouseMove(object sender, MouseEventArgs e)
 	{
-		DataGridView.HitTestInfo hitTestInfo = dataMain.HitTest(e.X, e.Y);
-		if (hitTestInfo.RowIndex >= 0 && hitTestInfo.ColumnIndex == 0)
+		try
 		{
-			if (bs[hitTestInfo.RowIndex] is PassTrace passTrace)
+			DataGridView.HitTestInfo hitTestInfo = dataMain.HitTest(e.X, e.Y);
+			if (hitTestInfo.RowIndex >= 0 && hitTestInfo.ColumnIndex == 0)
 			{
-				string item = LPDBHelper.GetAnalysisResultByPassTraceID(passTrace.PassTraceID, passTrace.PassCardCode, passTrace.ParkTypeID).Item2;
-				string filename = Config.LicensePlatePath + item;
-				if (!string.IsNullOrEmpty(item))
+				if (bs[hitTestInfo.RowIndex] is PassTrace passTrace)
 				{
-					pictureBox.Image = Image.FromFile(filename);
-					pictureBox.Location = new Point(130, 0);
-					pictureBox.Size = new Size(490, 275);
-					pictureBox.Visible = true;
+					string item = LPDBHelper.GetAnalysisResultByPassTraceID(passTrace.PassTraceID, passTrace.PassCardCode, passTrace.ParkTypeID).Item2;
+					string filename = Config.LicensePlatePath + item;
+					if (!string.IsNullOrEmpty(item))
+					{
+						Image image = LoadImageSafe(filename);
+						if (image == null)
+						{
+							pictureBox.Visible = false;
+							return;
+						}
+						Image old = pictureBox.Image;
+						pictureBox.Image = image;
+						old?.Dispose();
+						pictureBox.Location = new Point(130, 0);
+						pictureBox.Size = new Size(490, 275);
+						pictureBox.Visible = true;
+					}
 				}
 			}
+			else
+			{
+				pictureBox.Visible = false;
+			}
 		}
-		else
+		catch (Exception exception)
 		{
+			Logger.Error("車牌圖片顯示失敗", exception);
 			pictureBox.Visible = false;
+		}
+	}
+
+	// 修复：Image.FromFile 会锁定图片文件且句柄不释放；改为读入内存后创建副本，文件可正常被服务端清理
+	private Image LoadImageSafe(string path)
+	{
+		try
+		{
+			if (!File.Exists(path))
+			{
+				return null;
+			}
+			byte[] bytes = File.ReadAllBytes(path);
+			using (MemoryStream memoryStream = new MemoryStream(bytes))
+			{
+				return new Bitmap(Image.FromStream(memoryStream));
+			}
+		}
+		catch (Exception message)
+		{
+			Logger.Error("車牌圖片載入失敗: " + path, message);
+			return null;
 		}
 	}
 

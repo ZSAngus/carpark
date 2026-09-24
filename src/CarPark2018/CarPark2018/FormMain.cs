@@ -607,7 +607,7 @@ public class FormMain : Form
 
 		// 啟動天氣輪詢
 		timerWeather.Start();
-		FetchWeather();
+		FetchWeatherSafe();
 
 		ThreadPool.QueueUserWorkItem(delegate
 		{
@@ -2693,9 +2693,35 @@ public class FormMain : Form
 		}
 	}
 
+	private int _weatherFetching;
+
+	// 天氣下載改到後台線程執行，避免 232 不可達時 DownloadString 同步阻塞卡死 UI
+	private void FetchWeatherSafe()
+	{
+		if (Interlocked.CompareExchange(ref _weatherFetching, 1, 0) != 0)
+		{
+			return;
+		}
+		Task.Factory.StartNew(delegate
+		{
+			try
+			{
+				FetchWeather();
+			}
+			catch (Exception ex)
+			{
+				Logger.Warn("天氣擷取失敗", ex);
+			}
+			finally
+			{
+				Interlocked.Exchange(ref _weatherFetching, 0);
+			}
+		});
+	}
+
 	private void OnWeatherTimerTick(object sender, EventArgs e)
 	{
-		FetchWeather();
+		FetchWeatherSafe();
 	}
 
 	private void ReadTextFile()
