@@ -30,3 +30,7 @@ _*.py
 # OS files
 Thumbs.db
 .DS_Store
+
+# dnSpy step-by-step history (local only, do not upload)
+/20250422/
+/.workbuddy/

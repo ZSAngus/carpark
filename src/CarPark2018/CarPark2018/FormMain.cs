@@ -2610,7 +2610,7 @@ public class FormMain : Form
 			{
 				wc.Encoding = System.Text.Encoding.UTF8;
 				wc.Headers["User-Agent"] = "CarPark2018-Weather/1.0";
-				string json = wc.DownloadString("http://192.168.1.38/park8/api/weather_warning.php");
+				string json = wc.DownloadString("http://192.168.1.232/api/weather_warning.php");
 				var obj = JObject.Parse(json);
 				BeginInvoke((Action)(() => UpdateWeatherUI(obj)));
 			}
