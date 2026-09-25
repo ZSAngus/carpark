@@ -12,6 +12,7 @@ lib/
 
 # Source build intermediates
 src/**/obj/
+src/**/bin/
 src/**/_extracted_resources/
 src/**/*.resources
 src/**/*.ps1
